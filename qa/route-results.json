@@ -1,0 +1,1914 @@
+{
+  "count": 16,
+  "uniqueTitles": 16,
+  "uniqueDescriptions": 16,
+  "linkErrors": [],
+  "imageErrors": [],
+  "failures": [],
+  "pages": [
+    {
+      "path": "/en/",
+      "status": 200,
+      "title": "LaSpeak — Teacher-reviewed learning evidence across language lessons",
+      "lang": "en",
+      "h1": 1,
+      "description": "LaSpeak connects prompts, learner attempts, corrections and later reuse across language lessons, with every interpretation linked to its source and reviewed by teachers.",
+      "canonical": "https://your-domain.example/en/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/",
+        "/fr/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#how-it-works",
+        "/en/for-language-providers/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/en/research/",
+        "/en/about/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/fr/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/lesson-828.webp",
+          "loaded": true,
+          "alt": "An adult learner wearing headphones speaks with a teacher on a laptop."
+        },
+        {
+          "src": "",
+          "loaded": false,
+          "alt": "A teacher explains a point during a remote lesson, with notes and a laptop nearby."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/for-language-providers/",
+      "status": 200,
+      "title": "A little less lost between lessons. | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "Explore how source-linked, teacher-reviewed evidence could support handovers and formative progress conversations in adult FLE provision.",
+      "canonical": "https://your-domain.example/en/for-language-providers/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/for-language-providers/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/pour-les-organismes-fle/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/for-language-providers/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "A little less lost between lessons.",
+                  "item": "https://your-domain.example/en/for-language-providers/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/for-language-providers/",
+        "/fr/pour-les-organismes-fle/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "#section-6",
+        "/en/research/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/en/research/",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/for-language-providers/",
+        "/fr/pour-les-organismes-fle/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/teacher-1440.webp",
+          "loaded": true,
+          "alt": "A teacher explains a point during a remote lesson, with notes and a laptop nearby."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/research/",
+      "status": 200,
+      "title": "First, understand the work. | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "Join a 20-minute research conversation about adult FLE teaching workflows in France. No sales demo, preparation or learner data required.",
+      "canonical": "https://your-domain.example/en/research/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/research/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/recherche/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/research/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "First, understand the work.",
+                  "item": "https://your-domain.example/en/research/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/research/",
+        "/fr/recherche/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/en/for-language-providers/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/research/",
+        "/fr/recherche/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/conversation-1440.webp",
+          "loaded": true,
+          "alt": "An adult in conversation at her laptop in a calm workspace."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/about/",
+      "status": 200,
+      "title": "Delivering a lesson. Keeping what matters. | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "The origin of LaSpeak: Denis Gasenchenko’s experience operating language education workflows and a grounded question about continuity between lessons.",
+      "canonical": "https://your-domain.example/en/about/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/about/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/a-propos/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/about/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Delivering a lesson. Keeping what matters.",
+                  "item": "https://your-domain.example/en/about/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/about/",
+        "/fr/a-propos/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "/en/research/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/en/research/",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/about/",
+        "/fr/a-propos/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/insights/",
+      "status": 200,
+      "title": "Insights on teaching, context and learning evidence | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "Thoughtful notes on what gets lost between language lessons, the limits of transcripts and the role of teacher judgement. From LaSpeak’s early research.",
+      "canonical": "https://your-domain.example/en/insights/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/insights/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/ressources/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/insights/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Insights on teaching, context and learning evidence",
+                  "item": "https://your-domain.example/en/insights/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/what-gets-lost-between-language-lessons/",
+        "/en/insights/transcripts-and-learning-evidence/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/insights/",
+        "/fr/ressources/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/conversation-640.webp",
+          "loaded": true,
+          "alt": "An adult at her laptop during a remote conversation."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/privacy/",
+      "status": 200,
+      "title": "A simple site. A clear boundary. | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "How the LaSpeak public website handles contact emails, technical hosting data and synthetic examples. No learner uploads, tracking analytics or advertising cookies.",
+      "canonical": "https://your-domain.example/en/privacy/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/privacy/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/confidentialite/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/privacy/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "A simple site. A clear boundary.",
+                  "item": "https://your-domain.example/en/privacy/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/privacy/",
+        "/fr/confidentialite/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "/en/research/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/privacy/",
+        "/fr/confidentialite/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/insights/what-gets-lost-between-language-lessons/",
+      "status": 200,
+      "title": "What gets lost between one language lesson and the next? | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "A practical reflection on prompts, corrections and learner examples: what is worth carrying into the next lesson, and what should remain a question.",
+      "canonical": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Insights",
+                  "item": "https://your-domain.example/en/insights/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "What gets lost between one language lesson and the next?",
+                  "item": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/what-gets-lost-between-language-lessons/",
+        "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "#section-6",
+        "/en/insights/transcripts-and-learning-evidence/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/en/research/",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/insights/what-gets-lost-between-language-lessons/",
+        "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/insights/transcripts-and-learning-evidence/",
+      "status": 200,
+      "title": "Why a transcript is useful, but not the same as learning evidence | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "A transcript preserves words. Interpreting a learner’s production also requires the task, available support, surrounding exchange and teacher judgement.",
+      "canonical": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://your-domain.example/en/about/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://your-domain.example/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Insights",
+                  "item": "https://your-domain.example/en/insights/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Why a transcript is useful, but not the same as learning evidence",
+                  "item": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/transcripts-and-learning-evidence/",
+        "/fr/ressources/transcription-et-traces-pedagogiques/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/research/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/en/insights/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "#section-6",
+        "/en/insights/what-gets-lost-between-language-lessons/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/en/research/",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/insights/transcripts-and-learning-evidence/",
+        "/fr/ressources/transcription-et-traces-pedagogiques/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/",
+      "status": 200,
+      "title": "LaSpeak — Des traces pédagogiques reliées entre les cours de FLE",
+      "lang": "fr",
+      "h1": 1,
+      "description": "LaSpeak relie les consignes, productions, corrections et réemplois entre les cours, avec chaque interprétation reliée à sa source et validée par l’enseignant.",
+      "canonical": "https://your-domain.example/fr/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/",
+        "/fr/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/",
+        "/fr/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/lesson-828.webp",
+          "loaded": true,
+          "alt": "Une apprenante adulte, casque sur les oreilles, échange avec une enseignante sur son ordinateur."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/teacher-640.webp",
+          "loaded": true,
+          "alt": "Une enseignante explique un point à distance, devant son ordinateur et ses notes."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/pour-les-organismes-fle/",
+      "status": 200,
+      "title": "D’un cours à l’autre, préserver l’essentiel. | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Pour les organismes de formation FLE : explorer un suivi pédagogique fondé sur des traces reliées aux cours et examinées par les enseignants.",
+      "canonical": "https://your-domain.example/fr/pour-les-organismes-fle/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/for-language-providers/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/pour-les-organismes-fle/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/for-language-providers/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "D’un cours à l’autre, préserver l’essentiel.",
+                  "item": "https://your-domain.example/fr/pour-les-organismes-fle/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/for-language-providers/",
+        "/fr/pour-les-organismes-fle/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "#section-6",
+        "/fr/recherche/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/fr/recherche/",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/for-language-providers/",
+        "/fr/pour-les-organismes-fle/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/teacher-1440.webp",
+          "loaded": true,
+          "alt": "Une enseignante explique un point à distance, devant son ordinateur et ses notes."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/recherche/",
+      "status": 200,
+      "title": "D’abord, comprendre votre travail. | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Un échange de recherche de 20 minutes sur le suivi pédagogique en FLE pour adultes. Sans démonstration commerciale, préparation ni données d’apprenants.",
+      "canonical": "https://your-domain.example/fr/recherche/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/research/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/recherche/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/research/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "D’abord, comprendre votre travail.",
+                  "item": "https://your-domain.example/fr/recherche/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/research/",
+        "/fr/recherche/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/fr/pour-les-organismes-fle/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/research/",
+        "/fr/recherche/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/conversation-1440.webp",
+          "loaded": true,
+          "alt": "Une adulte échange à distance depuis son espace de travail."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/a-propos/",
+      "status": 200,
+      "title": "Assurer le cours. Garder ce qui compte. | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "LaSpeak est né d’une question opérationnelle sur la continuité entre les cours de langue. Découvrez le projet et son fondateur, Denis Gasenchenko.",
+      "canonical": "https://your-domain.example/fr/a-propos/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/about/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/a-propos/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/about/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Assurer le cours. Garder ce qui compte.",
+                  "item": "https://your-domain.example/fr/a-propos/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/about/",
+        "/fr/a-propos/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "/fr/recherche/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/fr/recherche/",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/about/",
+        "/fr/a-propos/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/ressources/",
+      "status": 200,
+      "title": "Ressources : traces et continuité pédagogique en FLE | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Réflexions sur les traces issues des cours de langue, la continuité pédagogique et les limites des transcriptions. Des pistes à examiner avec les enseignants.",
+      "canonical": "https://your-domain.example/fr/ressources/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/insights/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/ressources/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/insights/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Ressources : traces et continuité pédagogique en FLE",
+                  "item": "https://your-domain.example/fr/ressources/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/insights/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+        "/fr/ressources/transcription-et-traces-pedagogiques/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/insights/",
+        "/fr/ressources/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/conversation-640.webp",
+          "loaded": true,
+          "alt": "Une adulte devant son ordinateur, en conversation à distance."
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/confidentialite/",
+      "status": 200,
+      "title": "Un site simple. Un périmètre clair. | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Contact par email, données techniques et exemples fictifs : le fonctionnement de ce site LaSpeak, sans dépôt de cours ni traceurs publicitaires.",
+      "canonical": "https://your-domain.example/fr/confidentialite/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/privacy/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/confidentialite/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/privacy/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Un site simple. Un périmètre clair.",
+                  "item": "https://your-domain.example/fr/confidentialite/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/privacy/",
+        "/fr/confidentialite/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "/fr/recherche/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/privacy/",
+        "/fr/confidentialite/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+      "status": 200,
+      "title": "Que perd-on entre deux cours de langue ? | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Consignes, corrections, productions : quelles traces conserver entre deux cours pour éclairer la séance suivante sans tirer de conclusions hâtives ?",
+      "canonical": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Ressources",
+                  "item": "https://your-domain.example/fr/ressources/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Que perd-on entre deux cours de langue ?",
+                  "item": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/insights/what-gets-lost-between-language-lessons/",
+        "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "#section-6",
+        "/fr/ressources/transcription-et-traces-pedagogiques/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/fr/recherche/",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/insights/what-gets-lost-between-language-lessons/",
+        "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/ressources/transcription-et-traces-pedagogiques/",
+      "status": 200,
+      "title": "Pourquoi une transcription ne suffit pas à décrire ce qui s’est passé pédagogiquement | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Une transcription conserve des mots. Leur interprétation demande aussi de connaître la tâche, les aides et le contexte, sous le regard de l’enseignant.",
+      "canonical": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+        }
+      ],
+      "robots": "noindex, follow",
+      "og": "https://your-domain.example/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://your-domain.example/#website",
+              "name": "LaSpeak",
+              "url": "https://your-domain.example",
+              "inLanguage": [
+                "en",
+                "fr"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://your-domain.example/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://your-domain.example/fr/a-propos/"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://your-domain.example/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Ressources",
+                  "item": "https://your-domain.example/fr/ressources/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Pourquoi une transcription ne suffit pas à décrire ce qui s’est passé pédagogiquement",
+                  "item": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/en/insights/transcripts-and-learning-evidence/",
+        "/fr/ressources/transcription-et-traces-pedagogiques/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/recherche/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/",
+        "/fr/ressources/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "#section-6",
+        "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "/fr/recherche/",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/insights/transcripts-and-learning-evidence/",
+        "/fr/ressources/transcription-et-traces-pedagogiques/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "loaded": false,
+          "alt": "LaSpeak"
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    }
+  ]
+}
