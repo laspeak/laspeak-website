@@ -2,7 +2,7 @@ export interface Dictionary {
   nav: {
     how: string;
     providers: string;
-    research: string;
+    product: string;
     about: string;
     talk: string;
     menu: string;
@@ -11,6 +11,9 @@ export interface Dictionary {
     home: string;
     insights: string;
     privacy: string;
+    legal: string;
+    cookies: string;
+    terms: string;
     contact: string;
   };
   hero: {
@@ -94,13 +97,13 @@ export interface Dictionary {
     cta: string;
     alt: string;
   };
-  research: {
+  product: {
     label: string;
     title: string;
     paragraphs: string[];
     cta: string;
     note: string;
-    pilot: string;
+    implementation: string;
   };
   founder: {
     label: string;
@@ -108,16 +111,31 @@ export interface Dictionary {
     paragraphs: string[];
     role: string;
     linkedin: string;
-    linkedinPending: string;
     more: string;
   };
   final: { title: string; text: string; cta: string };
-  footer: { statement: string; development: string; theme: string };
+  footer: {
+    statement: string;
+    development: string;
+    theme: string;
+    emailLabels: {
+      general: string;
+      founder: string;
+      support: string;
+      privacy: string;
+    };
+  };
+}
+export interface SectionDetail {
+  label: string;
+  value: string;
+  href?: string;
 }
 export interface Section {
   title: string;
   paragraphs: string[];
   list?: string[];
+  details?: SectionDetail[];
 }
 export interface EditorialPage {
   title: string;
@@ -125,6 +143,7 @@ export interface EditorialPage {
   label: string;
   intro: string;
   sections: Section[];
+  updated?: string;
 }
 export interface Article extends EditorialPage {
   key: "between-lessons" | "transcripts";

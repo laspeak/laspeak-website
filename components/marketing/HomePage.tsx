@@ -5,7 +5,7 @@ import { Hero } from "./Hero";
 import { EvidenceJourney } from "./EvidenceJourney";
 import { EvidenceViewer } from "./EvidenceViewer";
 import { ProviderSection } from "./ProviderSection";
-import { ResearchCTA } from "./ResearchCTA";
+import { ProductCTA } from "./ProductCTA";
 import { FounderSection } from "./FounderSection";
 import { FinalCTA } from "./FinalCTA";
 
@@ -93,9 +93,9 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
       <ProviderSection d={d.providers} locale={locale} />
-      <ResearchCTA d={d.research} locale={locale} />
+      <ProductCTA d={d.product} locale={locale} />
       <FounderSection d={d.founder} locale={locale} />
-      <FinalCTA d={d.final} />
+      <FinalCTA d={d.final} locale={locale} />
     </>
   );
 }

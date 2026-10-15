@@ -7,3 +7,4 @@ out/
 qa/screenshots/
 qa/contact-sheets/
 qa/lighthouse-*.json
+.DS_Store

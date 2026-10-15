@@ -3,7 +3,10 @@ const required = [
   "NEXT_PUBLIC_SITE_URL",
   "NEXT_PUBLIC_HELLO_EMAIL",
   "NEXT_PUBLIC_FOUNDER_EMAIL",
-  "NEXT_PUBLIC_LINKEDIN_URL",
+  "NEXT_PUBLIC_SUPPORT_EMAIL",
+  "NEXT_PUBLIC_PRIVACY_EMAIL",
+  "NEXT_PUBLIC_BRAND_LINKEDIN_URL",
+  "NEXT_PUBLIC_FOUNDER_LINKEDIN_URL",
 ];
 const missing = required.filter((key) => !process.env[key]);
 if (missing.length) {
@@ -14,5 +17,5 @@ if (missing.length) {
   process.exitCode = 1;
 } else
   console.log(
-    "Launch environment complete. Verify mailbox delivery and the LinkedIn destination before launch.",
+    "Launch environment complete. Verify delivery to all four mailboxes and both LinkedIn destinations before launch.",
   );

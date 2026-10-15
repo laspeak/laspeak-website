@@ -1,14 +1,22 @@
 import type { EditorialPage, Article } from "../types";
+import { legalPages } from "./legal";
+import { emailHref, siteConfig } from "@/lib/site-config";
 
 export const pages: Record<
-  "providers" | "research" | "about" | "privacy",
+  | "providers"
+  | "product"
+  | "about"
+  | "privacy"
+  | "legal"
+  | "cookies"
+  | "terms",
   EditorialPage
 > = {
   providers: {
     label: "For adult and professional FLE providers",
     title: "A little less lost between lessons.",
     description:
-      "Explore how source-linked, teacher-reviewed evidence could support handovers and formative progress conversations in adult FLE provision.",
+      "See how source-linked, teacher-reviewed evidence supports handovers, lesson planning and formative progress conversations in adult FLE provision.",
     intro:
       "A course is a sequence of human interactions. When teachers, timetables or groups change, the useful context should not have to start again.",
     sections: [
@@ -22,14 +30,14 @@ export const pages: Record<
       {
         title: "Relationships, not another report",
         paragraphs: [
-          "LaSpeak is being designed to connect a teacher prompt, a learner attempt, a correction, a repair and a possible later reuse. The aim is to make relevant examples easier to revisit across several lessons.",
-          "A proposed connection is not a conclusion about the learner. The original excerpt, lesson reference and surrounding exchange should remain available so an educator can assess the interpretation.",
+          "LaSpeak connects a teacher prompt, a learner attempt, a correction, a repair and a possible later reuse, making relevant examples easier to revisit across several lessons.",
+          "A proposed connection is not a conclusion about the learner. The original excerpt, lesson reference and surrounding exchange remain available so an educator can assess the interpretation.",
         ],
       },
       {
-        title: "Four situations worth investigating",
+        title: "Four workflows LaSpeak supports",
         paragraphs: [
-          "We are exploring where this approach would fit into work that already happens, rather than asking teaching teams to adopt a new reporting routine.",
+          "LaSpeak fits the work teaching teams already do, without introducing another reporting routine.",
         ],
         list: [
           "Teacher handovers: pass on a concrete example and the circumstances in which it occurred.",
@@ -41,53 +49,53 @@ export const pages: Record<
       {
         title: "Teachers keep the decision",
         paragraphs: [
-          "The intended review options are simple: accept, edit, reject or defer. A teacher can recognise a relevant connection, correct its interpretation, dismiss it, or leave it unresolved.",
+          "The review options are simple: accept, edit, reject or defer. A teacher can recognise a relevant connection, correct its interpretation, dismiss it, or leave it unresolved.",
           "A system should not infer that a learner has mastered a form simply because it appears in a transcript. Nor should it treat an unobserved form as something the learner cannot do. There may have been no opportunity to use it.",
         ],
       },
       {
         title: "Alongside your existing systems",
         paragraphs: [
-          "LaSpeak is designed to complement live teaching, course management and your existing LMS. It is not a new language school, a replacement LMS or an automatic assessment system. No integration is being promised at this stage.",
-          "The initial focus is adult and professional French as a foreign language in France. We want to understand your constraints: teacher time, recording practices, consent, access permissions and the pedagogical value of looking back.",
+          "LaSpeak complements live teaching, course management and your existing LMS. It is an evidence-review layer, not a language school, replacement LMS or automatic assessment system.",
+          "The product is focused on adult and professional French as a foreign language in France, with workflows that respect teacher time, recording practices, consent, access permissions and the pedagogical value of looking back.",
         ],
       },
       {
-        title: "An R&D conversation, not a purchase decision",
+        title: "A focused product conversation",
         paragraphs: [
-          "LaSpeak is in early research and validation. Its usefulness, technical reliability and fit with real teaching workflows still need to be investigated. We are not claiming validated accuracy, learning gains or existing deployments.",
-          "A 20-minute conversation about how your team handles continuity is a useful starting point. No learner recordings or documents are needed for that conversation.",
+          "A 20-minute conversation maps LaSpeak to the way your team handles continuity, handovers and progress review. No learner recordings or documents are needed for the first conversation.",
+          "Where the workflow fits, the next step is a clearly scoped implementation discussion covering participants, data, access, responsibilities and success criteria.",
         ],
       },
     ],
   },
-  research: {
-    label: "Research & validation",
-    title: "First, understand the work.",
+  product: {
+    label: "Product & implementation",
+    title: "Bring continuity into view.",
     description:
-      "Join a 20-minute research conversation about adult FLE teaching workflows in France. No sales demo, preparation or learner data required.",
+      "A focused product conversation for adult FLE teams in France: see the LaSpeak workflow and identify the right implementation scope.",
     intro:
-      "Before building more software, we want to understand whether preserving context between language lessons is a problem worth solving.",
+      "LaSpeak turns lesson recordings, transcripts and teaching notes into source-linked evidence that teachers can review across lessons.",
     sections: [
       {
-        title: "The questions we are investigating",
+        title: "What LaSpeak brings together",
         paragraphs: [
-          "When does an educator need to look back across lessons? What makes a learner example worth keeping? What would make a proposed connection useful rather than another item to review?",
-          "We also want to understand the opposite: where existing notes work well, where a recording is unnecessary and where an evidence-review layer would add effort without enough benefit. Those answers matter just as much.",
+          "LaSpeak connects the moments that matter: teacher prompts, learner attempts, corrections, repairs and later reuse. Each interpretation stays close to its source and remains open to teacher review.",
+          "The result is a practical evidence layer for handovers, progress conversations and lesson planning, without turning an isolated transcript into an automatic judgement.",
         ],
       },
       {
-        title: "Who we would like to hear from",
+        title: "Who the product is built for",
         paragraphs: [
-          "Teachers, pedagogical managers and academic coordinators working in adult or professional FLE provision in France. Independent training organisations and language schools are part of the initial discovery audience.",
-          "You do not need to use a particular LMS, record your classes or be looking for new software. A workflow that does not involve recordings can help us understand the limits of the idea.",
+          "LaSpeak is built for teachers, pedagogical managers and academic coordinators working in adult or professional FLE provision in France, including independent training organisations and language schools.",
+          "It works alongside existing teaching and course-management systems. The product conversation starts from your actual workflow, whether evidence currently lives in recordings, transcripts, notes or an LMS.",
         ],
       },
       {
-        title: "What happens in 20 minutes",
+        title: "What the product conversation covers",
         paragraphs: [
-          "We will ask you to describe a recent, ordinary situation: a handover, a progress discussion or a moment when you wanted to find an earlier learner example. Then we will explore what you used, what was missing and whether the effort was worthwhile.",
-          "There is no preparation and no sales demonstration. You do not need to share learner names, recordings or confidential documents. An anonymised verbal description is enough.",
+          "In 20 minutes, we identify one concrete situation — a handover, progress discussion or lesson-planning decision — and show where LaSpeak fits into the sequence of work.",
+          "No preparation or learner data is required. A high-level, anonymised description of the workflow is enough to establish the right product scope.",
         ],
         list: [
           "Your context: how teaching and pedagogical follow-up are organised.",
@@ -96,17 +104,17 @@ export const pages: Record<
         ],
       },
       {
-        title: "What we are not claiming",
+        title: "Clear product boundaries",
         paragraphs: [
-          "The illustrative interfaces on this site are synthetic examples, not screenshots of a deployed product. LaSpeak has not established validated accuracy or demonstrated learning gains.",
-          "We are exploring a tool for teacher review, not a system for grading learners, ranking teachers or certifying CEFR levels.",
+          "LaSpeak supports teacher review; it does not grade learners, rank teachers or certify CEFR levels. The source and the teacher’s interpretation remain distinct throughout the workflow.",
+          "The public interface shown on this site uses synthetic data so that no learner, teacher or organisation is exposed. Product demonstrations and implementation discussions use an agreed, privacy-conscious scope.",
         ],
       },
       {
-        title: "A possible future research pilot",
+        title: "From conversation to implementation",
         paragraphs: [
-          "If the problem and context align, we can discuss whether a future, limited research pilot would make sense. This is an option to explore, not a commitment or an existing programme.",
-          "Any work involving real lesson material would require a separate agreement on purpose, lawful basis, participant information, access, retention and deletion before data is shared. Please do not send learner material in an introductory email.",
+          "Where there is a clear fit, we define a limited implementation with an agreed workflow, participants, responsibilities and success criteria.",
+          "Before any real lesson material is shared, the implementation framework must cover purpose, lawful basis, participant information, access, security, retention and deletion. Do not send learner material in an introductory email.",
         ],
       },
     ],
@@ -129,15 +137,15 @@ export const pages: Record<
       {
         title: "The idea behind LaSpeak",
         paragraphs: [
-          "The product is being designed as an evidence-review layer: a way to connect relevant moments across lessons while keeping each interpretation close to its source.",
-          "The conceptual chain runs from teacher model or prompt to learner attempt, correction, repair, possible later independent reuse and teacher review. It is a way to organise a question, not a formula for proving learning.",
+          "LaSpeak is an evidence-review layer that connects relevant moments across lessons while keeping each interpretation close to its source.",
+          "The product workflow runs from teacher model or prompt to learner attempt, correction, repair, possible later independent reuse and teacher review. It organises evidence without reducing learning to a formula.",
         ],
       },
       {
-        title: "A deliberately narrow starting point",
+        title: "A deliberately focused product",
         paragraphs: [
-          "The initial discovery audience is adult and professional FLE providers in France. This gives the project a concrete teaching context in which to investigate handovers, formative progress conversations and the work of finding examples.",
-          "LaSpeak is still in early R&D and validation. The task now is to understand the problem and test whether the proposed approach is useful, not to suggest that its value is already established.",
+          "LaSpeak is built first for adult and professional FLE providers in France. This gives the product a concrete teaching context for handovers, formative progress conversations and finding source-linked examples.",
+          "The focused scope keeps the product grounded in real teaching work: preserve context, surface relevant evidence and leave the final interpretation with the educator.",
         ],
       },
       {
@@ -150,42 +158,117 @@ export const pages: Record<
     ],
   },
   privacy: {
-    label: "Privacy",
-    title: "A simple site.\nA clear boundary.",
+    label: "Privacy and data protection",
+    title: "Privacy policy",
     description:
-      "How the LaSpeak public website handles contact emails, technical hosting data and synthetic examples. No learner uploads, tracking analytics or advertising cookies.",
+      "How the LaSpeak website processes technical data and voluntary email correspondence, with GDPR rights, purposes, retention periods and contact details.",
     intro:
-      "This public website introduces an early-stage project. It does not accept lesson recordings, transcripts or learner uploads.",
+      "This policy covers the LaSpeak public website and voluntary correspondence. The public site has no account, form, payment or learner-upload facility.",
+    updated: "Last updated: 15 October 2026",
     sections: [
       {
-        title: "Browsing this website",
+        title: "Controller and contact points",
         paragraphs: [
-          "LaSpeak does not add advertising trackers, analytics scripts or tracking cookies to this website. The colour-theme preference and illustrative review choices are held in the current page session, not in browser storage.",
-          "The hosting provider necessarily processes technical request information, such as IP addresses and browser details, to deliver and secure the site. Hosting arrangements and applicable retention details should be confirmed before the final public-domain launch.",
+          "The data controller is Denis Gasenchenko, a natural person and founder of LaSpeak. LaSpeak is not currently a separate legal person.",
+          "Use privacy@laspeak.eu to exercise a data-protection right or ask about this policy. Use support@laspeak.eu for a technical or accessibility issue, hello@laspeak.eu for a general enquiry, and denis@laspeak.eu for founder or product correspondence.",
+        ],
+        details: [
+          {
+            label: "Data protection",
+            value: siteConfig.PRIVACY_EMAIL,
+            href: emailHref(siteConfig.PRIVACY_EMAIL, "LaSpeak — privacy request"),
+          },
+          {
+            label: "Technical support",
+            value: siteConfig.SUPPORT_EMAIL,
+            href: emailHref(siteConfig.SUPPORT_EMAIL, "LaSpeak — website support"),
+          },
+          {
+            label: "General contact",
+            value: siteConfig.HELLO_EMAIL,
+            href: emailHref(siteConfig.HELLO_EMAIL, "LaSpeak — general enquiry"),
+          },
+          {
+            label: "Founder and product",
+            value: siteConfig.FOUNDER_EMAIL,
+            href: emailHref(siteConfig.FOUNDER_EMAIL, "LaSpeak — product conversation"),
+          },
         ],
       },
       {
-        title: "Contact by email",
+        title: "Data processed when you browse",
         paragraphs: [
-          "The contact buttons open your own email application. Nothing is submitted through a form on this website. If you send an email, your address and the content you choose to share are used to respond and organise the conversation.",
-          "Do not include learner names, lesson recordings or confidential learner information in your first message. A general description of your workflow is sufficient. Contact Denis using the email link on this page for questions about your correspondence or to request deletion.",
+          "LaSpeak does not use analytics, advertising technology, social-media pixels or tracking cookies. Theme and illustrative interface choices remain in page memory only and are not stored or transmitted to LaSpeak.",
+          "Vercel processes the technical request information required to deliver and protect the website. This may include an IP address, request time, requested URL, user agent, approximate network information and security signals. The purpose is website delivery, availability, troubleshooting and abuse prevention. The legal basis is the controller’s legitimate interest in providing a secure, reliable public website.",
+          "Technical request data is generated automatically and is necessary to deliver the requested page. LaSpeak does not create an independent analytics database. Any technical logs accessible to the publisher are retained for no more than 30 days, unless a specific security incident requires a longer, documented investigation.",
         ],
       },
       {
-        title: "Research is a separate step",
+        title: "Data processed when you contact us",
         paragraphs: [
-          "An introductory conversation does not authorise the collection or analysis of lesson material. Any future research involving personal data would need its own clear information and agreement about the purposes, responsibilities, legal basis, access and retention.",
-          "The product illustrations contain fictional exchanges. They do not represent a real learner, teacher or school.",
+          "Contact links open your own email application; no form submits information through the website. If you write to LaSpeak, the data processed may include your name, email address, organisation, role, message content, signature and ordinary message metadata, but only to the extent you choose to provide it.",
+          "The purposes are to answer your request, organise a product conversation, understand professional workflows and maintain relevant follow-up. The legal basis is the controller’s legitimate interest in responding and assessing implementation fit, or steps taken at your request before a possible agreement where applicable. Providing an email address and enough context is voluntary, but a reply may be impossible without them.",
+          "Correspondence is retained for up to 24 months after the last substantive exchange, then deleted or anonymised, unless you request earlier deletion or a longer period is required by law or to establish, exercise or defend a legal claim. Records needed to demonstrate the handling of a privacy request may be retained for up to five years after the request is closed.",
         ],
       },
       {
-        title: "External destinations",
+        title: "Product-conversation boundary and sensitive information",
         paragraphs: [
-          "Email and LinkedIn, when linked, are external services with their own privacy arrangements. Onest is self-hosted as part of the site build; viewing the site does not request the font from Google.",
+          "An introductory conversation does not authorise the collection or analysis of lesson material. Do not send learner names, recordings, transcripts, health information, special-category data, confidential employer material or information you are not authorised to disclose. A high-level, anonymised description is sufficient.",
+          "No product conversation is recorded unless participants receive separate information in advance and an appropriate legal basis is established. Any implementation involving real lesson or learner data requires a separate written framework covering roles, purposes, lawful basis, participant information, security, access, processors, retention and deletion before any data is shared.",
+          "The product illustrations use fictional exchanges. They do not represent a real learner, teacher, organisation, customer or deployment. The public site is directed to adult professionals and is not intended to collect children’s data.",
+        ],
+      },
+      {
+        title: "Recipients, service providers and international transfers",
+        paragraphs: [
+          "Correspondence is accessible only to Denis Gasenchenko and, where strictly necessary, the providers used to operate the website and email. The current principal providers are Vercel Inc. for website hosting and Apple iCloud Mail for the laspeak.eu mailboxes. Personal data is not sold, rented or shared for third-party advertising.",
+          "These providers may use infrastructure or support operations outside the European Economic Area. Where GDPR transfer rules apply, transfers must rely on an applicable adequacy decision or appropriate safeguards such as the European Commission’s Standard Contractual Clauses. Provider documentation should be consulted for the mechanism applying to a particular processing operation.",
+          "Information may also be disclosed where required by law or strictly necessary to protect rights, security or the integrity of the service. LaSpeak does not carry out automated decision-making or profiling.",
+        ],
+        details: [
+          {
+            label: "Vercel privacy information",
+            value: "vercel.com/legal/privacy-notice",
+            href: "https://vercel.com/legal/privacy-notice",
+          },
+          {
+            label: "Apple privacy information",
+            value: "apple.com/legal/privacy",
+            href: "https://www.apple.com/legal/privacy/",
+          },
+        ],
+      },
+      {
+        title: "Your rights",
+        paragraphs: [
+          "Subject to the conditions of the GDPR, you may request access, rectification, erasure, restriction or portability of your personal data, and you may object to processing based on legitimate interests. Where processing is based on consent, consent may be withdrawn at any time without affecting earlier lawful processing.",
+          "Send a request to privacy@laspeak.eu. LaSpeak may ask for limited additional information only where reasonably necessary to confirm identity. Requests are handled without undue delay and normally within one month. You may also lodge a complaint with the supervisory authority in your place of residence or work; for France, this is the Commission nationale de l’informatique et des libertés (CNIL).",
+        ],
+        details: [
+          {
+            label: "Exercise your rights",
+            value: siteConfig.PRIVACY_EMAIL,
+            href: emailHref(siteConfig.PRIVACY_EMAIL, "LaSpeak — GDPR rights request"),
+          },
+          {
+            label: "French supervisory authority",
+            value: "cnil.fr",
+            href: "https://www.cnil.fr/",
+          },
+        ],
+      },
+      {
+        title: "Security, external links and changes",
+        paragraphs: [
+          "Reasonable technical and organisational measures are used in proportion to the limited data processed by this website. No internet or email service can nevertheless guarantee absolute security. If you believe information has been exposed or misdirected, contact support@laspeak.eu and privacy@laspeak.eu promptly.",
+          "LinkedIn and your email provider are independent external services. Their own terms apply once you choose to visit or use them. The Onest font is served with the website and is not requested from Google when you view a page.",
+          "This policy will be updated before the website introduces accounts, forms, analytics, newsletters, payments, uploads or processing of learner material. Material changes will be identified by a new update date.",
         ],
       },
     ],
   },
+  ...legalPages,
 };
 
 export const articles: Article[] = [
@@ -249,7 +332,7 @@ export const articles: Article[] = [
         title: "Start with the next conversation",
         paragraphs: [
           "Before adding a tool, try reviewing a recent handover. What did the next teacher actually need to know? Could they find an example? Did the available detail change a decision, or simply add reading?",
-          "Those are the questions LaSpeak is investigating with adult FLE providers. The proposal is to connect relevant moments across lessons, retain their sources and let teachers decide what deserves to travel forward. Whether that approach saves effort or improves a workflow remains something to test.",
+          "LaSpeak addresses those questions by connecting relevant moments across lessons, retaining their sources and letting teachers decide what deserves to travel forward. The product keeps each decision grounded in evidence without turning a partial record into a complete account of the learner.",
         ],
       },
     ],
@@ -310,7 +393,7 @@ export const articles: Article[] = [
         title: "A transcript is a starting point",
         paragraphs: [
           "There is no need to dismiss transcripts to recognise their limits. They can be a practical route into a lesson and a way to locate examples. The question is what should happen between retrieving words and making a claim about a learner.",
-          "LaSpeak is exploring that space: source-linked relationships across lessons, visible uncertainty and human review. It is an R&D direction, not a claim that automated interpretation is already accurate or that a connected excerpt proves learning.",
+          "LaSpeak works in that space: source-linked relationships across lessons, visible uncertainty and human review. Automated suggestions remain reviewable interpretations; a connected excerpt is evidence to examine, not proof of learning on its own.",
         ],
       },
     ],

@@ -9,7 +9,7 @@
 
 ## Routes and SEO
 
-- All 16 localised content routes return success with one H1 and correct HTML language.
+- All 22 localised content routes return success with one H1 and correct HTML language.
 - All internal anchors and links resolve, including equivalent EN/FR article routes.
 - Unique page titles and descriptions; canonical, en/fr/x-default hreflang, OpenGraph and Twitter cards.
 - WebSite/Person schema and secondary-page BreadcrumbList parse as JSON.
@@ -32,7 +32,7 @@
 
 - Homepages at 375, 430, 768, 1024, 1440, 1728 pixels.
 - Every secondary page and article at desktop and 375 pixels.
-- Inspect hero, story, journey, evidence viewer, provider section, research CTA and footer.
+- Inspect hero, story, journey, evidence viewer, provider section, product CTA, legal documents and footer.
 - Inspect mobile menu, editing, source context, selected review state and dark homepage.
 - No horizontal overflow; no squashed or tiny interface labels.
 - Responsive image srcsets request mobile-sized WebP variants.
@@ -47,8 +47,9 @@
 ## Editorial integrity
 
 - Every product visual is visibly labelled illustrative/synthetic.
-- Stock subjects never appear as customers, founder or research participants.
+- Stock subjects never appear as customers, founder or study participants.
 - No fake testimonials, partnerships, customer counts, results or validated-accuracy claims.
-- R&D stage, uncertainty and teacher control remain explicit.
+- Product positioning is confident while example data, teacher control and the distinction between observation and interpretation remain explicit.
 - No lorem ipsum, invented academic references or corporate registration claims.
-- Missing domain/mailbox/LinkedIn are documented, not silently guessed.
+- Production domain, all four role-based contact addresses and brand/founder LinkedIn destinations are explicit.
+- Legal status is disclosed only where required and does not interrupt the product narrative.

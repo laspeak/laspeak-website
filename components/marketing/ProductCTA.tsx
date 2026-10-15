@@ -2,37 +2,37 @@ import { SiteLink as Link } from "@/components/ui/SiteLink";
 import type { Dictionary } from "@/content/types";
 import { href, type Locale } from "@/lib/i18n";
 import { mailto } from "@/lib/site-config";
-export function ResearchCTA({
+export function ProductCTA({
   d,
   locale,
 }: {
-  d: Dictionary["research"];
+  d: Dictionary["product"];
   locale: Locale;
 }) {
   return (
-    <section className="research-cta">
-      <div className="shell research-grid">
+    <section className="product-cta">
+      <div className="shell product-grid">
         <div>
           <p className="eyebrow">{d.label}</p>
           <h2>{d.title}</h2>
         </div>
-        <div className="research-copy">
+        <div className="product-copy">
           {d.paragraphs.map((p) => (
             <p key={p}>{p}</p>
           ))}
-          <a href={mailto("research")} className="button">
+          <a href={mailto("product", true, locale)} className="button">
             {d.cta}
             <span aria-hidden="true">↗</span>
           </a>
           <p className="cta-note">{d.note}</p>
-          <a href={mailto("pilot")} className="text-link">
-            {d.pilot}
+          <a href={mailto("implementation", true, locale)} className="text-link">
+            {d.implementation}
             <span aria-hidden="true">↗</span>
           </a>
-          <Link href={href(locale, "research")} className="research-details">
+          <Link href={href(locale, "product")} className="product-details">
             {locale === "fr"
-              ? "Notre démarche de recherche"
-              : "Our research approach"}{" "}
+              ? "Découvrir le produit"
+              : "Explore the product"}{" "}
             <span aria-hidden="true">→</span>
           </Link>
         </div>

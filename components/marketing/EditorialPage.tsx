@@ -4,7 +4,7 @@ import { getDictionary } from "@/content";
 import { editorialPages, getArticles } from "@/content/editorial";
 import { href, type Locale, type PageKey } from "@/lib/i18n";
 import { mailto } from "@/lib/site-config";
-import { ResearchCTA } from "./ResearchCTA";
+import { ProductCTA } from "./ProductCTA";
 import { LinkedInLink } from "./Footer";
 import { FinalCTA } from "./FinalCTA";
 import type { EditorialPage as EditorialContent } from "@/content/types";
@@ -69,6 +69,32 @@ function ReadingBody({
             {s.paragraphs.map((p) => (
               <p key={p}>{p}</p>
             ))}
+            {s.details ? (
+              <dl className="legal-details">
+                {s.details.map((detail) => (
+                  <div key={`${detail.label}-${detail.value}`}>
+                    <dt>{detail.label}</dt>
+                    <dd>
+                      {detail.href ? (
+                        <a
+                          href={detail.href}
+                          {...(detail.href.startsWith("http")
+                            ? { target: "_blank", rel: "noopener noreferrer" }
+                            : {})}
+                        >
+                          {detail.value}
+                          {detail.href.startsWith("http") ? (
+                            <span aria-hidden="true"> ↗</span>
+                          ) : null}
+                        </a>
+                      ) : (
+                        detail.value
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
             {s.list && (
               <ul>
                 {s.list.map((item) => (
@@ -88,11 +114,21 @@ export function EditorialPage({
   page,
 }: {
   locale: Locale;
-  page: "providers" | "research" | "about" | "privacy";
+  page:
+    | "providers"
+    | "product"
+    | "about"
+    | "privacy"
+    | "legal"
+    | "cookies"
+    | "terms";
 }) {
   const d = getDictionary(locale);
   const content = editorialPages[locale][page];
   const label = page === "providers" ? d.nav.providers : d.nav[page];
+  const isPolicyPage = ["privacy", "legal", "cookies", "terms"].includes(
+    page,
+  );
   return (
     <>
       <div className="shell">
@@ -101,19 +137,28 @@ export function EditorialPage({
           <p className="eyebrow">{content.label}</p>
           <h1>{content.title}</h1>
           <p className="intro">{content.intro}</p>
-          <div className="actions">
-            <a
-              href={mailto(page === "research" ? "research" : "conversation")}
-              className="button"
-            >
-              {page === "research" ? d.research.cta : d.nav.talk}
-              <span aria-hidden="true">↗</span>
-            </a>
-            {page === "about" && <LinkedInLink locale={locale} />}
-            {page === "research" && (
-              <span className="ui-label">{d.research.note}</span>
-            )}
-          </div>
+          {content.updated ? (
+            <p className="legal-updated">{content.updated}</p>
+          ) : null}
+          {!isPolicyPage ? (
+            <div className="actions">
+              <a
+                href={mailto(
+                  page === "product" ? "product" : "conversation",
+                  true,
+                  locale,
+                )}
+                className="button"
+              >
+                {page === "product" ? d.product.cta : d.nav.talk}
+                <span aria-hidden="true">↗</span>
+              </a>
+              {page === "about" ? <LinkedInLink locale={locale} /> : null}
+              {page === "product" ? (
+                <span className="ui-label">{d.product.note}</span>
+              ) : null}
+            </div>
+          ) : null}
         </header>
         {page === "providers" && (
           <Image
@@ -125,7 +170,7 @@ export function EditorialPage({
             sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1500px) calc(100vw - 112px), 1320px"
           />
         )}
-        {page === "research" && (
+        {page === "product" && (
           <Image
             src="/images/conversation.webp"
             alt={
@@ -142,46 +187,58 @@ export function EditorialPage({
         <ReadingBody content={content} locale={locale}>
           {page === "about" && (
             <div className="founder-signature">
-              <span className="founder-monogram" aria-hidden="true">
-                dg.
-              </span>
+              <Image
+                src="/images/founder.webp"
+                alt="Denis Gasenchenko"
+                width={800}
+                height={800}
+                className="founder-photo"
+                unoptimized
+              />
               <div>
                 <strong>Denis Gasenchenko</strong>
                 <span>{d.founder.role}</span>
               </div>
             </div>
           )}
-          {page === "research" && (
+          {page === "product" && (
             <div className="editorial-aside">
-              <a className="text-link" href={mailto("pilot")}>
-                {d.research.pilot}
+              <a
+                className="text-link"
+                href={mailto("implementation", true, locale)}
+              >
+                {d.product.implementation}
                 <span aria-hidden="true">↗</span>
               </a>
               <p>
                 {locale === "fr"
-                  ? "Une possibilité à étudier ensemble. Aucun pilote n’est annoncé."
-                  : "A possibility to explore together. No pilot is being announced."}
+                  ? "Le périmètre, les responsabilités et les règles de traitement des données sont convenus avant toute mise en œuvre."
+                  : "Scope, responsibilities and data-handling rules are agreed before any implementation begins."}
               </p>
             </div>
           )}
-          <div className="related-article">
-            <p>{locale === "fr" ? "Pour poursuivre" : "Continue exploring"}</p>
-            <Link
-              href={href(
-                locale,
-                page === "research" ? "providers" : "research",
-              )}
-            >
-              {page === "research" ? d.nav.providers : d.nav.research}
-              <span aria-hidden="true"> →</span>
-            </Link>
-          </div>
+          {!isPolicyPage ? (
+            <div className="related-article">
+              <p>
+                {locale === "fr" ? "Pour poursuivre" : "Continue exploring"}
+              </p>
+              <Link
+                href={href(
+                  locale,
+                  page === "product" ? "providers" : "product",
+                )}
+              >
+                {page === "product" ? d.nav.providers : d.nav.product}
+                <span aria-hidden="true"> →</span>
+              </Link>
+            </div>
+          ) : null}
         </ReadingBody>
       </div>
-      {page === "providers" || page === "about" ? (
-        <ResearchCTA d={d.research} locale={locale} />
+      {isPolicyPage ? null : page === "providers" || page === "about" ? (
+        <ProductCTA d={d.product} locale={locale} />
       ) : (
-        <FinalCTA d={d.final} />
+        <FinalCTA d={d.final} locale={locale} />
       )}
     </>
   );
@@ -240,7 +297,7 @@ export function InsightsPage({ locale }: { locale: Locale }) {
           </Link>
         ))}
       </div>
-      <FinalCTA d={d.final} />
+      <FinalCTA d={d.final} locale={locale} />
     </div>
   );
 }
@@ -285,7 +342,7 @@ export function ArticlePage({
           </div>
         </ReadingBody>
       </article>
-      <ResearchCTA d={d.research} locale={locale} />
+      <ProductCTA d={d.product} locale={locale} />
     </>
   );
 }

@@ -1,14 +1,22 @@
 import type { EditorialPage, Article } from "../types";
+import { legalPages } from "./legal";
+import { emailHref, siteConfig } from "@/lib/site-config";
 
 export const pages: Record<
-  "providers" | "research" | "about" | "privacy",
+  | "providers"
+  | "product"
+  | "about"
+  | "privacy"
+  | "legal"
+  | "cookies"
+  | "terms",
   EditorialPage
 > = {
   providers: {
     label: "Formation linguistique pour adultes",
     title: "D’un cours à l’autre,\npréserver l’essentiel.",
     description:
-      "Pour les organismes de formation FLE : explorer un suivi pédagogique fondé sur des traces reliées aux cours et examinées par les enseignants.",
+      "Pour les organismes de formation FLE : un suivi pédagogique fondé sur des traces reliées aux cours et examinées par les enseignants.",
     intro:
       "Un parcours de formation repose sur une suite d’échanges humains. Lorsque les enseignants, les groupes ou les plannings changent, le contexte utile ne devrait pas repartir de zéro.",
     sections: [
@@ -22,14 +30,14 @@ export const pages: Record<
       {
         title: "Relier des traces, plutôt qu’ajouter un rapport",
         paragraphs: [
-          "LaSpeak est conçu pour rapprocher une consigne, une production de l’apprenant, une correction, une reprise et un éventuel réemploi ultérieur. L’objectif est de faciliter le retour à des exemples pertinents sur plusieurs séances.",
-          "Un rapprochement proposé n’est pas une conclusion sur l’apprenant. L’extrait d’origine, la référence de la séance et le contexte de l’échange doivent permettre à l’enseignant d’en examiner la pertinence.",
+          "LaSpeak rapproche une consigne, une production de l’apprenant, une correction, une reprise et un éventuel réemploi ultérieur. Les exemples pertinents deviennent faciles à retrouver sur plusieurs séances.",
+          "Un rapprochement proposé n’est pas une conclusion sur l’apprenant. L’extrait d’origine, la référence de la séance et le contexte de l’échange restent accessibles afin que l’enseignant puisse en examiner la pertinence.",
         ],
       },
       {
-        title: "Quatre situations à explorer",
+        title: "Quatre usages pris en charge",
         paragraphs: [
-          "Nous cherchons à comprendre où cet outil pourrait s’inscrire dans le travail existant d’un organisme de formation FLE, sans imposer une nouvelle routine de compte rendu.",
+          "LaSpeak s’inscrit dans le travail déjà réalisé par les équipes pédagogiques, sans imposer une nouvelle routine de compte rendu.",
         ],
         list: [
           "Passation entre enseignants : transmettre un exemple concret et les conditions dans lesquelles il a été produit.",
@@ -41,53 +49,53 @@ export const pages: Record<
       {
         title: "La décision reste à l’enseignant",
         paragraphs: [
-          "Accepter, modifier, rejeter ou différer : les choix prévus pour l’examen d’un rapprochement doivent rester simples. L’enseignant peut reconnaître une piste utile, en corriger l’interprétation ou laisser la question ouverte.",
+          "Accepter, modifier, rejeter ou différer : les choix pour l’examen d’un rapprochement restent simples. L’enseignant peut reconnaître une piste utile, en corriger l’interprétation ou laisser la question ouverte.",
           "La présence d’une forme dans une transcription ne suffit pas à conclure à sa maîtrise. Son absence ne signifie pas non plus que l’apprenant ne sait pas l’utiliser : l’activité n’en a peut-être pas donné l’occasion.",
         ],
       },
       {
         title: "Un complément à vos outils",
         paragraphs: [
-          "LaSpeak vise à compléter les cours, le suivi pédagogique et les outils de gestion de la formation déjà en place. Ce n’est ni une école de langues, ni un LMS de remplacement, ni un système de notation automatique. Aucune intégration technique n’est promise à ce stade.",
-          "Notre premier terrain de recherche est la formation linguistique pour adultes et professionnels en France. Nous souhaitons comprendre vos contraintes : temps enseignant, pratiques d’enregistrement, consentement, droits d’accès et intérêt pédagogique d’un retour sur les cours.",
+          "LaSpeak complète les cours, le suivi pédagogique et les outils de gestion de la formation déjà en place. C’est une couche d’examen des traces, et non une école de langues, un LMS de remplacement ou un système de notation automatique.",
+          "Le produit se concentre sur la formation linguistique pour adultes et professionnels en France, avec des usages qui respectent le temps enseignant, les pratiques d’enregistrement, le consentement, les droits d’accès et l’intérêt pédagogique d’un retour sur les cours.",
         ],
       },
       {
-        title: "Un échange de recherche, pas une décision d’achat",
+        title: "Un échange produit ciblé",
         paragraphs: [
-          "LaSpeak est en phase initiale de R&D et de validation. L’utilité, la fiabilité technique et l’adéquation aux pratiques de terrain restent à examiner. Nous ne revendiquons ni précision validée, ni gain d’apprentissage démontré, ni déploiement existant.",
-          "Un échange de 20 minutes sur la continuité pédagogique dans votre organisme constitue un premier pas. Il ne nécessite aucun enregistrement ni document concernant vos apprenants.",
+          "Un échange de 20 minutes permet de situer LaSpeak dans la façon dont votre équipe assure la continuité, les passations et les bilans de progression. Aucun enregistrement ou document d’apprenant n’est nécessaire pour ce premier échange.",
+          "Lorsque le fonctionnement correspond à vos besoins, l’étape suivante consiste à cadrer la mise en œuvre : participants, données, accès, responsabilités et critères de réussite.",
         ],
       },
     ],
   },
-  research: {
-    label: "Recherche et validation",
-    title: "D’abord, comprendre votre travail.",
+  product: {
+    label: "Produit et mise en œuvre",
+    title: "Rendre la continuité visible.",
     description:
-      "Un échange de recherche de 20 minutes sur le suivi pédagogique en FLE pour adultes. Sans démonstration commerciale, préparation ni données d’apprenants.",
+      "Un échange produit ciblé pour les équipes de FLE pour adultes en France : découvrir LaSpeak et définir le bon périmètre de mise en œuvre.",
     intro:
-      "Avant de développer davantage le produit, nous voulons comprendre si la perte de contexte entre les cours de langue est un problème qui mérite d’être résolu.",
+      "LaSpeak transforme les enregistrements, transcriptions et notes pédagogiques en traces reliées aux sources que les enseignants examinent entre plusieurs cours.",
     sections: [
       {
-        title: "Les questions que nous explorons",
+        title: "Ce que LaSpeak relie",
         paragraphs: [
-          "Quand faut-il revenir sur plusieurs cours ? Qu’est-ce qui rend une production de l’apprenant utile à conserver ? À quelles conditions un rapprochement entre deux extraits aide-t-il l’enseignant, plutôt que d’ajouter une vérification ?",
-          "Nous souhaitons aussi comprendre ce qui fonctionne déjà : des notes suffisantes, des situations où un enregistrement n’a pas d’intérêt, ou des tâches pour lesquelles cet outil ferait perdre du temps. Ces réponses comptent tout autant.",
+          "LaSpeak relie les moments qui comptent : consignes, productions de l’apprenant, corrections, reprises et réemplois ultérieurs. Chaque interprétation reste proche de sa source et soumise à la validation de l’enseignant.",
+          "Le résultat est une couche de traces directement exploitable pour les passations, les bilans de progression et la préparation des cours, sans transformer une transcription isolée en jugement automatique.",
         ],
       },
       {
-        title: "Avec qui souhaitons-nous échanger ?",
+        title: "À qui s’adresse le produit ?",
         paragraphs: [
-          "Avec des enseignants, responsables pédagogiques et coordinateurs intervenant dans des formations de FLE pour adultes ou professionnels en France. Les organismes de formation et les écoles de langues constituent notre premier public de recherche.",
-          "Il n’est pas nécessaire d’utiliser un LMS particulier, d’enregistrer les cours ou de chercher un nouveau logiciel. Une pratique sans enregistrement peut également nous aider à comprendre les limites du projet.",
+          "LaSpeak est conçu pour les enseignants, responsables pédagogiques et coordinateurs intervenant dans des formations de FLE pour adultes ou professionnels en France, notamment dans les organismes de formation et les écoles de langues.",
+          "Il complète les outils d’enseignement et de gestion déjà en place. L’échange part de votre organisation réelle, que les traces se trouvent aujourd’hui dans des enregistrements, des transcriptions, des notes ou un LMS.",
         ],
       },
       {
-        title: "À quoi ressemblent ces 20 minutes ?",
+        title: "Le contenu de l’échange produit",
         paragraphs: [
-          "Nous vous proposons de revenir sur une situation récente et ordinaire : une passation, un échange sur la progression ou un moment où vous avez voulu retrouver un exemple. Nous chercherons à comprendre ce que vous avez utilisé, ce qui manquait et l’effort nécessaire.",
-          "Aucune préparation, aucune démonstration commerciale. Vous n’avez pas à transmettre de noms d’apprenants, d’enregistrements ou de documents confidentiels. Une description orale anonymisée suffit.",
+          "En 20 minutes, nous identifions une situation concrète — passation, bilan de progression ou décision de préparation — et montrons où LaSpeak s’insère dans la chaîne de travail.",
+          "Aucune préparation ni donnée d’apprenant n’est nécessaire. Une description générale et anonymisée suffit pour définir le bon périmètre produit.",
         ],
         list: [
           "Votre contexte : l’organisation des cours et du suivi pédagogique.",
@@ -96,17 +104,17 @@ export const pages: Record<
         ],
       },
       {
-        title: "Ce que nous ne prétendons pas",
+        title: "Des limites produit claires",
         paragraphs: [
-          "Les interfaces présentées sur ce site reposent sur des échanges fictifs. Ce ne sont pas des captures d’un produit déployé. LaSpeak ne dispose pas d’une précision validée ni de gains d’apprentissage démontrés.",
-          "Nous explorons un outil d’examen des traces par l’enseignant, pas un système de notation des apprenants, de classement des enseignants ou de certification CECRL.",
+          "LaSpeak assiste l’examen par l’enseignant ; il ne note pas les apprenants, ne classe pas les enseignants et ne certifie aucun niveau CECRL. La source et l’interprétation de l’enseignant restent distinctes tout au long du processus.",
+          "L’interface publique présentée sur ce site utilise des données fictives afin de n’exposer aucun apprenant, enseignant ou organisme. Les démonstrations et mises en œuvre s’inscrivent dans un périmètre convenu et respectueux des données.",
         ],
       },
       {
-        title: "Éventuellement, un futur pilote de recherche",
+        title: "De l’échange à la mise en œuvre",
         paragraphs: [
-          "Si le besoin et le contexte s’y prêtent, nous pouvons discuter de l’intérêt d’un futur pilote de recherche limité. Il s’agit d’une possibilité à étudier, pas d’un engagement ni d’un programme déjà en place.",
-          "Tout travail sur des cours réels nécessiterait au préalable un cadre distinct précisant les finalités, la base légale, l’information des participants, les accès, la conservation et la suppression des données. Merci de ne pas envoyer de documents d’apprenants lors du premier contact.",
+          "Lorsque l’adéquation est claire, nous définissons une mise en œuvre limitée avec un processus, des participants, des responsabilités et des critères de réussite convenus.",
+          "Avant tout partage de supports de cours réels, le cadre de mise en œuvre couvre les finalités, la base légale, l’information des participants, les accès, la sécurité, la conservation et la suppression. Merci de ne pas envoyer de données d’apprenants dans un premier email.",
         ],
       },
     ],
@@ -115,7 +123,7 @@ export const pages: Record<
     label: "À propos de LaSpeak",
     title: "Assurer le cours.\nGarder ce qui compte.",
     description:
-      "LaSpeak est né d’une question opérationnelle sur la continuité entre les cours de langue. Découvrez le projet et son fondateur, Denis Gasenchenko.",
+      "LaSpeak est né d’une question opérationnelle sur la continuité entre les cours de langue. Découvrez le produit et son fondateur, Denis Gasenchenko.",
     intro:
       "À l’origine de LaSpeak, une distinction très concrète : assurer un cours et préserver les traces utiles de ce cours sont deux tâches différentes.",
     sections: [
@@ -129,15 +137,15 @@ export const pages: Record<
       {
         title: "L’idée derrière LaSpeak",
         paragraphs: [
-          "Le projet vise à créer un outil de mise en relation et d’examen des traces pédagogiques. Il s’agit de relier des moments pertinents entre plusieurs séances, en maintenant chaque interprétation au plus près de sa source.",
-          "Le fil envisagé va du modèle ou de la consigne de l’enseignant à la production de l’apprenant, puis à la correction, à la reprise, à un éventuel réemploi autonome et à l’examen par l’enseignant. C’est une manière d’organiser une question, pas une formule pour prouver l’apprentissage.",
+          "LaSpeak est une couche de mise en relation et d’examen des traces pédagogiques. Le produit relie des moments pertinents entre plusieurs séances, en maintenant chaque interprétation au plus près de sa source.",
+          "Le parcours va du modèle ou de la consigne de l’enseignant à la production de l’apprenant, puis à la correction, à la reprise, à un éventuel réemploi autonome et à l’examen par l’enseignant. Il organise les traces sans réduire l’apprentissage à une formule.",
         ],
       },
       {
-        title: "Un point de départ volontairement précis",
+        title: "Un produit volontairement ciblé",
         paragraphs: [
-          "Le premier public de recherche est celui des organismes de FLE pour adultes et professionnels en France. Ce cadre permet d’examiner des situations concrètes de passation, d’échange sur la progression et de recherche d’exemples.",
-          "LaSpeak est encore en phase initiale de R&D et de validation. Il s’agit aujourd’hui de comprendre le problème et de vérifier l’intérêt de l’approche, pas de laisser entendre que sa valeur est déjà établie.",
+          "LaSpeak est d’abord conçu pour les organismes de FLE pour adultes et professionnels en France. Ce cadre donne au produit un contexte précis pour les passations, les bilans de progression et la recherche d’exemples reliés aux sources.",
+          "Ce périmètre ciblé maintient le produit ancré dans le travail pédagogique réel : conserver le contexte, faire remonter les traces pertinentes et laisser l’interprétation finale à l’enseignant.",
         ],
       },
       {
@@ -150,42 +158,117 @@ export const pages: Record<
     ],
   },
   privacy: {
-    label: "Confidentialité",
-    title: "Un site simple.\nUn périmètre clair.",
+    label: "Confidentialité et données personnelles",
+    title: "Politique de confidentialité",
     description:
-      "Contact par email, données techniques et exemples fictifs : le fonctionnement de ce site LaSpeak, sans dépôt de cours ni traceurs publicitaires.",
+      "Traitement des données techniques et des échanges volontaires par email sur le site LaSpeak : finalités, bases légales, durées et droits RGPD.",
     intro:
-      "Ce site public présente un projet à un stade précoce. Il ne permet pas de déposer des enregistrements, des transcriptions ou des données d’apprenants.",
+      "Cette politique couvre le site public LaSpeak et les échanges volontaires. Le site public ne comporte ni compte, ni formulaire, ni paiement, ni dépôt de données d’apprenants.",
+    updated: "Dernière mise à jour : 15 octobre 2026",
     sections: [
       {
-        title: "Consulter le site",
+        title: "Responsable du traitement et contacts",
         paragraphs: [
-          "LaSpeak n’ajoute à ce site ni traceurs publicitaires, ni outils de mesure d’audience, ni cookies de suivi. Le choix du thème et les décisions prises dans l’exemple illustratif restent dans la session de la page, sans stockage dans le navigateur.",
-          "L’hébergeur traite nécessairement des informations techniques, notamment l’adresse IP et des informations sur le navigateur, pour servir et sécuriser le site. Les modalités d’hébergement et les durées de conservation applicables devront être confirmées avant le lancement sur le domaine définitif.",
+          "Le responsable du traitement est Denis Gasenchenko, personne physique et fondateur de LaSpeak. LaSpeak ne constitue pas actuellement une personne morale distincte.",
+          "Utilisez privacy@laspeak.eu pour exercer un droit ou poser une question sur cette politique, support@laspeak.eu pour un problème technique ou d’accessibilité, hello@laspeak.eu pour une demande générale et denis@laspeak.eu pour un échange avec le fondateur ou sur le produit.",
+        ],
+        details: [
+          {
+            label: "Données personnelles",
+            value: siteConfig.PRIVACY_EMAIL,
+            href: emailHref(siteConfig.PRIVACY_EMAIL, "LaSpeak — demande vie privée"),
+          },
+          {
+            label: "Assistance technique",
+            value: siteConfig.SUPPORT_EMAIL,
+            href: emailHref(siteConfig.SUPPORT_EMAIL, "LaSpeak — assistance site"),
+          },
+          {
+            label: "Contact général",
+            value: siteConfig.HELLO_EMAIL,
+            href: emailHref(siteConfig.HELLO_EMAIL, "LaSpeak — demande générale"),
+          },
+          {
+            label: "Fondateur et produit",
+            value: siteConfig.FOUNDER_EMAIL,
+            href: emailHref(siteConfig.FOUNDER_EMAIL, "LaSpeak — échange produit"),
+          },
         ],
       },
       {
-        title: "Prendre contact par email",
+        title: "Données traitées lors de la navigation",
         paragraphs: [
-          "Les boutons de contact ouvrent votre application de messagerie. Aucun formulaire de ce site ne transmet de données. Si vous envoyez un email, votre adresse et les informations que vous choisissez de communiquer servent à vous répondre et à organiser l’échange.",
-          "Merci de ne pas inclure de noms d’apprenants, d’enregistrements ou d’informations confidentielles dans votre premier message. Une description générale de votre pratique suffit. Pour toute question sur votre correspondance ou demande de suppression, contactez Denis via le lien email de cette page.",
+          "LaSpeak n’utilise ni mesure d’audience, ni technologie publicitaire, ni pixel de réseau social, ni cookie de suivi. Le choix du thème et les décisions prises dans l’interface illustrative restent uniquement dans la mémoire de la page et ne sont ni conservés ni transmis à LaSpeak.",
+          "Vercel traite les informations techniques nécessaires pour fournir et protéger le site. Il peut s’agir de l’adresse IP, de l’heure de la requête, de l’URL demandée, de l’agent utilisateur, d’informations réseau approximatives et de signaux de sécurité. Les finalités sont la fourniture du site, sa disponibilité, le diagnostic et la prévention des abus. La base légale est l’intérêt légitime du responsable à proposer un site public sûr et fiable.",
+          "Les données techniques sont générées automatiquement et nécessaires pour servir la page demandée. LaSpeak ne constitue aucune base de mesure d’audience indépendante. Les journaux techniques accessibles à l’éditeur sont conservés pendant 30 jours au maximum, sauf si un incident précis nécessite une investigation documentée plus longue.",
         ],
       },
       {
-        title: "La recherche fait l’objet d’une étape distincte",
+        title: "Données traitées lorsque vous nous écrivez",
         paragraphs: [
-          "Un premier échange n’autorise pas la collecte ou l’analyse de cours. Toute recherche ultérieure impliquant des données personnelles nécessiterait une information et un cadre spécifiques sur les finalités, les responsabilités, la base légale, les accès et la conservation.",
-          "Les échanges présentés dans les illustrations du produit sont fictifs. Ils ne correspondent à aucun apprenant, enseignant ou organisme réel.",
+          "Les liens de contact ouvrent votre propre messagerie ; aucun formulaire ne transmet de données par le site. Si vous écrivez à LaSpeak, les données traitées peuvent comprendre votre nom, adresse email, organisation, fonction, contenu du message, signature et métadonnées usuelles, uniquement dans la mesure où vous choisissez de les communiquer.",
+          "Les finalités sont de répondre à votre demande, d’organiser un échange produit, de comprendre des pratiques professionnelles et d’assurer un suivi pertinent. La base légale est l’intérêt légitime du responsable à répondre et à évaluer l’adéquation d’une mise en œuvre, ou, le cas échéant, l’exécution de mesures prises à votre demande avant un éventuel accord. L’envoi d’une adresse email et d’un contexte suffisant est facultatif, mais une réponse peut être impossible sans ces éléments.",
+          "Les correspondances sont conservées pendant 24 mois au maximum après le dernier échange substantiel, puis supprimées ou anonymisées, sauf demande de suppression anticipée ou nécessité légale de les conserver plus longtemps pour constater, exercer ou défendre un droit. Les éléments nécessaires pour démontrer le traitement d’une demande relative aux droits peuvent être conservés pendant cinq ans après sa clôture.",
         ],
       },
       {
-        title: "Les services externes",
+        title: "Périmètre des échanges produit et informations sensibles",
         paragraphs: [
-          "La messagerie et LinkedIn, lorsqu’un lien est proposé, sont des services externes soumis à leurs propres modalités de confidentialité. La police Onest est hébergée avec le site : sa consultation ne déclenche pas de requête vers Google pour charger la police.",
+          "Un premier échange n’autorise ni la collecte ni l’analyse de supports de cours. N’envoyez pas de noms d’apprenants, enregistrements, transcriptions, données de santé, données sensibles, informations confidentielles d’un employeur ou contenus que vous n’êtes pas autorisé à communiquer. Une description générale et anonymisée suffit.",
+          "Aucun échange produit n’est enregistré sans information préalable distincte des participants et sans base légale appropriée. Toute mise en œuvre impliquant des cours réels ou des données d’apprenants exige, avant tout partage, un cadre écrit distinct couvrant les rôles, finalités, base légale, information des personnes, sécurité, accès, sous-traitants, conservation et suppression.",
+          "Les interfaces du produit présentent des échanges fictifs. Elles ne représentent aucun apprenant, enseignant, organisme, client ou déploiement réel. Le site public s’adresse à des professionnels adultes et n’est pas destiné à collecter des données d’enfants.",
+        ],
+      },
+      {
+        title: "Destinataires, prestataires et transferts internationaux",
+        paragraphs: [
+          "Les correspondances sont accessibles uniquement à Denis Gasenchenko et, lorsque cela est strictement nécessaire, aux prestataires utilisés pour exploiter le site et la messagerie. Les principaux prestataires actuels sont Vercel Inc. pour l’hébergement du site et Apple iCloud Mail pour les boîtes du domaine laspeak.eu. Les données personnelles ne sont ni vendues, ni louées, ni partagées à des fins publicitaires pour des tiers.",
+          "Ces prestataires peuvent s’appuyer sur des infrastructures ou des opérations d’assistance situées hors de l’Espace économique européen. Lorsque les règles du RGPD sur les transferts s’appliquent, ceux-ci doivent reposer sur une décision d’adéquation applicable ou sur des garanties appropriées, telles que les clauses contractuelles types de la Commission européenne. La documentation du prestataire précise le mécanisme applicable à chaque traitement.",
+          "Des informations peuvent aussi être communiquées lorsqu’une loi l’exige ou lorsque cela est strictement nécessaire pour protéger des droits, la sécurité ou l’intégrité du service. LaSpeak ne réalise aucune prise de décision automatisée ni aucun profilage.",
+        ],
+        details: [
+          {
+            label: "Informations Vercel",
+            value: "vercel.com/legal/privacy-notice",
+            href: "https://vercel.com/legal/privacy-notice",
+          },
+          {
+            label: "Informations Apple",
+            value: "apple.com/legal/privacy",
+            href: "https://www.apple.com/legal/privacy/",
+          },
+        ],
+      },
+      {
+        title: "Vos droits",
+        paragraphs: [
+          "Dans les conditions prévues par le RGPD, vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou la portabilité de vos données et vous opposer aux traitements fondés sur l’intérêt légitime. Lorsqu’un traitement repose sur le consentement, celui-ci peut être retiré à tout moment sans remettre en cause la licéité du traitement antérieur.",
+          "Adressez votre demande à privacy@laspeak.eu. LaSpeak peut demander des informations complémentaires limitées uniquement lorsqu’elles sont raisonnablement nécessaires pour confirmer l’identité. Les demandes sont traitées dans les meilleurs délais et normalement sous un mois. Vous pouvez également saisir l’autorité de contrôle de votre lieu de résidence ou de travail ; en France, il s’agit de la Commission nationale de l’informatique et des libertés (CNIL).",
+        ],
+        details: [
+          {
+            label: "Exercer vos droits",
+            value: siteConfig.PRIVACY_EMAIL,
+            href: emailHref(siteConfig.PRIVACY_EMAIL, "LaSpeak — exercice des droits RGPD"),
+          },
+          {
+            label: "Autorité française",
+            value: "cnil.fr",
+            href: "https://www.cnil.fr/",
+          },
+        ],
+      },
+      {
+        title: "Sécurité, liens externes et évolutions",
+        paragraphs: [
+          "Des mesures techniques et organisationnelles raisonnables sont mises en œuvre au regard du volume limité de données traité par le site. Aucun service internet ou de messagerie ne peut toutefois garantir une sécurité absolue. Si vous pensez qu’une information a été exposée ou mal dirigée, contactez rapidement support@laspeak.eu et privacy@laspeak.eu.",
+          "LinkedIn et votre prestataire de messagerie sont des services externes indépendants. Leurs propres conditions s’appliquent lorsque vous choisissez de les consulter ou de les utiliser. La police Onest est fournie avec le site et n’est pas demandée à Google lors de la consultation d’une page.",
+          "Cette politique sera mise à jour avant l’ajout de comptes, formulaires, outils de mesure d’audience, newsletters, paiements, dépôts de fichiers ou traitements de supports d’apprenants. Toute modification importante sera signalée par une nouvelle date de mise à jour.",
         ],
       },
     ],
   },
+  ...legalPages,
 };
 
 export const articles: Article[] = [
@@ -249,7 +332,7 @@ export const articles: Article[] = [
         title: "Partir du prochain échange",
         paragraphs: [
           "Avant d’ajouter un outil, on peut revenir sur une passation récente. De quoi l’enseignant avait-il réellement besoin ? A-t-il pu retrouver un exemple ? Le détail disponible a-t-il changé une décision ou simplement ajouté du texte à lire ?",
-          "Ce sont les questions que LaSpeak explore auprès des organismes de FLE pour adultes. L’idée est de relier des moments pertinents, de conserver leurs sources et de laisser les enseignants décider de ce qui mérite d’être transmis. Le gain de temps et l’intérêt pour les pratiques restent à vérifier.",
+          "LaSpeak répond à ces questions en reliant les moments pertinents, en conservant leurs sources et en laissant les enseignants décider de ce qui mérite d’être transmis. Le produit ancre chaque décision dans des traces sans transformer un dossier partiel en portrait complet de l’apprenant.",
         ],
       },
     ],
@@ -311,7 +394,7 @@ export const articles: Article[] = [
         title: "Une transcription est un point de départ",
         paragraphs: [
           "Reconnaître les limites d’une transcription ne revient pas à en nier l’intérêt. Elle peut fournir un accès pratique au cours et faciliter la recherche d’exemples. La question porte sur ce qui se passe entre retrouver des mots et formuler une conclusion sur l’apprenant.",
-          "LaSpeak explore cet espace : des rapprochements entre séances, reliés aux sources, avec une incertitude visible et un examen humain. C’est une direction de R&D, pas l’affirmation qu’une interprétation automatique serait déjà fiable ou qu’un extrait relié prouverait un apprentissage.",
+          "LaSpeak intervient dans cet espace : des rapprochements entre séances, reliés aux sources, avec une incertitude visible et un examen humain. Les suggestions automatiques restent des interprétations à valider ; un extrait relié constitue une trace à examiner, pas une preuve d’apprentissage à lui seul.",
         ],
       },
     ],

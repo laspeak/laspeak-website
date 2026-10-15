@@ -20,7 +20,7 @@ const insightsMeta = {
   en: {
     title: "Insights on teaching, context and learning evidence",
     description:
-      "Thoughtful notes on what gets lost between language lessons, the limits of transcripts and the role of teacher judgement. From LaSpeak’s early research.",
+      "Thoughtful notes on what gets lost between language lessons, the limits of transcripts and the role of teacher judgement in LaSpeak.",
   },
   fr: {
     title: "Ressources : traces et continuité pédagogique en FLE",

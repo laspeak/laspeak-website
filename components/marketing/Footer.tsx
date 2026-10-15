@@ -2,41 +2,61 @@ import Image from "next/image";
 import { SiteLink as Link } from "@/components/ui/SiteLink";
 import { getDictionary } from "@/content";
 import { href, type Locale, type PageKey } from "@/lib/i18n";
-import { mailto, siteConfig } from "@/lib/site-config";
+import { emailHref, siteConfig } from "@/lib/site-config";
 import { ThemeToggle } from "./ThemeToggle";
 
 export function LinkedInLink({
   locale,
   compact = false,
+  profile = "founder",
 }: {
   locale: Locale;
   compact?: boolean;
+  profile?: "brand" | "founder";
 }) {
   const d = getDictionary(locale);
-  return siteConfig.LINKEDIN_URL ? (
+  const url =
+    profile === "brand"
+      ? siteConfig.BRAND_LINKEDIN_URL
+      : siteConfig.FOUNDER_LINKEDIN_URL;
+  const label =
+    profile === "brand"
+      ? locale === "fr"
+        ? "LaSpeak sur LinkedIn"
+        : "LaSpeak on LinkedIn"
+      : d.founder.linkedin;
+  return (
     <a
-      href={siteConfig.LINKEDIN_URL}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
       className={compact ? "" : "text-link"}
+      aria-label={compact ? label : undefined}
     >
-      {compact ? "LinkedIn" : d.founder.linkedin}
+      {profile === "brand" ? (
+        <Image
+          src="/icons/linkedin-brand.svg"
+          alt=""
+          width={38}
+          height={40}
+          className="linkedin-brand-icon"
+          unoptimized
+        />
+      ) : null}
+      {compact ? "LinkedIn" : label}
       <span aria-hidden="true"> ↗</span>
     </a>
-  ) : (
-    <span
-      className={compact ? "unavailable-link" : "text-link unavailable-link"}
-      aria-disabled="true"
-      title={d.founder.linkedinPending}
-    >
-      {compact ? "LinkedIn" : d.founder.linkedin}
-      <span className="sr-only"> · {d.founder.linkedinPending}</span>
-    </span>
   );
 }
 
 export function Footer({ locale, page }: { locale: Locale; page: PageKey }) {
   const d = getDictionary(locale);
+  const emailDirectory = [
+    [d.footer.emailLabels.general, siteConfig.HELLO_EMAIL],
+    [d.footer.emailLabels.founder, siteConfig.FOUNDER_EMAIL],
+    [d.footer.emailLabels.support, siteConfig.SUPPORT_EMAIL],
+    [d.footer.emailLabels.privacy, siteConfig.PRIVACY_EMAIL],
+  ] as const;
   return (
     <footer className="site-footer">
       <div className="shell">
@@ -63,10 +83,23 @@ export function Footer({ locale, page }: { locale: Locale; page: PageKey }) {
           >
             <Link href={href(locale, "insights")}>{d.nav.insights}</Link>
             <Link href={href(locale, "privacy")}>{d.nav.privacy}</Link>
-            <a href={mailto("conversation", false)}>{d.nav.contact}</a>
-            <LinkedInLink locale={locale} compact />
+            <Link href={href(locale, "legal")}>{d.nav.legal}</Link>
+            <Link href={href(locale, "cookies")}>{d.nav.cookies}</Link>
+            <Link href={href(locale, "terms")}>{d.nav.terms}</Link>
+            <LinkedInLink locale={locale} compact profile="brand" />
           </nav>
         </div>
+        <nav
+          className="footer-email-directory"
+          aria-label={locale === "fr" ? "Adresses email" : "Email addresses"}
+        >
+          {emailDirectory.map(([label, email]) => (
+            <a href={emailHref(email)} key={email}>
+              <span>{label}</span>
+              {email}
+            </a>
+          ))}
+        </nav>
         <div className="footer-bottom">
           <p>{d.footer.development}</p>
           <div className="footer-languages">

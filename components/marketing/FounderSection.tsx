@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiteLink as Link } from "@/components/ui/SiteLink";
 import type { Dictionary } from "@/content/types";
 import { href, type Locale } from "@/lib/i18n";
@@ -20,9 +21,14 @@ export function FounderSection({
           <p key={p}>{p}</p>
         ))}
         <div className="founder-signature">
-          <span className="founder-monogram" aria-hidden="true">
-            dg.
-          </span>
+          <Image
+            src="/images/founder.webp"
+            alt="Denis Gasenchenko"
+            width={800}
+            height={800}
+            className="founder-photo"
+            unoptimized
+          />
           <div>
             <strong>Denis Gasenchenko</strong>
             <span>{d.role}</span>

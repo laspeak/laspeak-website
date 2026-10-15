@@ -11,8 +11,8 @@ for (const locale of ["en", "fr"]) {
       : "Des traces pédagogiques, examinées par les enseignants";
   const status =
     locale === "en"
-      ? "Early-stage research &amp; development"
-      : "Un projet en recherche et développement";
+      ? "Teacher-controlled · Source-linked · Across lessons"
+      : "Sous le contrôle de l’enseignant · Relié aux sources";
   const text = async (value, size, color, width) =>
     sharp({
       text: {

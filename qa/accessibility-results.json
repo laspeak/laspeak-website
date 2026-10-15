@@ -1,66 +1,288 @@
 [
   {
     "path": "/en/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 20,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/en/for-language-providers/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
-    "path": "/en/research/",
-    "violations": []
+    "path": "/en/product/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/en/about/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/en/insights/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/en/privacy/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "path": "/en/legal-notice/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "path": "/en/cookies/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "path": "/en/terms-of-use/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/en/insights/what-gets-lost-between-language-lessons/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/en/insights/transcripts-and-learning-evidence/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 18,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/pour-les-organismes-fle/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
-    "path": "/fr/recherche/",
-    "violations": []
+    "path": "/fr/produit/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/a-propos/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 3,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/ressources/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/confidentialite/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "path": "/fr/mentions-legales/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "path": "/fr/cookies/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "path": "/fr/conditions-utilisation/",
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 1,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   },
   {
     "path": "/fr/ressources/transcription-et-traces-pedagogiques/",
-    "violations": []
+    "axeVersion": "4.12.1",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodeCount": 2,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
   }
 ]

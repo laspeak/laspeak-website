@@ -1069,43 +1069,43 @@ html[lang="fr"] .hero h1 {
   color: var(--muted);
   padding-block: var(--s8) var(--s4);
 }
-.research-cta {
+.product-cta {
   background: var(--lavender);
   color: #171717;
   padding-block: var(--s20);
 }
-.research-grid {
+.product-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: var(--s20);
 }
-.research-grid h2 {
+.product-grid h2 {
   font-size: clamp(2.8rem, 2rem + 2.5vw, 4.65rem);
   max-width: 650px;
 }
-.research-copy {
+.product-copy {
   padding-top: var(--s12);
 }
-.research-copy > p {
+.product-copy > p {
   max-width: 470px;
   margin-bottom: var(--s5);
 }
-.research-copy .button {
+.product-copy .button {
   color: #f7f6f2;
   background: #171717;
   margin-top: var(--s4);
 }
-.research-copy .button:hover {
+.product-copy .button:hover {
   background: #493979;
 }
-.research-copy .cta-note {
+.product-copy .cta-note {
   margin-top: var(--s3);
   font-size: var(--text-xs);
 }
-.research-copy .text-link:hover {
+.product-copy .text-link:hover {
   color: #3d2c69;
 }
-.research-details {
+.product-details {
   display: block;
   width: fit-content;
   font-size: var(--text-xs);
@@ -1135,12 +1135,13 @@ html[lang="fr"] .hero h1 {
   align-items: center;
   margin-block: var(--s8) var(--s5);
 }
-.founder-monogram {
-  font-size: 3.5rem;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.09em;
-  padding-right: var(--s2);
+.founder-photo {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--line);
 }
 .founder-signature strong {
   font-size: var(--text-sm);
@@ -1157,10 +1158,6 @@ html[lang="fr"] .hero h1 {
   display: flex;
   flex-wrap: wrap;
   gap: var(--s4) var(--s8);
-}
-.unavailable-link {
-  color: var(--muted);
-  cursor: default;
 }
 .final-cta {
   padding-block: var(--s16) var(--s24);
@@ -1229,8 +1226,40 @@ html[lang="fr"] .hero h1 {
   min-height: 44px;
   font-size: var(--text-sm);
 }
+.footer-links a[aria-label*="LinkedIn"] {
+  gap: var(--s2);
+}
+.linkedin-brand-icon {
+  width: 24px;
+  height: auto;
+  flex: 0 0 auto;
+}
 .footer-links a:hover {
   color: var(--purple);
+}
+.footer-email-directory {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s4);
+  padding-block: var(--s8);
+  margin-top: var(--s10);
+  border-block: 1px solid var(--line);
+}
+.footer-email-directory a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s2);
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: var(--text-sm);
+}
+.footer-email-directory a:hover {
+  color: var(--purple);
+}
+.footer-email-directory span {
+  color: var(--muted);
+  font-size: var(--text-xs);
 }
 .footer-bottom {
   display: flex;
@@ -1294,6 +1323,11 @@ html[lang="fr"] .hero h1 {
   max-width: 670px;
   margin-top: var(--s8);
   color: var(--muted);
+}
+.legal-updated {
+  margin-top: var(--s5);
+  color: var(--muted);
+  font-size: var(--text-xs);
 }
 .editorial-hero .actions {
   margin-top: var(--s8);
@@ -1366,6 +1400,35 @@ html[lang="fr"] .hero h1 {
   line-height: 1.75;
 }
 .prose-section li::marker {
+  color: var(--purple);
+}
+.legal-details {
+  margin-block: var(--s7);
+  border-top: 1px solid var(--line);
+}
+.legal-details > div {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.65fr) minmax(0, 1.35fr);
+  gap: var(--s6);
+  padding-block: var(--s4);
+  border-bottom: 1px solid var(--line);
+}
+.legal-details dt {
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+.legal-details dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+.legal-details a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--purple) 55%, transparent);
+  text-underline-offset: 0.18em;
+}
+.legal-details a:hover {
   color: var(--purple);
 }
 .editorial-aside {
@@ -1504,7 +1567,7 @@ html[lang="fr"] .hero h1 {
 [data-theme="dark"] .viewer-disclaimer {
   color: #c0c7bb;
 }
-[data-theme="dark"] .research-cta :focus-visible {
+[data-theme="dark"] .product-cta :focus-visible {
   outline-color: #171717;
 }
 @media (prefers-color-scheme: dark) {
@@ -1566,7 +1629,7 @@ html[lang="fr"] .hero h1 {
   .problem-section,
   .why-section,
   .provider-section,
-  .research-grid,
+  .product-grid,
   .founder-section {
     gap: var(--s12);
   }
@@ -1726,10 +1789,10 @@ html[lang="fr"] .hero h1 {
   .provider-section {
     gap: var(--s8);
   }
-  .research-grid {
+  .product-grid {
     gap: var(--s10);
   }
-  .research-grid h2 {
+  .product-grid h2 {
     font-size: 3.25rem;
   }
   .founder-section {
@@ -1741,6 +1804,9 @@ html[lang="fr"] .hero h1 {
   }
   .final-bottom > div {
     min-width: 250px;
+  }
+  .footer-email-directory {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .editorial-body {
     grid-template-columns: 0.6fr 1.4fr;
@@ -2056,23 +2122,23 @@ html[lang="fr"] .hero h1 {
   .complement {
     padding-top: var(--s6);
   }
-  .research-cta {
+  .product-cta {
     padding-block: var(--s12);
   }
-  .research-grid {
+  .product-grid {
     grid-template-columns: 1fr;
     gap: var(--s6);
   }
-  .research-grid h2 {
+  .product-grid h2 {
     font-size: clamp(2.6rem, 9vw, 3.8rem);
   }
-  .research-grid .eyebrow {
+  .product-grid .eyebrow {
     margin-bottom: var(--s6);
   }
-  .research-copy {
+  .product-copy {
     padding-top: 0;
   }
-  .research-copy .button {
+  .product-copy .button {
     width: fit-content;
     max-width: 100%;
     text-align: left;
@@ -2120,6 +2186,19 @@ html[lang="fr"] .hero h1 {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     gap: var(--s2) var(--s6);
+  }
+  .footer-email-directory {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-block: var(--s3);
+    margin-top: var(--s6);
+  }
+  .footer-email-directory a {
+    padding-block: var(--s3);
+    border-bottom: 1px solid var(--line);
+  }
+  .footer-email-directory a:last-child {
+    border-bottom: 0;
   }
   .footer-bottom {
     margin-top: var(--s8);
@@ -2177,6 +2256,10 @@ html[lang="fr"] .hero h1 {
   .prose-section p {
     line-height: 1.8;
   }
+  .legal-details > div {
+    grid-template-columns: 1fr;
+    gap: var(--s2);
+  }
   .article-pullquote {
     padding: var(--s6);
   }
@@ -2233,7 +2316,7 @@ html[lang="fr"] .hero h1 {
 @media print {
   .site-header,
   .site-footer,
-  .research-cta,
+  .product-cta,
   .final-cta,
   .editorial-sidebar,
   .actions {

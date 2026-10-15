@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   ...(process.env.STATIC_EXPORT === "1" ? { output: "export" } : {}),
+  turbopack: { root: process.cwd() },
+  outputFileTracingRoot: process.cwd(),
   trailingSlash: true,
   poweredByHeader: false,
   images: {
@@ -9,6 +11,21 @@ const nextConfig: NextConfig = {
     loaderFile: "./lib/image-loader.ts",
     deviceSizes: [384, 640, 828, 1080, 1440, 1920],
     imageSizes: [192, 256],
+  },
+  async redirects() {
+    if (process.env.STATIC_EXPORT === "1") return [];
+    return [
+      {
+        source: "/en/research",
+        destination: "/en/product/",
+        permanent: true,
+      },
+      {
+        source: "/fr/recherche",
+        destination: "/fr/produit/",
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     if (process.env.STATIC_EXPORT === "1") return [];

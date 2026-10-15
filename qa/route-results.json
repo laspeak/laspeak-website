@@ -1,7 +1,7 @@
 {
-  "count": 16,
-  "uniqueTitles": 16,
-  "uniqueDescriptions": 16,
+  "count": 22,
+  "uniqueTitles": 22,
+  "uniqueDescriptions": 22,
   "linkErrors": [],
   "imageErrors": [],
   "failures": [],
@@ -13,43 +13,63 @@
       "lang": "en",
       "h1": 1,
       "description": "LaSpeak connects prompts, learner attempts, corrections and later reuse across language lessons, with every interpretation linked to its source and reviewed by teachers.",
-      "canonical": "https://your-domain.example/en/",
+      "canonical": "https://laspeak.eu/en/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/"
+          "href": "https://laspeak.eu/en/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/"
+          "href": "https://laspeak.eu/fr/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/"
+          "href": "https://laspeak.eu/en/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             }
           ]
         }
@@ -59,55 +79,73 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/",
         "/fr/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "#how-it-works",
         "/en/for-language-providers/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/en/research/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20workflow",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20implementation",
+        "/en/product/",
+        "https://www.linkedin.com/in/denis-gasenchenko-en/",
         "/en/about/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/",
         "/fr/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/lesson-828.webp",
+          "src": "http://localhost:3000/images/lesson-1920.webp",
           "loaded": true,
           "alt": "An adult learner wearing headphones speaks with a teacher on a laptop."
         },
         {
-          "src": "",
-          "loaded": false,
+          "src": "http://localhost:3000/images/teacher-1920.webp",
+          "loaded": true,
           "alt": "A teacher explains a point during a remote lesson, with notes and a laptop nearby."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/founder.webp",
+          "loaded": true,
+          "alt": "Denis Gasenchenko"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -121,44 +159,64 @@
       "title": "A little less lost between lessons. | LaSpeak",
       "lang": "en",
       "h1": 1,
-      "description": "Explore how source-linked, teacher-reviewed evidence could support handovers and formative progress conversations in adult FLE provision.",
-      "canonical": "https://your-domain.example/en/for-language-providers/",
+      "description": "See how source-linked, teacher-reviewed evidence supports handovers, lesson planning and formative progress conversations in adult FLE provision.",
+      "canonical": "https://laspeak.eu/en/for-language-providers/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/for-language-providers/"
+          "href": "https://laspeak.eu/en/for-language-providers/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/pour-les-organismes-fle/"
+          "href": "https://laspeak.eu/fr/pour-les-organismes-fle/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/for-language-providers/"
+          "href": "https://laspeak.eu/en/for-language-providers/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -167,13 +225,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "A little less lost between lessons.",
-                  "item": "https://your-domain.example/en/for-language-providers/"
+                  "item": "https://laspeak.eu/en/for-language-providers/"
                 }
               ]
             }
@@ -185,52 +243,64 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/for-language-providers/",
         "/fr/pour-les-organismes-fle/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
         "#section-5",
         "#section-6",
-        "/en/research/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/en/research/",
+        "/en/product/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20workflow",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20implementation",
+        "/en/product/",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/for-language-providers/",
         "/fr/pour-les-organismes-fle/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/teacher-1440.webp",
+          "src": "http://localhost:3000/images/teacher-1920.webp",
           "loaded": true,
           "alt": "A teacher explains a point during a remote lesson, with notes and a laptop nearby."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -239,49 +309,69 @@
       }
     },
     {
-      "path": "/en/research/",
+      "path": "/en/product/",
       "status": 200,
-      "title": "First, understand the work. | LaSpeak",
+      "title": "Bring continuity into view. | LaSpeak",
       "lang": "en",
       "h1": 1,
-      "description": "Join a 20-minute research conversation about adult FLE teaching workflows in France. No sales demo, preparation or learner data required.",
-      "canonical": "https://your-domain.example/en/research/",
+      "description": "A focused product conversation for adult FLE teams in France: see the LaSpeak workflow and identify the right implementation scope.",
+      "canonical": "https://laspeak.eu/en/product/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/research/"
+          "href": "https://laspeak.eu/en/product/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/recherche/"
+          "href": "https://laspeak.eu/fr/produit/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/research/"
+          "href": "https://laspeak.eu/en/product/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -290,13 +380,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "First, understand the work.",
-                  "item": "https://your-domain.example/en/research/"
+                  "name": "Bring continuity into view.",
+                  "item": "https://laspeak.eu/en/product/"
                 }
               ]
             }
@@ -308,52 +398,64 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
-        "/en/research/",
-        "/fr/recherche/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/product/",
+        "/fr/produit/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20workflow",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
         "#section-5",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20implementation",
         "/en/for-language-providers/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "/en/research/",
-        "/fr/recherche/"
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/product/",
+        "/fr/produit/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/conversation-1440.webp",
+          "src": "http://localhost:3000/images/conversation-1920.webp",
           "loaded": true,
           "alt": "An adult in conversation at her laptop in a calm workspace."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -368,43 +470,63 @@
       "lang": "en",
       "h1": 1,
       "description": "The origin of LaSpeak: Denis Gasenchenko’s experience operating language education workflows and a grounded question about continuity between lessons.",
-      "canonical": "https://your-domain.example/en/about/",
+      "canonical": "https://laspeak.eu/en/about/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/about/"
+          "href": "https://laspeak.eu/en/about/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/a-propos/"
+          "href": "https://laspeak.eu/fr/a-propos/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/about/"
+          "href": "https://laspeak.eu/en/about/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -413,13 +535,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Delivering a lesson. Keeping what matters.",
-                  "item": "https://your-domain.example/en/about/"
+                  "item": "https://laspeak.eu/en/about/"
                 }
               ]
             }
@@ -431,45 +553,63 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/about/",
         "/fr/a-propos/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "https://www.linkedin.com/in/denis-gasenchenko-en/",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
-        "/en/research/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/en/research/",
+        "/en/product/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20workflow",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20implementation",
+        "/en/product/",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/about/",
         "/fr/a-propos/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/founder.webp",
+          "loaded": true,
+          "alt": "Denis Gasenchenko"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -483,44 +623,64 @@
       "title": "Insights on teaching, context and learning evidence | LaSpeak",
       "lang": "en",
       "h1": 1,
-      "description": "Thoughtful notes on what gets lost between language lessons, the limits of transcripts and the role of teacher judgement. From LaSpeak’s early research.",
-      "canonical": "https://your-domain.example/en/insights/",
+      "description": "Thoughtful notes on what gets lost between language lessons, the limits of transcripts and the role of teacher judgement in LaSpeak.",
+      "canonical": "https://laspeak.eu/en/insights/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/insights/"
+          "href": "https://laspeak.eu/en/insights/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/ressources/"
+          "href": "https://laspeak.eu/fr/ressources/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/insights/"
+          "href": "https://laspeak.eu/en/insights/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -529,13 +689,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Insights on teaching, context and learning evidence",
-                  "item": "https://your-domain.example/en/insights/"
+                  "item": "https://laspeak.eu/en/insights/"
                 }
               ]
             }
@@ -547,46 +707,58 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
         "/en/insights/what-gets-lost-between-language-lessons/",
         "/en/insights/transcripts-and-learning-evidence/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/insights/",
         "/fr/ressources/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/conversation-640.webp",
+          "src": "http://localhost:3000/images/conversation-1920.webp",
           "loaded": true,
           "alt": "An adult at her laptop during a remote conversation."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -597,47 +769,67 @@
     {
       "path": "/en/privacy/",
       "status": 200,
-      "title": "A simple site. A clear boundary. | LaSpeak",
+      "title": "Privacy policy | LaSpeak",
       "lang": "en",
       "h1": 1,
-      "description": "How the LaSpeak public website handles contact emails, technical hosting data and synthetic examples. No learner uploads, tracking analytics or advertising cookies.",
-      "canonical": "https://your-domain.example/en/privacy/",
+      "description": "How the LaSpeak website processes technical data and voluntary email correspondence, with GDPR rights, purposes, retention periods and contact details.",
+      "canonical": "https://laspeak.eu/en/privacy/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/privacy/"
+          "href": "https://laspeak.eu/en/privacy/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/confidentialite/"
+          "href": "https://laspeak.eu/fr/confidentialite/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/privacy/"
+          "href": "https://laspeak.eu/en/privacy/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -646,13 +838,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "A simple site. A clear boundary.",
-                  "item": "https://your-domain.example/en/privacy/"
+                  "name": "Privacy policy",
+                  "item": "https://laspeak.eu/en/privacy/"
                 }
               ]
             }
@@ -664,45 +856,507 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/privacy/",
         "/fr/confidentialite/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
-        "/en/research/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-5",
+        "#section-6",
+        "#section-7",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20privacy%20request",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20website%20support",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20general%20enquiry",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "https://vercel.com/legal/privacy-notice",
+        "https://www.apple.com/legal/privacy/",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20GDPR%20rights%20request",
+        "https://www.cnil.fr/",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/privacy/",
         "/fr/confidentialite/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/legal-notice/",
+      "status": 200,
+      "title": "Legal notice | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "Publisher, hosting, publishing status, contact details and intellectual-property information for the LaSpeak website.",
+      "canonical": "https://laspeak.eu/en/legal-notice/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://laspeak.eu/en/legal-notice/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://laspeak.eu/fr/mentions-legales/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://laspeak.eu/en/legal-notice/"
+        }
+      ],
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://laspeak.eu/#website",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "inLanguage": [
+                "en",
+                "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://laspeak.eu/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://laspeak.eu/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Legal notice",
+                  "item": "https://laspeak.eu/en/legal-notice/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/product/",
+        "/en/about/",
+        "/en/legal-notice/",
+        "/fr/mentions-legales/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/product/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "/en/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "https://laspeak.eu",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20legal%20enquiry",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20general%20enquiry",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20website%20support",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20privacy%20request",
+        "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000801164/LEGISCTA000006117684/",
+        "https://vercel.com",
+        "tel:+15592887060",
+        "https://vercel.com/legal/privacy-notice",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/legal-notice/",
+        "/fr/mentions-legales/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/cookies/",
+      "status": 200,
+      "title": "No tracking by design. | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "The LaSpeak public website does not use analytics, advertising cookies, tracking pixels or persistent browser storage.",
+      "canonical": "https://laspeak.eu/en/cookies/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://laspeak.eu/en/cookies/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://laspeak.eu/fr/cookies/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://laspeak.eu/en/cookies/"
+        }
+      ],
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://laspeak.eu/#website",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "inLanguage": [
+                "en",
+                "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://laspeak.eu/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://laspeak.eu/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "No tracking by design.",
+                  "item": "https://laspeak.eu/en/cookies/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/product/",
+        "/en/about/",
+        "/en/cookies/",
+        "/fr/cookies/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/product/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "/en/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20cookies%20and%20privacy",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20website%20support",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/cookies/",
+        "/fr/cookies/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/en/terms-of-use/",
+      "status": 200,
+      "title": "Terms of use | LaSpeak",
+      "lang": "en",
+      "h1": 1,
+      "description": "Conditions for accessing and using the public LaSpeak product website.",
+      "canonical": "https://laspeak.eu/en/terms-of-use/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://laspeak.eu/en/terms-of-use/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://laspeak.eu/fr/conditions-utilisation/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://laspeak.eu/en/terms-of-use/"
+        }
+      ],
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://laspeak.eu/#website",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "inLanguage": [
+                "en",
+                "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://laspeak.eu/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Founder of LaSpeak",
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://laspeak.eu/en/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Terms of use",
+                  "item": "https://laspeak.eu/en/terms-of-use/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/en/",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/product/",
+        "/en/about/",
+        "/en/terms-of-use/",
+        "/fr/conditions-utilisation/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "/en/#how-it-works",
+        "/en/for-language-providers/",
+        "/en/product/",
+        "/en/about/",
+        "/en/insights/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
+        "/en/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20terms%20of%20use",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20website%20support",
+        "/en/",
+        "/en/insights/",
+        "/en/privacy/",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/terms-of-use/",
+        "/fr/conditions-utilisation/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -717,43 +1371,63 @@
       "lang": "en",
       "h1": 1,
       "description": "A practical reflection on prompts, corrections and learner examples: what is worth carrying into the next lesson, and what should remain a question.",
-      "canonical": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/",
+      "canonical": "https://laspeak.eu/en/insights/what-gets-lost-between-language-lessons/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+          "href": "https://laspeak.eu/en/insights/what-gets-lost-between-language-lessons/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+          "href": "https://laspeak.eu/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+          "href": "https://laspeak.eu/en/insights/what-gets-lost-between-language-lessons/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -762,19 +1436,19 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Insights",
-                  "item": "https://your-domain.example/en/insights/"
+                  "item": "https://laspeak.eu/en/insights/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "What gets lost between one language lesson and the next?",
-                  "item": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+                  "item": "https://laspeak.eu/en/insights/what-gets-lost-between-language-lessons/"
                 }
               ]
             }
@@ -786,17 +1460,17 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/what-gets-lost-between-language-lessons/",
         "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
         "/en/insights/",
         "#section-1",
@@ -806,27 +1480,39 @@
         "#section-5",
         "#section-6",
         "/en/insights/transcripts-and-learning-evidence/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/en/research/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20workflow",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20implementation",
+        "/en/product/",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/insights/what-gets-lost-between-language-lessons/",
         "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -841,43 +1527,63 @@
       "lang": "en",
       "h1": 1,
       "description": "A transcript preserves words. Interpreting a learner’s production also requires the task, available support, surrounding exchange and teacher judgement.",
-      "canonical": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/",
+      "canonical": "https://laspeak.eu/en/insights/transcripts-and-learning-evidence/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+          "href": "https://laspeak.eu/en/insights/transcripts-and-learning-evidence/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/"
+          "href": "https://laspeak.eu/fr/ressources/transcription-et-traces-pedagogiques/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+          "href": "https://laspeak.eu/en/insights/transcripts-and-learning-evidence/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-en.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-en.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Founder of LaSpeak",
-              "url": "https://your-domain.example/en/about/"
+              "url": "https://laspeak.eu/en/about/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -886,19 +1592,19 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://your-domain.example/en/"
+                  "item": "https://laspeak.eu/en/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Insights",
-                  "item": "https://your-domain.example/en/insights/"
+                  "item": "https://laspeak.eu/en/insights/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Why a transcript is useful, but not the same as learning evidence",
-                  "item": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+                  "item": "https://laspeak.eu/en/insights/transcripts-and-learning-evidence/"
                 }
               ]
             }
@@ -910,17 +1616,17 @@
         "/en/",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/transcripts-and-learning-evidence/",
         "/fr/ressources/transcription-et-traces-pedagogiques/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/#how-it-works",
         "/en/for-language-providers/",
-        "/en/research/",
+        "/en/product/",
         "/en/about/",
         "/en/insights/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20conversation",
         "/en/",
         "/en/insights/",
         "#section-1",
@@ -930,27 +1636,39 @@
         "#section-5",
         "#section-6",
         "/en/insights/what-gets-lost-between-language-lessons/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/en/research/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20product%20workflow",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20implementation",
+        "/en/product/",
         "/en/",
         "/en/insights/",
         "/en/privacy/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/legal-notice/",
+        "/en/cookies/",
+        "/en/terms-of-use/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/insights/transcripts-and-learning-evidence/",
         "/fr/ressources/transcription-et-traces-pedagogiques/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -965,43 +1683,63 @@
       "lang": "fr",
       "h1": 1,
       "description": "LaSpeak relie les consignes, productions, corrections et réemplois entre les cours, avec chaque interprétation reliée à sa source et validée par l’enseignant.",
-      "canonical": "https://your-domain.example/fr/",
+      "canonical": "https://laspeak.eu/fr/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/"
+          "href": "https://laspeak.eu/en/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/"
+          "href": "https://laspeak.eu/fr/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/"
+          "href": "https://laspeak.eu/en/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             }
           ]
         }
@@ -1011,55 +1749,73 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/",
         "/fr/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/fr/recherche/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20fonctionnement%20du%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20mise%20en%20%C5%93uvre",
+        "/fr/produit/",
+        "https://www.linkedin.com/in/denis-gasenchenko-en/",
         "/fr/a-propos/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/",
         "/fr/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/lesson-828.webp",
+          "src": "http://localhost:3000/images/lesson-1920.webp",
           "loaded": true,
           "alt": "Une apprenante adulte, casque sur les oreilles, échange avec une enseignante sur son ordinateur."
         },
         {
-          "src": "http://127.0.0.1:3001/images/teacher-640.webp",
+          "src": "http://localhost:3000/images/teacher-1920.webp",
           "loaded": true,
           "alt": "Une enseignante explique un point à distance, devant son ordinateur et ses notes."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/founder.webp",
+          "loaded": true,
+          "alt": "Denis Gasenchenko"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1073,44 +1829,64 @@
       "title": "D’un cours à l’autre, préserver l’essentiel. | LaSpeak",
       "lang": "fr",
       "h1": 1,
-      "description": "Pour les organismes de formation FLE : explorer un suivi pédagogique fondé sur des traces reliées aux cours et examinées par les enseignants.",
-      "canonical": "https://your-domain.example/fr/pour-les-organismes-fle/",
+      "description": "Pour les organismes de formation FLE : un suivi pédagogique fondé sur des traces reliées aux cours et examinées par les enseignants.",
+      "canonical": "https://laspeak.eu/fr/pour-les-organismes-fle/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/for-language-providers/"
+          "href": "https://laspeak.eu/en/for-language-providers/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/pour-les-organismes-fle/"
+          "href": "https://laspeak.eu/fr/pour-les-organismes-fle/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/for-language-providers/"
+          "href": "https://laspeak.eu/en/for-language-providers/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1119,13 +1895,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "D’un cours à l’autre, préserver l’essentiel.",
-                  "item": "https://your-domain.example/fr/pour-les-organismes-fle/"
+                  "item": "https://laspeak.eu/fr/pour-les-organismes-fle/"
                 }
               ]
             }
@@ -1137,52 +1913,64 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/for-language-providers/",
         "/fr/pour-les-organismes-fle/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
         "#section-5",
         "#section-6",
-        "/fr/recherche/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/fr/recherche/",
+        "/fr/produit/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20fonctionnement%20du%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20mise%20en%20%C5%93uvre",
+        "/fr/produit/",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/for-language-providers/",
         "/fr/pour-les-organismes-fle/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/teacher-1440.webp",
+          "src": "http://localhost:3000/images/teacher-1920.webp",
           "loaded": true,
           "alt": "Une enseignante explique un point à distance, devant son ordinateur et ses notes."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1191,49 +1979,69 @@
       }
     },
     {
-      "path": "/fr/recherche/",
+      "path": "/fr/produit/",
       "status": 200,
-      "title": "D’abord, comprendre votre travail. | LaSpeak",
+      "title": "Rendre la continuité visible. | LaSpeak",
       "lang": "fr",
       "h1": 1,
-      "description": "Un échange de recherche de 20 minutes sur le suivi pédagogique en FLE pour adultes. Sans démonstration commerciale, préparation ni données d’apprenants.",
-      "canonical": "https://your-domain.example/fr/recherche/",
+      "description": "Un échange produit ciblé pour les équipes de FLE pour adultes en France : découvrir LaSpeak et définir le bon périmètre de mise en œuvre.",
+      "canonical": "https://laspeak.eu/fr/produit/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/research/"
+          "href": "https://laspeak.eu/en/product/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/recherche/"
+          "href": "https://laspeak.eu/fr/produit/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/research/"
+          "href": "https://laspeak.eu/en/product/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1242,13 +2050,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "D’abord, comprendre votre travail.",
-                  "item": "https://your-domain.example/fr/recherche/"
+                  "name": "Rendre la continuité visible.",
+                  "item": "https://laspeak.eu/fr/produit/"
                 }
               ]
             }
@@ -1260,52 +2068,64 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
-        "/en/research/",
-        "/fr/recherche/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/en/product/",
+        "/fr/produit/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20fonctionnement%20du%20produit",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
         "#section-5",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20mise%20en%20%C5%93uvre",
         "/fr/pour-les-organismes-fle/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "/en/research/",
-        "/fr/recherche/"
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/product/",
+        "/fr/produit/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/conversation-1440.webp",
+          "src": "http://localhost:3000/images/conversation-1920.webp",
           "loaded": true,
           "alt": "Une adulte échange à distance depuis son espace de travail."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1319,44 +2139,64 @@
       "title": "Assurer le cours. Garder ce qui compte. | LaSpeak",
       "lang": "fr",
       "h1": 1,
-      "description": "LaSpeak est né d’une question opérationnelle sur la continuité entre les cours de langue. Découvrez le projet et son fondateur, Denis Gasenchenko.",
-      "canonical": "https://your-domain.example/fr/a-propos/",
+      "description": "LaSpeak est né d’une question opérationnelle sur la continuité entre les cours de langue. Découvrez le produit et son fondateur, Denis Gasenchenko.",
+      "canonical": "https://laspeak.eu/fr/a-propos/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/about/"
+          "href": "https://laspeak.eu/en/about/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/a-propos/"
+          "href": "https://laspeak.eu/fr/a-propos/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/about/"
+          "href": "https://laspeak.eu/en/about/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1365,13 +2205,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Assurer le cours. Garder ce qui compte.",
-                  "item": "https://your-domain.example/fr/a-propos/"
+                  "item": "https://laspeak.eu/fr/a-propos/"
                 }
               ]
             }
@@ -1383,45 +2223,63 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/about/",
         "/fr/a-propos/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "https://www.linkedin.com/in/denis-gasenchenko-en/",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
-        "/fr/recherche/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/fr/recherche/",
+        "/fr/produit/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20fonctionnement%20du%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20mise%20en%20%C5%93uvre",
+        "/fr/produit/",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/about/",
         "/fr/a-propos/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/founder.webp",
+          "loaded": true,
+          "alt": "Denis Gasenchenko"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1436,43 +2294,63 @@
       "lang": "fr",
       "h1": 1,
       "description": "Réflexions sur les traces issues des cours de langue, la continuité pédagogique et les limites des transcriptions. Des pistes à examiner avec les enseignants.",
-      "canonical": "https://your-domain.example/fr/ressources/",
+      "canonical": "https://laspeak.eu/fr/ressources/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/insights/"
+          "href": "https://laspeak.eu/en/insights/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/ressources/"
+          "href": "https://laspeak.eu/fr/ressources/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/insights/"
+          "href": "https://laspeak.eu/en/insights/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1481,13 +2359,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Ressources : traces et continuité pédagogique en FLE",
-                  "item": "https://your-domain.example/fr/ressources/"
+                  "item": "https://laspeak.eu/fr/ressources/"
                 }
               ]
             }
@@ -1499,46 +2377,58 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/insights/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
         "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
         "/fr/ressources/transcription-et-traces-pedagogiques/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/insights/",
         "/fr/ressources/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/conversation-640.webp",
+          "src": "http://localhost:3000/images/conversation-1920.webp",
           "loaded": true,
           "alt": "Une adulte devant son ordinateur, en conversation à distance."
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1549,47 +2439,67 @@
     {
       "path": "/fr/confidentialite/",
       "status": 200,
-      "title": "Un site simple. Un périmètre clair. | LaSpeak",
+      "title": "Politique de confidentialité | LaSpeak",
       "lang": "fr",
       "h1": 1,
-      "description": "Contact par email, données techniques et exemples fictifs : le fonctionnement de ce site LaSpeak, sans dépôt de cours ni traceurs publicitaires.",
-      "canonical": "https://your-domain.example/fr/confidentialite/",
+      "description": "Traitement des données techniques et des échanges volontaires par email sur le site LaSpeak : finalités, bases légales, durées et droits RGPD.",
+      "canonical": "https://laspeak.eu/fr/confidentialite/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/privacy/"
+          "href": "https://laspeak.eu/en/privacy/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/confidentialite/"
+          "href": "https://laspeak.eu/fr/confidentialite/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/privacy/"
+          "href": "https://laspeak.eu/en/privacy/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1598,13 +2508,13 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Un site simple. Un périmètre clair.",
-                  "item": "https://your-domain.example/fr/confidentialite/"
+                  "name": "Politique de confidentialité",
+                  "item": "https://laspeak.eu/fr/confidentialite/"
                 }
               ]
             }
@@ -1616,45 +2526,507 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/privacy/",
         "/fr/confidentialite/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
         "#section-1",
         "#section-2",
         "#section-3",
         "#section-4",
-        "/fr/recherche/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "#section-5",
+        "#section-6",
+        "#section-7",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20demande%20vie%20priv%C3%A9e",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20assistance%20site",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20demande%20g%C3%A9n%C3%A9rale",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "https://vercel.com/legal/privacy-notice",
+        "https://www.apple.com/legal/privacy/",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20exercice%20des%20droits%20RGPD",
+        "https://www.cnil.fr/",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/privacy/",
         "/fr/confidentialite/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/mentions-legales/",
+      "status": 200,
+      "title": "Mentions légales | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Éditeur, hébergeur, statut de publication, contacts et propriété intellectuelle du site LaSpeak.",
+      "canonical": "https://laspeak.eu/fr/mentions-legales/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://laspeak.eu/en/legal-notice/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://laspeak.eu/fr/mentions-legales/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://laspeak.eu/en/legal-notice/"
+        }
+      ],
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://laspeak.eu/#website",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "inLanguage": [
+                "en",
+                "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://laspeak.eu/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://laspeak.eu/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Mentions légales",
+                  "item": "https://laspeak.eu/fr/mentions-legales/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/produit/",
+        "/fr/a-propos/",
+        "/en/legal-notice/",
+        "/fr/mentions-legales/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/produit/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "/fr/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "https://laspeak.eu",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20question%20juridique",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20demande%20g%C3%A9n%C3%A9rale",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20assistance%20site",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20demande%20vie%20priv%C3%A9e",
+        "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000801164/LEGISCTA000006117684/",
+        "https://vercel.com",
+        "tel:+15592887060",
+        "https://vercel.com/legal/privacy-notice",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/legal-notice/",
+        "/fr/mentions-legales/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/cookies/",
+      "status": 200,
+      "title": "Aucun suivi, par conception. | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Le site public LaSpeak n’utilise ni outil de mesure d’audience, ni cookie publicitaire, ni pixel de suivi, ni stockage persistant dans le navigateur.",
+      "canonical": "https://laspeak.eu/fr/cookies/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://laspeak.eu/en/cookies/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://laspeak.eu/fr/cookies/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://laspeak.eu/en/cookies/"
+        }
+      ],
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://laspeak.eu/#website",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "inLanguage": [
+                "en",
+                "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://laspeak.eu/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://laspeak.eu/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Aucun suivi, par conception.",
+                  "item": "https://laspeak.eu/fr/cookies/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/produit/",
+        "/fr/a-propos/",
+        "/en/cookies/",
+        "/fr/cookies/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/produit/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "/fr/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "mailto:privacy@laspeak.eu?subject=LaSpeak%20%E2%80%94%20cookies%20et%20vie%20priv%C3%A9e",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20assistance%20site",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/cookies/",
+        "/fr/cookies/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
+        }
+      ],
+      "mobile": {
+        "overflow": false,
+        "width": 375
+      }
+    },
+    {
+      "path": "/fr/conditions-utilisation/",
+      "status": 200,
+      "title": "Conditions d’utilisation | LaSpeak",
+      "lang": "fr",
+      "h1": 1,
+      "description": "Conditions d’accès et d’utilisation du site public du produit LaSpeak.",
+      "canonical": "https://laspeak.eu/fr/conditions-utilisation/",
+      "alternates": [
+        {
+          "lang": "en",
+          "href": "https://laspeak.eu/en/terms-of-use/"
+        },
+        {
+          "lang": "fr",
+          "href": "https://laspeak.eu/fr/conditions-utilisation/"
+        },
+        {
+          "lang": "x-default",
+          "href": "https://laspeak.eu/en/terms-of-use/"
+        }
+      ],
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://laspeak.eu/#website",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "inLanguage": [
+                "en",
+                "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
+              ]
+            },
+            {
+              "@type": "Person",
+              "@id": "https://laspeak.eu/#denis",
+              "name": "Denis Gasenchenko",
+              "jobTitle": "Fondateur de LaSpeak",
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Accueil",
+                  "item": "https://laspeak.eu/fr/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Conditions d’utilisation",
+                  "item": "https://laspeak.eu/fr/conditions-utilisation/"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        "#main",
+        "/fr/",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/produit/",
+        "/fr/a-propos/",
+        "/en/terms-of-use/",
+        "/fr/conditions-utilisation/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "/fr/#how-it-works",
+        "/fr/pour-les-organismes-fle/",
+        "/fr/produit/",
+        "/fr/a-propos/",
+        "/fr/ressources/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
+        "/fr/",
+        "#section-1",
+        "#section-2",
+        "#section-3",
+        "#section-4",
+        "#section-5",
+        "mailto:hello@laspeak.eu?subject=LaSpeak%20%E2%80%94%20conditions%20d%E2%80%99utilisation",
+        "mailto:support@laspeak.eu?subject=LaSpeak%20%E2%80%94%20assistance%20site",
+        "/fr/",
+        "/fr/ressources/",
+        "/fr/confidentialite/",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
+        "/en/terms-of-use/",
+        "/fr/conditions-utilisation/"
+      ],
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
+          "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1669,43 +3041,63 @@
       "lang": "fr",
       "h1": 1,
       "description": "Consignes, corrections, productions : quelles traces conserver entre deux cours pour éclairer la séance suivante sans tirer de conclusions hâtives ?",
-      "canonical": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
+      "canonical": "https://laspeak.eu/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+          "href": "https://laspeak.eu/en/insights/what-gets-lost-between-language-lessons/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+          "href": "https://laspeak.eu/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/insights/what-gets-lost-between-language-lessons/"
+          "href": "https://laspeak.eu/en/insights/what-gets-lost-between-language-lessons/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1714,19 +3106,19 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Ressources",
-                  "item": "https://your-domain.example/fr/ressources/"
+                  "item": "https://laspeak.eu/fr/ressources/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Que perd-on entre deux cours de langue ?",
-                  "item": "https://your-domain.example/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
+                  "item": "https://laspeak.eu/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
                 }
               ]
             }
@@ -1738,17 +3130,17 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/insights/what-gets-lost-between-language-lessons/",
         "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
         "/fr/ressources/",
         "#section-1",
@@ -1758,27 +3150,39 @@
         "#section-5",
         "#section-6",
         "/fr/ressources/transcription-et-traces-pedagogiques/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/fr/recherche/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20fonctionnement%20du%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20mise%20en%20%C5%93uvre",
+        "/fr/produit/",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/insights/what-gets-lost-between-language-lessons/",
         "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {
@@ -1793,43 +3197,63 @@
       "lang": "fr",
       "h1": 1,
       "description": "Une transcription conserve des mots. Leur interprétation demande aussi de connaître la tâche, les aides et le contexte, sous le regard de l’enseignant.",
-      "canonical": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/",
+      "canonical": "https://laspeak.eu/fr/ressources/transcription-et-traces-pedagogiques/",
       "alternates": [
         {
           "lang": "en",
-          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+          "href": "https://laspeak.eu/en/insights/transcripts-and-learning-evidence/"
         },
         {
           "lang": "fr",
-          "href": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/"
+          "href": "https://laspeak.eu/fr/ressources/transcription-et-traces-pedagogiques/"
         },
         {
           "lang": "x-default",
-          "href": "https://your-domain.example/en/insights/transcripts-and-learning-evidence/"
+          "href": "https://laspeak.eu/en/insights/transcripts-and-learning-evidence/"
         }
       ],
-      "robots": "noindex, follow",
-      "og": "https://your-domain.example/images/og-fr.png",
+      "robots": "index, follow",
+      "og": "https://laspeak.eu/images/og-fr.png",
       "schema": [
         {
           "@context": "https://schema.org",
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://your-domain.example/#website",
+              "@id": "https://laspeak.eu/#website",
               "name": "LaSpeak",
-              "url": "https://your-domain.example",
+              "url": "https://laspeak.eu",
               "inLanguage": [
                 "en",
                 "fr"
+              ],
+              "creator": {
+                "@id": "https://laspeak.eu/#denis"
+              },
+              "about": {
+                "@id": "https://laspeak.eu/#brand"
+              }
+            },
+            {
+              "@type": "Brand",
+              "@id": "https://laspeak.eu/#brand",
+              "name": "LaSpeak",
+              "url": "https://laspeak.eu",
+              "logo": "https://laspeak.eu/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/laspeak/"
               ]
             },
             {
               "@type": "Person",
-              "@id": "https://your-domain.example/#denis",
+              "@id": "https://laspeak.eu/#denis",
               "name": "Denis Gasenchenko",
               "jobTitle": "Fondateur de LaSpeak",
-              "url": "https://your-domain.example/fr/a-propos/"
+              "url": "https://laspeak.eu/fr/a-propos/",
+              "image": "https://laspeak.eu/images/founder.webp",
+              "sameAs": [
+                "https://www.linkedin.com/in/denis-gasenchenko-en/"
+              ]
             },
             {
               "@type": "BreadcrumbList",
@@ -1838,19 +3262,19 @@
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Accueil",
-                  "item": "https://your-domain.example/fr/"
+                  "item": "https://laspeak.eu/fr/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Ressources",
-                  "item": "https://your-domain.example/fr/ressources/"
+                  "item": "https://laspeak.eu/fr/ressources/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Pourquoi une transcription ne suffit pas à décrire ce qui s’est passé pédagogiquement",
-                  "item": "https://your-domain.example/fr/ressources/transcription-et-traces-pedagogiques/"
+                  "item": "https://laspeak.eu/fr/ressources/transcription-et-traces-pedagogiques/"
                 }
               ]
             }
@@ -1862,17 +3286,17 @@
         "/fr/",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/en/insights/transcripts-and-learning-evidence/",
         "/fr/ressources/transcription-et-traces-pedagogiques/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/#how-it-works",
         "/fr/pour-les-organismes-fle/",
-        "/fr/recherche/",
+        "/fr/produit/",
         "/fr/a-propos/",
         "/fr/ressources/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20%C3%A9change%20produit",
         "/fr/",
         "/fr/ressources/",
         "#section-1",
@@ -1882,27 +3306,39 @@
         "#section-5",
         "#section-6",
         "/fr/ressources/que-perd-on-entre-deux-cours-de-langue/",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20FLE%20workflow%20research",
-        "mailto:denis@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20pilot",
-        "/fr/recherche/",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20fonctionnement%20du%20produit",
+        "mailto:denis@laspeak.eu?subject=LaSpeak%20%E2%80%94%20mise%20en%20%C5%93uvre",
+        "/fr/produit/",
         "/fr/",
         "/fr/ressources/",
         "/fr/confidentialite/",
-        "mailto:hello@your-domain.example?subject=LaSpeak%20%E2%80%94%20research%20conversation",
+        "/fr/mentions-legales/",
+        "/fr/cookies/",
+        "/fr/conditions-utilisation/",
+        "https://www.linkedin.com/company/laspeak/",
+        "mailto:hello@laspeak.eu",
+        "mailto:denis@laspeak.eu",
+        "mailto:support@laspeak.eu",
+        "mailto:privacy@laspeak.eu",
         "/en/insights/transcripts-and-learning-evidence/",
         "/fr/ressources/transcription-et-traces-pedagogiques/"
       ],
       "overflow": false,
       "images": [
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
+          "src": "http://localhost:3000/images/wordmark.webp",
           "loaded": true,
           "alt": "LaSpeak"
         },
         {
-          "src": "http://127.0.0.1:3001/images/wordmark.webp",
-          "loaded": false,
+          "src": "http://localhost:3000/images/wordmark.webp",
+          "loaded": true,
           "alt": "LaSpeak"
+        },
+        {
+          "src": "http://localhost:3000/icons/linkedin-brand.svg",
+          "loaded": true,
+          "alt": ""
         }
       ],
       "mobile": {

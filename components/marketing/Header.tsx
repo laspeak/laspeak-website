@@ -72,10 +72,10 @@ export function Header({
               {d.providers}
             </Link>
             <Link
-              href={href(locale, "research")}
-              aria-current={page === "research" ? "page" : undefined}
+              href={href(locale, "product")}
+              aria-current={page === "product" ? "page" : undefined}
             >
-              {d.research}
+              {d.product}
             </Link>
             <Link
               href={href(locale, "about")}
@@ -85,7 +85,7 @@ export function Header({
             </Link>
           </nav>
           <div className="header-actions">
-            <div
+            <nav
               className="locale-switch"
               aria-label={locale === "fr" ? "Langue" : "Language"}
             >
@@ -106,8 +106,11 @@ export function Header({
               >
                 FR
               </Link>
-            </div>
-            <a href={mailto()} className="button button-small header-cta">
+            </nav>
+            <a
+              href={mailto("conversation", true, locale)}
+              className="button button-small header-cta"
+            >
               {d.talk}
               <span aria-hidden="true">↗</span>
             </a>
@@ -137,7 +140,7 @@ export function Header({
           >
             {d.how}
           </Link>
-          {(["providers", "research", "about", "insights"] as const).map(
+          {(["providers", "product", "about", "insights"] as const).map(
             (k) => (
               <Link
                 key={k}
@@ -148,7 +151,10 @@ export function Header({
               </Link>
             ),
           )}
-          <a href={mailto()} onClick={() => setOpen(false)}>
+          <a
+            href={mailto("conversation", true, locale)}
+            onClick={() => setOpen(false)}
+          >
             {d.talk}
             <span aria-hidden="true">↗</span>
           </a>

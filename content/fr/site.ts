@@ -3,7 +3,7 @@ export const fr: Dictionary = {
   nav: {
     how: "Fonctionnement",
     providers: "Organismes FLE",
-    research: "Recherche",
+    product: "Produit",
     about: "À propos",
     talk: "Échangeons",
     menu: "Menu",
@@ -12,6 +12,9 @@ export const fr: Dictionary = {
     home: "Accueil",
     insights: "Ressources",
     privacy: "Confidentialité",
+    legal: "Mentions légales",
+    cookies: "Cookies",
+    terms: "Conditions d’utilisation",
     contact: "Contact",
   },
   hero: {
@@ -23,12 +26,12 @@ export const fr: Dictionary = {
       "LaSpeak relie les consignes, les productions de l’apprenant, les corrections, les reprises et les réemplois ultérieurs entre plusieurs séances, tout en conservant le contexte d’origine et en laissant la décision à l’enseignant.",
     cta: "Échanger avec le fondateur",
     secondary: "Découvrir le fonctionnement",
-    note: "En développement. Au service des enseignants, pas à leur place.",
+    note: "Conçu pour les enseignants, avec chaque interprétation sous leur contrôle.",
   },
   story: {
     label: "Le cours n’est qu’un début",
     title: "Un cours, c’est bien plus qu’un enregistrement.",
-    text: "Une consigne. Une hésitation. Une correction qui fait sens. Une expression réutilisée trois séances plus tard. Ce contexte peut se perdre entre enregistrements, notes et comptes rendus isolés. LaSpeak est conçu pour en préserver le fil.",
+    text: "Une consigne. Une hésitation. Une correction qui fait sens. Une expression réutilisée trois séances plus tard. Ce contexte peut se perdre entre enregistrements, notes et comptes rendus isolés. LaSpeak en préserve le fil.",
     alt: "Une apprenante adulte, casque sur les oreilles, échange avec une enseignante sur son ordinateur.",
     caption:
       "L’échange humain reste au premier plan. Les traces doivent rester reliées à cet échange.",
@@ -49,7 +52,7 @@ export const fr: Dictionary = {
     label: "Le fonctionnement",
     title: "Suivre les productions.\nGarder le contexte.",
     description:
-      "Un enchaînement illustratif, pas une note. LaSpeak vise à relier des moments que l’enseignant pourrait vouloir examiner ensemble.",
+      "Un enchaînement illustratif, pas une note. LaSpeak relie des moments que l’enseignant peut examiner ensemble.",
     steps: [
       [
         "Modèle ou consigne de l’enseignant",
@@ -147,7 +150,7 @@ export const fr: Dictionary = {
     label: "Pour les organismes FLE",
     title: "Changer d’enseignant, sans repartir de zéro.",
     description:
-      "Un premier terrain de recherche : la formation en FLE pour adultes et professionnels en France, et les équipes qui assurent la continuité pédagogique.",
+      "Conçu pour les organismes de FLE pour adultes et professionnels en France, et pour les équipes qui assurent la continuité pédagogique.",
     items: [
       [
         "Passation entre enseignants",
@@ -167,42 +170,47 @@ export const fr: Dictionary = {
       ],
     ],
     complement:
-      "LaSpeak est conçu pour compléter les outils d’enseignement et de gestion des formations existants, pas pour les remplacer.",
+      "LaSpeak complète les outils d’enseignement et de gestion des formations existants sans les remplacer.",
     cta: "Pour les organismes FLE",
     alt: "Une enseignante explique un point à distance, devant son ordinateur et ses notes.",
   },
-  research: {
-    label: "Comprendre avant de promettre",
-    title: "Aidez-nous à déterminer si ce produit mérite d’exister.",
+  product: {
+    label: "Échanges produit",
+    title: "Voyons comment LaSpeak s’intègre à votre organisation pédagogique.",
     paragraphs: [
-      "Nous échangeons actuellement avec des organismes et des enseignants de FLE pour adultes en France afin de comprendre si la perte de contexte entre les cours constitue un problème réel et récurrent.",
-      "Nous ne voulons pas vendre un logiciel à des organismes avant d’avoir vérifié qu’il leur est réellement utile.",
+      "LaSpeak donne aux équipes de FLE pour adultes un cadre structuré pour retrouver des traces reliées aux sources entre plusieurs cours, sous le contrôle des enseignants.",
+      "Un échange ciblé permet de situer le produit dans vos passations, vos bilans de progression et vos outils de gestion existants.",
     ],
-    cta: "Partager votre façon de travailler",
-    note: "20 minutes. Aucun pitch commercial.",
-    pilot: "Discuter d’un pilote de recherche",
+    cta: "Échanger sur LaSpeak",
+    note: "20 minutes autour du produit. Aucune préparation nécessaire.",
+    implementation: "Discuter d’une mise en œuvre",
   },
   founder: {
     label: "Derrière LaSpeak",
-    title: "Un projet né de l’expérience opérationnelle.",
+    title: "Un produit né de l’expérience opérationnelle.",
     paragraphs: [
       "Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.",
-      "La gestion de cours de langue en direct l’a amené à s’intéresser au problème que LaSpeak cherche à explorer : assurer un cours ne suffit pas à préserver les traces utiles d’un apprentissage dans la durée.",
+      "La gestion de cours de langue en direct l’a conduit à créer LaSpeak : un produit qui comble l’écart entre la réalisation d’un cours et la conservation de traces utiles entre plusieurs séances.",
     ],
     role: "Fondateur de LaSpeak",
-    linkedin: "Échanger sur LinkedIn",
-    linkedinPending: "Le profil LinkedIn sera ajouté au lancement",
-    more: "En savoir plus sur le projet",
+    linkedin: "Voir le profil LinkedIn de Denis",
+    more: "En savoir plus sur le produit",
   },
   final: {
-    title: "Ce problème existe-t-il dans votre organisation ?",
-    text: "Je préfère le découvrir maintenant plutôt que de passer deux ans à construire un outil dont les enseignants n’ont pas besoin.",
+    title: "Prolongez chaque cours dans le suivant.",
+    text: "Découvrez comment LaSpeak s’intègre à vos passations, vos bilans de progression et votre préparation pédagogique.",
     cta: "Échanger avec Denis",
   },
   footer: {
     statement: "Garder le fil.",
     development:
-      "LaSpeak est un produit en cours de recherche et de développement.",
+      "LaSpeak est un produit d’intelligence pédagogique validée par l’enseignant, au service de la continuité des apprentissages.",
     theme: "Changer le thème de couleurs",
+    emailLabels: {
+      general: "Général",
+      founder: "Fondateur",
+      support: "Assistance",
+      privacy: "Données personnelles",
+    },
   },
 };

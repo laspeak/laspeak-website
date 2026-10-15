@@ -19,6 +19,16 @@ export function StructuredData({
       name: "LaSpeak",
       url: siteConfig.SITE_URL,
       inLanguage: ["en", "fr"],
+      creator: { "@id": `${siteConfig.SITE_URL}/#denis` },
+      about: { "@id": `${siteConfig.SITE_URL}/#brand` },
+    },
+    {
+      "@type": "Brand",
+      "@id": `${siteConfig.SITE_URL}/#brand`,
+      name: "LaSpeak",
+      url: siteConfig.SITE_URL,
+      logo: absolute("/icon.png"),
+      sameAs: [siteConfig.BRAND_LINKEDIN_URL],
     },
     {
       "@type": "Person",
@@ -26,7 +36,8 @@ export function StructuredData({
       name: "Denis Gasenchenko",
       jobTitle: locale === "fr" ? "Fondateur de LaSpeak" : "Founder of LaSpeak",
       url: absolute(href(locale, "about")),
-      ...(siteConfig.LINKEDIN_URL ? { sameAs: [siteConfig.LINKEDIN_URL] } : {}),
+      image: absolute("/images/founder.webp"),
+      sameAs: [siteConfig.FOUNDER_LINKEDIN_URL],
     },
   ];
   if (page !== "home") {

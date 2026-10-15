@@ -17,7 +17,10 @@ export function Hero({ d, locale }: { d: Dictionary; locale: Locale }) {
         </h1>
         <p className="hero-description">{d.hero.description}</p>
         <div className="actions">
-          <a className="button" href={mailto()}>
+          <a
+            className="button"
+            href={mailto("conversation", true, locale)}
+          >
             {d.hero.cta}
             <span aria-hidden="true">↗</span>
           </a>

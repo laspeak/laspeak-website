@@ -1,13 +1,13 @@
 # LaSpeak QA results
 
-The first deployable version was checked on 13 October 2026. The checks below distinguish application verification from requirements that depend on the final public domain and hosting setup.
+The current pre-deployment version was checked on 15 October 2026. The checks below distinguish application verification from requirements that depend on the final public domain and hosting setup.
 
 ## Build and code
 
 | Check                        | Result                                                                           |
 | ---------------------------- | -------------------------------------------------------------------------------- |
 | Next.js production build     | Passed, Next.js 16.4.0                                                           |
-| Content generation           | 16 statically generated localised content routes                                 |
+| Content generation           | 22 statically generated localised content routes                                 |
 | Static export                | Passed                                                                           |
 | TypeScript strict check      | Passed                                                                           |
 | ESLint                       | Passed, no errors or warnings                                                    |
@@ -18,32 +18,32 @@ The remaining advisory is confined to build/lint tooling. No arbitrary glob patt
 
 ## Routes and metadata
 
-- All 16 content routes returned HTTP 200.
-- All 16 had the correct `html` language and exactly one H1.
-- All 16 had unique titles and unique descriptions.
+- All 22 content routes returned HTTP 200.
+- All 22 had the correct `html` language and exactly one H1.
+- All 22 had unique titles and unique descriptions.
 - Canonical links and all three alternate-language references were present.
 - Internal links, section anchors and image requests passed.
-- EN/FR navigation was exercised, including equivalent research routes.
+- EN/FR navigation was exercised, including equivalent product and legal-document routes. The former `/en/research/` and `/fr/recherche/` paths permanently redirect to the current product pages.
 - Article-to-article alternate paths were checked against the route map and generated pages.
 - All JSON-LD payloads parsed successfully.
 - The normal Next.js runtime returned HTTP 308 from `/` to `/en/`.
 - An unknown translated route returned HTTP 404.
 - A configured production build returned `index, follow` and `Allow: /`.
-- The placeholder-domain preview deliberately returns `noindex` and `Disallow: /`.
+- A reserved-domain regression build deliberately returns `noindex` and `Disallow: /`.
 
 Production indexing was tested locally with a reserved `.test` hostname. This did not publish a domain, contact Google or send email.
 
 ## Responsive and visual review
 
-Both homepages and all secondary pages were rendered in Chromium. Screenshots were captured at desktop and 375px widths. The homepage was additionally checked at 430, 768, 1024, 1440 and 1728 pixels.
+Both homepages and the secondary-page templates were rendered in Chromium. Product, privacy, legal-notice, cookie and terms pages were checked at desktop width; the French homepage, product, privacy and legal-notice pages were also checked at 375px.
 
-No horizontal overflow was found at the requested widths. The hero, photography, journey, source-review interface, provider use cases, research surface, founder block, article layouts and shared footer were reviewed. A 720px viewport verified the reflow equivalent of 200% zoom on a 1440px display.
+No horizontal overflow was found in the current desktop or 375px checks. The hero, photography, journey, source-review interface, provider use cases, product surface, founder block, article layouts, legal definition lists, four-address directory and shared footer were reviewed. Earlier responsive checks also covered 430, 720, 768, 1024, 1440 and 1728 pixels.
 
 The mobile menu and evidence-review editor were inspected in their open states. Both light and dark themes were checked after transitions settled. Reduced-motion mode was exercised.
 
 ## Accessibility
 
-- Axe-core WCAG 2 A/AA and WCAG 2.1 AA scans reported zero violations on all 16 routes.
+- Axe-core 4.12.1 reported zero WCAG 2 A/AA and WCAG 2.1 AA violations across all 22 routes. Its remaining incomplete colour-contrast checks concern hidden arrow/theme glyphs and backgrounds that use pseudo-elements; these were reviewed separately and are not exposed as unlabelled content.
 - An additional dark-mode homepage scan reported zero violations.
 - The first keyboard Tab focused the skip link; activating it moved focus to the main content.
 - Menu Escape closed the menu and returned focus to its trigger.
@@ -87,14 +87,14 @@ These are lab results, not measured production Core Web Vitals. Performance vari
 
 No lorem ipsum, fake testimonials, fabricated customers, partner logos, outcome statistics, invented studies or incorporation claims were found. Product examples are labelled synthetic/illustrative. No stock person is presented as the founder or a real LaSpeak customer.
 
-The content clearly states the R&D stage and preserves the distinction between observation and interpretation. Proposed future pilots are invitations to discuss, not claims that a pilot exists.
+Public marketing presents LaSpeak directly as a teacher-reviewed language-intelligence product. It does not foreground development status, future plans, customer absence or corporate formation. The distinction between observation and interpretation, source limits and teacher control remains clear. The current non-professional publishing status appears only in the legal notice, where it is relevant and factually required.
 
-## Remaining launch inputs
+## Remaining operational checks
 
-- Purchased domain and canonical production origin.
-- Two working mailboxes and the confirmed founder LinkedIn URL.
-- Final hosting/email privacy details, publisher information and any legally required notice.
-- Public-domain deployment, mailbox delivery check and Search Console ownership/submission.
+- Confirm `https://laspeak.eu` remains connected as the canonical production origin.
+- Provision and verify `hello@laspeak.eu`, `denis@laspeak.eu`, `support@laspeak.eu` and `privacy@laspeak.eu`. Brand and founder LinkedIn URLs are configured separately.
+- Keep the non-professional publisher status factually accurate and ensure the hosting provider holds the publisher’s complete identification. Replace the notice with professional or incorporated-entity particulars before professional trading begins.
+- Verify the current production deployment after release; complete mailbox delivery and Search Console ownership/submission checks.
 - Continued monitoring of the development-only lint dependency advisory.
 
-No domain purchase, public deployment, email sending or Search Console submission was performed.
+The QA run did not deploy, change DNS, send email or submit the sitemap to Search Console.
