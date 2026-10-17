@@ -9,12 +9,7 @@ export interface Dictionary {
   };
   hero: {
     context: string; title: string; accent: string; description: string;
-    cta: string; secondary: string; note: string;
-    story: { alt: string; caption: string; beats: { time: string; title: string; text: string }[] };
-  };
-  tour: {
-    label: string; title: string; description: string; note: string;
-    items: { key: string; image: string; device: "desktop" | "phone"; role: string; title: string; text: string; alt: string }[];
+    cta: string; secondary: string; note: string; orbit: string[]; centre: string;
   };
   problem: {
     label: string; title: string; description: string;

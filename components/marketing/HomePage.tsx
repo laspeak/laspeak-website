@@ -6,7 +6,6 @@ import { mailto } from "@/lib/site-config";
 import { Hero } from "./Hero";
 import { FounderSection } from "./FounderSection";
 import { FinalCTA } from "./FinalCTA";
-import { ProductTour } from "./ProductTour";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const d = getDictionary(locale);
@@ -57,8 +56,6 @@ export function HomePage({ locale }: { locale: Locale }) {
           ))}
         </div>
       </section>
-
-      <ProductTour d={d.tour} />
 
       <section className="cycle-section">
         <div className="shell section">
