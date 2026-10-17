@@ -13,7 +13,28 @@ export const en: Dictionary = {
     description: "LaSpeak brings schedules, live teaching, materials, homework, messages and student progress into one continuous service — for the owner, the teacher and the learner.",
     cta: "Explore the platform", secondary: "Discuss an 8-week pilot",
     note: "Built for owner-led schools with 6–25 teachers delivering recurring adult lessons.",
-    orbit: ["Schedule", "Teach", "Follow up", "Practise", "Prepare"], centre: "One learning record",
+    story: {
+      alt: "An adult learner with headphones takes notes during an online French lesson.",
+      caption: "Amélie, B1 · one illustrative week",
+      beats: [
+        { time: "Tue · 18:00 · Live lesson", title: "She tells a story from last weekend.", text: "“Je viens de…” comes out with a little help." },
+        { time: "Tue · 18:52 · Teacher note", title: "venir de + infinitif", text: "Repaired after correction. Saved with its source." },
+        { time: "Thu · 08:10 · On the tram", title: "Six practice cards from Tuesday", text: "Built from her own sentences, not a generic list." },
+        { time: "Fri · 09:00 · Next lesson", title: "She uses it on her own.", text: "The teacher sees the whole thread before class." },
+      ],
+    },
+  },
+  tour: {
+    label: "Inside the platform",
+    title: "What the connected school day looks like.",
+    description: "Screens from the working LaSpeak prototype. Learner names and lesson content are fictional demonstration data.",
+    note: "Prototype screens · fictional demonstration data",
+    items: [
+      { key: "lesson", image: "/images/product/live-lesson.webp", device: "desktop", role: "Teacher · live", title: "A lesson board built for speaking.", text: "Prompts, language bank and a live teaching focus sit beside the call, so observations are captured at the moment they happen.", alt: "LaSpeak live lesson board with a three-step storytelling prompt and a teaching focus panel." },
+      { key: "record", image: "/images/product/learner-record.webp", device: "desktop", role: "Teacher · between lessons", title: "One learner, one continuous record.", text: "Every focus links back to the lesson moment it came from, with the teacher’s decision kept separate from raw evidence.", alt: "LaSpeak learner record showing a primary teaching focus, latest evidence and recommended next step." },
+      { key: "cohorts", image: "/images/product/cohorts.webp", device: "desktop", role: "Owner", title: "The whole school, ordered by what needs attention.", text: "Cohorts, review workload and processing status in one view for the person running the service.", alt: "LaSpeak cohort overview with portfolio health and review workload by cohort." },
+      { key: "practice", image: "/images/product/mobile-practice.webp", device: "phone", role: "Student", title: "Practice that fits between lessons.", text: "Short native mobile practice — flashcards, writing, word detail — continuing the same learning record.", alt: "LaSpeak mobile flashcard practice screen." },
+    ],
   },
   problem: {
     label: "The fragmented school", title: "A good lesson can still sit inside a disconnected service.",

@@ -13,7 +13,28 @@ export const fr: Dictionary = {
     description: "LaSpeak réunit planning, cours en direct, supports, devoirs, messages et progression dans un même service — pour la direction, l’enseignant et l’apprenant.",
     cta: "Découvrir la plateforme", secondary: "Discuter d’un pilote de 8 semaines",
     note: "Conçu pour les écoles dirigées par leur propriétaire, avec 6 à 25 enseignants et des cours récurrents pour adultes.",
-    orbit: ["Planifier", "Enseigner", "Suivre", "Pratiquer", "Préparer"], centre: "Un même parcours d’apprentissage",
+    story: {
+      alt: "Une apprenante adulte avec un casque prend des notes pendant un cours de français en ligne.",
+      caption: "Amélie, B1 · une semaine illustrative",
+      beats: [
+        { time: "Mar · 18:00 · Cours en direct", title: "Elle raconte son week-end.", text: "« Je viens de… » sort avec un peu d’aide." },
+        { time: "Mar · 18:52 · Note de l’enseignante", title: "venir de + infinitif", text: "Corrigé puis repris. Enregistré avec sa source." },
+        { time: "Jeu · 08:10 · Dans le tram", title: "Six cartes issues du cours de mardi", text: "Construites à partir de ses propres phrases." },
+        { time: "Ven · 09:00 · Cours suivant", title: "Elle l’utilise seule.", text: "L’enseignante voit tout le fil avant le cours." },
+      ],
+    },
+  },
+  tour: {
+    label: "Dans la plateforme",
+    title: "À quoi ressemble une journée d’école reliée.",
+    description: "Écrans issus du prototype fonctionnel de LaSpeak. Les noms d’apprenants et les contenus de cours sont des données de démonstration fictives.",
+    note: "Écrans du prototype · données de démonstration fictives",
+    items: [
+      { key: "lesson", image: "/images/product/live-lesson.webp", device: "desktop", role: "Enseignant · en direct", title: "Un tableau de cours pensé pour l’oral.", text: "Consignes, banque de langue et objectif pédagogique restent à côté de l’appel : les observations sont saisies au moment où elles se produisent.", alt: "Tableau de cours en direct LaSpeak avec une consigne narrative en trois étapes et un panneau d’objectif pédagogique." },
+      { key: "record", image: "/images/product/learner-record.webp", device: "desktop", role: "Enseignant · entre deux cours", title: "Un apprenant, un parcours continu.", text: "Chaque objectif renvoie au moment du cours dont il provient ; la décision de l’enseignant reste distincte des traces brutes.", alt: "Fiche apprenant LaSpeak avec l’objectif pédagogique principal, la dernière trace et la prochaine étape recommandée." },
+      { key: "cohorts", image: "/images/product/cohorts.webp", device: "desktop", role: "Direction", title: "Toute l’école, classée par priorité.", text: "Groupes, charge de relecture et état de traitement dans une seule vue pour la personne qui pilote le service.", alt: "Vue des groupes LaSpeak avec l’état global et la charge de relecture par groupe." },
+      { key: "practice", image: "/images/product/mobile-practice.webp", device: "phone", role: "Apprenant", title: "Une pratique qui tient entre deux cours.", text: "De courtes activités mobiles natives — cartes, écriture, fiche mot — qui prolongent le même parcours.", alt: "Écran mobile LaSpeak d’entraînement par cartes." },
+    ],
   },
   problem: {
     label: "L’école fragmentée", title: "Un bon cours peut rester prisonnier d’un service déconnecté.",

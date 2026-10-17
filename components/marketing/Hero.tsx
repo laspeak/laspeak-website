@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiteLink as Link } from "@/components/ui/SiteLink";
 import type { Dictionary } from "@/content/types";
 import { href, type Locale } from "@/lib/i18n";
@@ -28,20 +29,31 @@ export function Hero({ d, locale }: { d: Dictionary; locale: Locale }) {
         </div>
         <p className="hero-note">{d.hero.note}</p>
       </div>
-      <div className="orbit-map" aria-label={`${d.hero.centre}: ${d.hero.orbit.join(", ")}`}>
-        <div className="orbit-ring orbit-ring-one" aria-hidden="true" />
-        <div className="orbit-ring orbit-ring-two" aria-hidden="true" />
-        <div className="orbit-centre">
-          <span>LaSpeak</span>
-          <strong>{d.hero.centre}</strong>
+      <figure className="hero-story">
+        <div className="hero-story-photo">
+          <Image
+            src="/images/lesson.webp"
+            alt={d.hero.story.alt}
+            width={1440}
+            height={960}
+            priority
+            sizes="(max-width: 959px) calc(100vw - 40px), 42vw"
+          />
         </div>
-        {d.hero.orbit.map((item, index) => (
-          <span className={`orbit-item orbit-item-${index + 1}`} key={item}>
-            <i aria-hidden="true">0{index + 1}</i>
-            {item}
-          </span>
-        ))}
-      </div>
+        <ol className="story-beats">
+          {d.hero.story.beats.map((beat, index) => (
+            <li className={`story-beat story-beat-${index + 1}`} key={beat.time}>
+              <span className="story-time">{beat.time}</span>
+              <strong>{beat.title}</strong>
+              <span className="story-text">{beat.text}</span>
+            </li>
+          ))}
+        </ol>
+        <figcaption>
+          <span className="status-dot" aria-hidden="true" />
+          {d.hero.story.caption}
+        </figcaption>
+      </figure>
     </section>
   );
 }

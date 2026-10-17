@@ -7,6 +7,7 @@ import { mailto } from "@/lib/site-config";
 import { ProductCTA } from "./ProductCTA";
 import { LinkedInLink } from "./Footer";
 import { FinalCTA } from "./FinalCTA";
+import { ProductTour } from "./ProductTour";
 import type { EditorialPage as EditorialContent } from "@/content/types";
 
 export function Breadcrumbs({
@@ -180,20 +181,7 @@ export function EditorialPage({
             sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1500px) calc(100vw - 112px), 1320px"
           />
         )}
-        {page === "product" && (
-          <Image
-            src="/images/conversation.webp"
-            alt={
-              locale === "fr"
-                ? "Une adulte échange à distance depuis son espace de travail."
-                : "An adult in conversation at her laptop in a calm workspace."
-            }
-            className="editorial-image"
-            width={1440}
-            height={960}
-            sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1500px) calc(100vw - 112px), 1320px"
-          />
-        )}
+        {page === "product" && <ProductTour d={d.tour} heading={false} />}
         <ReadingBody content={content} locale={locale}>
           {page === "about" && (
             <div className="founder-signature">
