@@ -31,6 +31,24 @@ export function StructuredData({
       sameAs: [siteConfig.BRAND_LINKEDIN_URL],
     },
     {
+      "@type": "Product",
+      "@id": `${siteConfig.SITE_URL}/#platform`,
+      name: "LaSpeak",
+      category: "Language school management and learning platform",
+      description:
+        locale === "fr"
+          ? "Plateforme pédagogique et opérationnelle pour les écoles de langues indépendantes."
+          : "Learning and operating platform for independent language schools.",
+      brand: { "@id": `${siteConfig.SITE_URL}/#brand` },
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType:
+          locale === "fr"
+            ? "Écoles de langues indépendantes"
+            : "Independent language schools",
+      },
+    },
+    {
       "@type": "Person",
       "@id": `${siteConfig.SITE_URL}/#denis`,
       name: "Denis Gasenchenko",

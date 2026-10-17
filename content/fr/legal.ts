@@ -1,7 +1,7 @@
 import type { EditorialPage } from "../types";
 import { emailHref, siteConfig } from "@/lib/site-config";
 
-const updated = "Dernière mise à jour : 15 octobre 2026";
+const updated = "Dernière mise à jour : 16 octobre 2026";
 
 export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = {
   legal: {
@@ -16,7 +16,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
       {
         title: "Site et éditeur",
         paragraphs: [
-          "LaSpeak est un produit et une marque d’intelligence pédagogique validée par l’enseignant. Il n’est actuellement pas exploité par une société immatriculée ou une personne morale distincte ; aucune dénomination sociale, forme juridique, mention de capital, immatriculation ou numéro de TVA n’est donc applicable.",
+          "LaSpeak est une plateforme pédagogique et opérationnelle, ainsi qu’une marque, destinée aux écoles de langues indépendantes. Il n’est actuellement pas exploité par une société immatriculée ou une personne morale distincte ; aucune dénomination sociale, forme juridique, mention de capital, immatriculation ou numéro de TVA n’est donc applicable.",
           "Au stade actuel, préalable à l’activité commerciale, le site est édité à titre non professionnel par Denis Gasenchenko, personne physique et fondateur de LaSpeak. Denis Gasenchenko est également directeur de la publication et responsable du contenu éditorial.",
           "L’accès au produit, le périmètre de mise en œuvre et les conditions commerciales ne sont pas contractualisés sur ce site public. Les mentions seront mises à jour avec l’ensemble des coordonnées professionnelles de l’exploitant dès le début de l’activité ou la reprise de l’édition par une personne morale.",
         ],
@@ -83,7 +83,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
         paragraphs: [
           "Sauf crédit attribué à un tiers, les textes originaux, l’architecture de l’information, la conception de l’interface, le nom LaSpeak et l’identité visuelle LaSpeak présents sur ce site sont protégés par les règles applicables de propriété intellectuelle. L’accès au site n’emporte aucune licence de reproduction, d’adaptation, de diffusion ou d’exploitation commerciale.",
           "Le portrait du fondateur est publié avec l’autorisation de Denis Gasenchenko. Les autres photographies et éléments visuels ont été fournis pour le projet et restent soumis aux droits et aux licences de leurs auteurs ou ayants droit respectifs. Les noms et marques de tiers demeurent la propriété de leurs titulaires. Toute réutilisation dépassant les exceptions prévues par la loi nécessite une vérification et, le cas échéant, une autorisation préalable.",
-          "La police Onest est distribuée sous licence SIL Open Font License. Les interfaces de produit et les conversations présentées sur le site sont fictives et ne représentent aucun apprenant, enseignant, client ou déploiement réel.",
+          "La police Onest est distribuée sous licence SIL Open Font License. Les schémas éditoriaux et les situations d’apprentissage présentés sur le site sont génériques et ne représentent aucun apprenant, enseignant, client ou déploiement réel.",
         ],
       },
       {
@@ -108,7 +108,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
         title: "Ce que le site ne stocke pas",
         paragraphs: [
           "LaSpeak n’utilise aucun cookie de mesure d’audience ou de publicité, pixel de réseau social, technique d’empreinte numérique, suivi intersites, localStorage ou sessionStorage. Aucun identifiant publicitaire ni profil de visiteur n’est créé.",
-          "Le choix du thème et les décisions prises dans l’exemple illustratif restent uniquement dans la mémoire de travail de la page. Ils disparaissent au rechargement ou à la fermeture de la page et ne sont pas transmis à LaSpeak.",
+          "Le choix du thème reste uniquement dans la mémoire de travail de la page. Il disparaît au rechargement ou à la fermeture de la page et n’est pas transmis à LaSpeak.",
         ],
       },
       {
@@ -159,7 +159,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
         title: "Objet et périmètre",
         paragraphs: [
           "Le site présente LaSpeak, son fonctionnement et les contextes professionnels qu’il prend en charge. Il fournit également des contacts directs pour les échanges produit et de mise en œuvre. Aucun achat, abonnement ou contrat de service n’est conclu par l’intermédiaire du site lui-même.",
-          "Les descriptions publiques présentent le fonctionnement central du produit, sans se substituer à une spécification, un périmètre de mise en œuvre ou un accord commercial convenu. Les interfaces illustratives utilisent des données fictives afin de n’exposer aucun apprenant, enseignant ou organisme.",
+          "Les descriptions publiques présentent le fonctionnement central du produit, sans se substituer à une spécification, un périmètre de mise en œuvre ou un accord commercial convenu. Les schémas éditoriaux utilisent un contenu générique afin de n’exposer aucun apprenant, enseignant ou organisme.",
         ],
       },
       {

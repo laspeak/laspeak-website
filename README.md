@@ -1,6 +1,6 @@
 # LaSpeak public website
 
-A complete bilingual public site for a teacher-reviewed, source-linked language-intelligence product. Built with Next.js 16 App Router, TypeScript, Tailwind CSS v4, `next/image` and self-hosted Onest via `next/font/google`.
+A complete bilingual public site for LaSpeak: the learning and operating platform for independent language schools. Built with Next.js 16 App Router, TypeScript, Tailwind CSS v4, `next/image` and self-hosted Onest via `next/font/google`.
 
 ## Start locally
 
@@ -18,7 +18,7 @@ npm run build
 npm start
 ```
 
-`npm run build` is the normal Vercel production build. All 22 localised content routes are statically generated. `npm run build:preview` produces a portable static export in `out/`, then adapts only that export to the private preview host’s nested URL: relative asset paths, explicit HTML document links and an English entry page. The production Next.js output and route map are unchanged. Do not set `STATIC_EXPORT` on Vercel unless intentionally deploying the static export.
+`npm run build` is the normal Vercel production build. All 26 localised content routes are statically generated. `npm run build:preview` produces a portable static export in `out/`, then adapts only that export to the private preview host’s nested URL: relative asset paths, explicit HTML document links and an English entry page. The production Next.js output and route map are unchanged. Do not set `STATIC_EXPORT` on Vercel unless intentionally deploying the static export.
 
 ## Production domain and contacts
 
@@ -40,7 +40,7 @@ The defaults use the production domain `laspeak.eu` and four role-based addresse
 
 The production origin is indexable unless `NEXT_PUBLIC_PREVIEW=true` or Vercel identifies the deployment as a Preview environment. Canonicals, hreflang, social URLs and sitemap entries all derive from this configuration. Rebuild after changing values.
 
-`npm run check:launch` checks the environment-variable route. If editing defaults directly, inspect `lib/site-config.ts` instead. Contact buttons use `mailto:` only, with product, workflow and implementation subjects.
+`npm run check:launch` checks the environment-variable route. If editing defaults directly, inspect `lib/site-config.ts` instead. Contact buttons use `mailto:` only, with platform, workflow and paid-pilot subjects.
 
 ## Deploy to Vercel
 
@@ -61,6 +61,8 @@ The repository defines public addresses but does not provision mailboxes. Confir
 | Home            | `/en/`                                                  | `/fr/`                                                   |
 | Providers       | `/en/for-language-providers/`                           | `/fr/pour-les-organismes-fle/`                           |
 | Product         | `/en/product/`                                          | `/fr/produit/`                                           |
+| Pricing         | `/en/pricing/`                                          | `/fr/tarifs/`                                            |
+| Trust & research| `/en/trust-and-research/`                               | `/fr/confiance-et-recherche/`                            |
 | About           | `/en/about/`                                            | `/fr/a-propos/`                                          |
 | Insights index  | `/en/insights/`                                         | `/fr/ressources/`                                        |
 | Privacy         | `/en/privacy/`                                          | `/fr/confidentialite/`                                   |
@@ -76,11 +78,11 @@ The repository defines public addresses but does not provision mailboxes. Confir
 
 - Warm `#F7F6F2`, near-black text, a lavender identity and one muted sage interruption.
 - Onest is the only content font. Variable weights and responsive editorial scale replace decorative elements.
-- Deliberately varied compositions: asymmetric hero, large photo break, numbered sequence, editorial lists, a source-review interface, lavender product invitation and a typography-only founder section.
+- Deliberately varied compositions: asymmetric hero, role routes, a learning-cycle diagram, product-layer cards, pricing markers, lavender pilot invitation and a typography-only founder section.
 - The supplied temporary wordmark is retained. The favicon uses its mark.
 - No gradients, testimonials, customer-logo strips, invented metrics or decorative charts.
 - No animation framework. CSS handles interaction transitions and respects reduced motion.
-- Mobile layouts reorganise the timeline and review actions rather than shrinking the desktop UI.
+- Mobile layouts reorganise the connected learning cycle, role routes and pricing cards rather than shrinking desktop compositions.
 - A quiet colour-theme control is in the footer. No local storage or cookies are used.
 - Privacy, cookie, legal-notice and website-use documents are published in both languages and linked from every page.
 
@@ -94,7 +96,7 @@ app/
   globals.css                  Design system and responsive layouts
   robots.ts
   sitemap.ts
-components/marketing/          Small, focused page and interface components
+components/marketing/          Small, focused page and narrative components
 content/
   en/site.ts                   English homepage and shared UI
   en/pages.ts                  English pages and two seed articles
@@ -113,19 +115,13 @@ qa/                            QA coverage and machine-readable results
 
 Articles use a simple typed content structure: title, description, introduction, sections, paragraphs, optional lists and takeaway. They can be replaced without editing the layout, and need no CMS or MDX build machinery. Route translation is explicit, including article-to-article language switching.
 
-Server components are the default. Client components are limited to the navigation, evidence viewer, image loader and theme toggle. Essential copy, links and initial evidence are present in the generated HTML.
+Server components are the default. Client components are limited to navigation, image loading and the theme toggle. Essential copy and links are present in the generated HTML.
 
-## Evidence interaction
+## Product narrative
 
-The hero, conceptual journey and viewer are visibly labelled synthetic/illustrative in both languages. The viewer supports:
+The site presents LaSpeak as one connected platform across school operations, live teaching and learning between lessons. The homepage separates three perspectives (owner, teacher and student), eight steps in the learning cycle and three product layers (operating platform, learning intelligence and native practice).
 
-- Selecting source excerpts from Lessons 02, 04 and 07.
-- Opening the surrounding fictional exchange from the source reference.
-- Accepting, editing, rejecting or deferring a proposed relationship.
-- Cancelling an edit and resetting the example.
-- Keeping observation separate from the editable interpretation.
-
-Choices exist only in memory on the current page. They do not persist, call an API, assess a learner or represent a deployed product. Selecting another excerpt resets its illustrative review state.
+Capability status is explicit throughout: existing ChinaChild foundations, work that requires multi-school productisation and research-programme directions are not presented as the same level of readiness. The site contains no platform screenshots, browser or phone frames, synthetic dashboards, fabricated customers or outcome claims.
 
 ## SEO
 
@@ -135,7 +131,7 @@ Choices exist only in memory on the current page. They do not persist, call an A
 - Localised OpenGraph/Twitter metadata and two 1200×630 Onest social images.
 - Sitemap with all localised pages and alternate-language references.
 - Environment-aware robots and indexing controls.
-- Truthful WebSite and Person JSON-LD; BreadcrumbList on secondary pages.
+- Truthful WebSite, Product and Person JSON-LD; BreadcrumbList on secondary pages.
 - No ratings, reviews, customer counts, incorporation claims or meta keywords.
 - Internal navigation, related article links and descriptive photography alt text.
 
@@ -144,14 +140,14 @@ Choices exist only in memory on the current page. They do not persist, call an A
 | Original            | Production use                                         |
 | ------------------- | ------------------------------------------------------ |
 | `La-Speak-Logo.png` | Navigation/footer wordmark, favicon and social imagery |
-| `7.png`             | Homepage story about an actual remote lesson           |
-| `metodist.png`      | Homepage provider section and dedicated provider page  |
+| `7.png`             | Editorial photography for a remote learning situation  |
+| `metodist.png`      | Editorial photography for the school workflow story    |
 | `8.png`             | Product page and insights index                        |
 | Founder portrait    | Founder identity block on the homepage and about page  |
 
 The supplied `4.png`, `first-call.png` and `lawyer-junior.png` were inspected but not used. Other filenames mentioned in the brief were not among the seven actual attachments. No domain screenshot or visual-reference image is displayed.
 
-Stock subjects are never named as customers, teachers using LaSpeak or study participants. The founder section uses Denis Gasenchenko’s supplied portrait.
+Stock subjects are never named as customers, teachers using LaSpeak, employees or study participants. The founder section uses Denis Gasenchenko’s supplied portrait.
 
 Photos have WebP variants at 192, 256, 384, 640, 828, 1080, 1440 and 1920 pixels. `next/image` supplies width/height, responsive `sizes`/`srcset` and lazy loading. The custom loader selects those real files, so both normal Vercel builds and static exports need no image-optimisation server.
 

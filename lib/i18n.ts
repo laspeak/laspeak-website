@@ -4,6 +4,8 @@ export type PageKey =
   | "home"
   | "providers"
   | "product"
+  | "pricing"
+  | "trust"
   | "about"
   | "insights"
   | "privacy"
@@ -17,6 +19,8 @@ export const paths: Record<Locale, Record<PageKey, string>> = {
     home: "",
     providers: "for-language-providers",
     product: "product",
+    pricing: "pricing",
+    trust: "trust-and-research",
     about: "about",
     insights: "insights",
     privacy: "privacy",
@@ -30,6 +34,8 @@ export const paths: Record<Locale, Record<PageKey, string>> = {
     home: "",
     providers: "pour-les-organismes-fle",
     product: "produit",
+    pricing: "tarifs",
+    trust: "confiance-et-recherche",
     about: "a-propos",
     insights: "ressources",
     privacy: "confidentialite",

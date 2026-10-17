@@ -81,6 +81,10 @@ export function Footer({ locale, page }: { locale: Locale; page: PageKey }) {
             aria-label={locale === "fr" ? "Pied de page" : "Footer"}
             className="footer-links"
           >
+            <Link href={href(locale, "product")}>{d.nav.product}</Link>
+            <Link href={href(locale, "providers")}>{d.nav.providers}</Link>
+            <Link href={href(locale, "pricing")}>{d.nav.pricing}</Link>
+            <Link href={href(locale, "trust")}>{d.nav.trust}</Link>
             <Link href={href(locale, "insights")}>{d.nav.insights}</Link>
             <Link href={href(locale, "privacy")}>{d.nav.privacy}</Link>
             <Link href={href(locale, "legal")}>{d.nav.legal}</Link>

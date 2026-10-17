@@ -3,16 +3,16 @@ const fontfile = "scripts/fonts/Onest.ttf";
 for (const locale of ["en", "fr"]) {
   const title =
     locale === "en"
-      ? "Learning evidence that\nsurvives the lesson."
-      : "Garder le fil.\nD’un cours à l’autre.";
+      ? "One school.\nEvery lesson connected."
+      : "Une école.\nTous les cours reliés.";
   const label =
     locale === "en"
-      ? "Teacher-reviewed evidence across language lessons"
-      : "Des traces pédagogiques, examinées par les enseignants";
+      ? "The learning and operating platform for independent language schools"
+      : "La plateforme pédagogique et opérationnelle des écoles de langues indépendantes";
   const status =
     locale === "en"
-      ? "Teacher-controlled · Source-linked · Across lessons"
-      : "Sous le contrôle de l’enseignant · Relié aux sources";
+      ? "Schedule · Teach · Follow up · Practise · Prepare"
+      : "Planifier · Enseigner · Suivre · Pratiquer · Préparer";
   const text = async (value, size, color, width) =>
     sharp({
       text: {

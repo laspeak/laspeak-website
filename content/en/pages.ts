@@ -5,6 +5,8 @@ import { emailHref, siteConfig } from "@/lib/site-config";
 export const pages: Record<
   | "providers"
   | "product"
+  | "pricing"
+  | "trust"
   | "about"
   | "privacy"
   | "legal"
@@ -13,146 +15,152 @@ export const pages: Record<
   EditorialPage
 > = {
   providers: {
-    label: "For adult and professional FLE providers",
-    title: "A little less lost between lessons.",
-    description:
-      "See how source-linked, teacher-reviewed evidence supports handovers, lesson planning and formative progress conversations in adult FLE provision.",
-    intro:
-      "A course is a sequence of human interactions. When teachers, timetables or groups change, the useful context should not have to start again.",
+    label: "For independent language schools",
+    title: "Start where the owner feels the friction.",
+    description: "LaSpeak is designed for owner-led language schools with 6–25 teachers, recurring adult lessons and a direct view of both teaching quality and operations.",
+    intro: "A school should not need a collection of disconnected tools to keep its timetable, teaching, follow-up and student experience coherent.",
     sections: [
       {
-        title: "What gets lost between sessions",
+        title: "The first customer profile",
         paragraphs: [
-          "A lesson report might record that a class worked on the past tense. It may not preserve whether a learner used a form after a model, repaired it after a correction, or returned to it without help in a later conversation.",
-          "For a pedagogical manager or academic coordinator, those distinctions can be useful questions during a handover. They are harder to investigate when the relevant moments sit in separate notes, recordings or LMS entries.",
+          "The initial buyer is a school owner who still sees the daily work. The school runs recurring live lessons, has several teachers sharing student context and wants a consistent service without maintaining loosely connected systems.",
+          "The 6–25 teacher range is the starting hypothesis: large enough for coordination friction, small enough for a reachable decision-maker and a focused migration.",
         ],
       },
       {
-        title: "Relationships, not another report",
+        title: "A complete school workflow",
         paragraphs: [
-          "LaSpeak connects a teacher prompt, a learner attempt, a correction, a repair and a possible later reuse, making relevant examples easier to revisit across several lessons.",
-          "A proposed connection is not a conclusion about the learner. The original excerpt, lesson reference and surrounding exchange remain available so an educator can assess the interpretation.",
+          "LaSpeak connects scheduling, live teaching, materials, homework, messages and operational oversight with the context needed for the next lesson.",
+          "One school identity and one lesson record serve three perspectives: the owner running the service, the teacher continuing the learning story and the student acting between lessons.",
         ],
       },
       {
-        title: "Four workflows LaSpeak supports",
-        paragraphs: [
-          "LaSpeak fits the work teaching teams already do, without introducing another reporting routine.",
-        ],
+        title: "Where the value appears",
+        paragraphs: ["The first pilot follows the school’s actual timetable rather than a generic product tour."],
         list: [
-          "Teacher handovers: pass on a concrete example and the circumstances in which it occurred.",
-          "Progress conversations: discuss a selected production with the learner, rather than only a broad impression.",
-          "Planning what to revisit: identify a question for the next lesson without turning absence of evidence into a deficit.",
-          "Finding examples: return to a specific excerpt rather than manually searching an entire recording.",
+          "Owner: see schedule changes, unfinished reviews and service exceptions with a next action.",
+          "Teacher: begin with relevant learner context instead of reconstructing it from several tools.",
+          "Student: move from the lesson to homework, messages and short practice within the same service.",
+          "School: measure onboarding, recurring use, follow-up completion and willingness to renew.",
         ],
       },
       {
-        title: "Teachers keep the decision",
+        title: "A focused first market",
         paragraphs: [
-          "The review options are simple: accept, edit, reject or defer. A teacher can recognise a relevant connection, correct its interpretation, dismiss it, or leave it unresolved.",
-          "A system should not infer that a learner has mastered a form simply because it appears in a transcript. Nor should it treat an unobserved form as something the learner cannot do. There may have been no opportunity to use it.",
+          "Priority prospects teach English, French or Chinese to adults through online or hybrid recurring lessons and can nominate an operational owner for a pilot.",
+          "Solo teachers may later use a self-service offer. Large universities and enterprise procurement are outside the first sales motion.",
         ],
       },
       {
-        title: "Alongside your existing systems",
+        title: "No unmeasured savings claims",
         paragraphs: [
-          "LaSpeak complements live teaching, course management and your existing LMS. It is an evidence-review layer, not a language school, replacement LMS or automatic assessment system.",
-          "The product is focused on adult and professional French as a foreign language in France, with workflows that respect teacher time, recording practices, consent, access permissions and the pedagogical value of looking back.",
-        ],
-      },
-      {
-        title: "A focused product conversation",
-        paragraphs: [
-          "A 20-minute conversation maps LaSpeak to the way your team handles continuity, handovers and progress review. No learner recordings or documents are needed for the first conversation.",
-          "Where the workflow fits, the next step is a clearly scoped implementation discussion covering participants, data, access, responsibilities and success criteria.",
+          "The pilot measures duplicate entry, preparation, handoffs, service exceptions, support time and supplier cost against the school’s own baseline.",
+          "LaSpeak does not claim proven time, cost or learning improvements before that evidence exists.",
         ],
       },
     ],
   },
   product: {
-    label: "Product & implementation",
-    title: "Bring continuity into view.",
-    description:
-      "A focused product conversation for adult FLE teams in France: see the LaSpeak workflow and identify the right implementation scope.",
-    intro:
-      "LaSpeak turns lesson recordings, transcripts and teaching notes into source-linked evidence that teachers can review across lessons.",
+    label: "The LaSpeak platform",
+    title: "Three layers. One teaching service.",
+    description: "Explore how school operations, learning continuity and native practice fit into one product for independent language schools.",
+    intro: "LaSpeak’s unit of value is the complete learning cycle — from scheduling and live teaching to follow-up, practice, preparation and school oversight.",
     sections: [
       {
-        title: "What LaSpeak brings together",
+        title: "Operating platform — existing foundation to school product",
         paragraphs: [
-          "LaSpeak connects the moments that matter: teacher prompts, learner attempts, corrections, repairs and later reuse. Each interpretation stays close to its source and remains open to teacher review.",
-          "The result is a practical evidence layer for handovers, progress conversations and lesson planning, without turning an isolated transcript into an automatic judgement.",
+          "Recurring schedules, a LiveKit classroom, teaching content, homework, messaging, records and lesson processing already exist in the ChinaChild technology base.",
+          "LaSpeak productises those domains with school tenancy, roles, language-neutral configuration, European processing controls, billing, onboarding and release observability.",
         ],
       },
       {
-        title: "Who the product is built for",
+        title: "Learning intelligence — reports exist, longitudinal state is R&D",
         paragraphs: [
-          "LaSpeak is built for teachers, pedagogical managers and academic coordinators working in adult or professional FLE provision in France, including independent training organisations and language schools.",
-          "It works alongside existing teaching and course-management systems. The product conversation starts from your actual workflow, whether evidence currently lives in recordings, transcripts, notes or an LMS.",
+          "Lesson evidence, teacher review and next-lesson preparation keep teaching decisions connected to their source. Teachers can confirm, edit, dismiss or leave weak evidence unresolved.",
+          "A revisable learner history that survives late correction and deletion without corrupting earlier views remains a bounded research and engineering programme.",
         ],
       },
       {
-        title: "What the product conversation covers",
+        title: "Native practice — foundation exists, interactions require evaluation",
         paragraphs: [
-          "In 20 minutes, we identify one concrete situation — a handover, progress discussion or lesson-planning decision — and show where LaSpeak fits into the sequence of work.",
-          "No preparation or learner data is required. A high-level, anonymised description of the workflow is enough to establish the right product scope.",
-        ],
-        list: [
-          "Your context: how teaching and pedagogical follow-up are organised.",
-          "A concrete situation: what happened and how you handled it.",
-          "Your judgement: what, if anything, would have made the work easier.",
+          "Existing native student code covers lessons, content, homework, messages, schedule, vocabulary and progress.",
+          "New speaking, listening, pronunciation and Chinese handwriting interactions are evaluated by task and language rather than presented as validated learning outcomes.",
         ],
       },
       {
-        title: "Clear product boundaries",
+        title: "One platform, three perspectives",
         paragraphs: [
-          "LaSpeak supports teacher review; it does not grade learners, rank teachers or certify CEFR levels. The source and the teacher’s interpretation remain distinct throughout the workflow.",
-          "The public interface shown on this site uses synthetic data so that no learner, teacher or organisation is exposed. Product demonstrations and implementation discussions use an agreed, privacy-conscious scope.",
+          "Owners see schedules, teacher allocation, service exceptions and billing visibility. Teachers work with materials, the live lesson, reviewed observations and a prepared next step. Students find lessons, homework, messages and short practice in one place.",
+          "The same learner, lesson and permissions continue across those perspectives rather than being re-created in separate tools.",
         ],
       },
       {
-        title: "From conversation to implementation",
+        title: "A staged release, not a blanket claim",
         paragraphs: [
-          "Where there is a clear fit, we define a limited implementation with an agreed workflow, participants, responsibilities and success criteria.",
-          "Before any real lesson material is shared, the implementation framework must cover purpose, lawful basis, participant information, access, security, retention and deletion. Do not send learner material in an introductory email.",
+          "Product status is explicit: an operating foundation, productisation work for independent schools and research features with decision gates.",
+          "Features that miss a reliability, usefulness, privacy or interaction gate remain manual or restricted. No interface on this website is presented as a production screenshot.",
         ],
       },
     ],
   },
+  pricing: {
+    label: "Pricing & pilot",
+    title: "A school subscription with clear allowances.",
+    description: "Three monthly tiers align school size, student activity and variable media usage. The first commercial step is a paid eight-week pilot.",
+    intro: "Every tier includes schedules, classroom, materials, homework, messaging and teacher/student access. Prices exclude VAT.",
+    sections: [
+      { title: "Start — €199 per month", paragraphs: ["For up to 6 named teachers and 100 monthly active students."], list: ["300 participant-hours", "20 processed one-to-one AI lesson-hours", "Core school workflow and teacher/student access"] },
+      { title: "School — €399 per month", paragraphs: ["For up to 12 named teachers and 250 monthly active students. This is the starting tier for the first paid pilots."], list: ["700 participant-hours", "40 processed one-to-one AI lesson-hours", "€200 onboarding per school"] },
+      { title: "Growth — €699 per month", paragraphs: ["For up to 25 named teachers and 500 monthly active students."], list: ["1,400 participant-hours", "80 processed one-to-one AI lesson-hours", "The same connected school workflow at a larger operating scale"] },
+      { title: "Predictable core, metered extra use", paragraphs: ["Additional usage is €0.30 per participant-hour and €1.50 per processed one-to-one AI lesson-hour. A one-hour lesson with one teacher and one student consumes two participant-hours. Group processing receives a separate usage quote."], list: ["Active students are counted monthly", "Teacher seats are named accounts", "AI hours cover one-to-one lessons with up to two recorded tracks"] },
+      { title: "Eight-week School pilot — €998", paragraphs: ["The pilot includes two School months at €399 and €200 onboarding. It begins with one adult teaching cohort, an agreed timetable and a named school contact."], list: ["Reliable classroom access", "Recurring use by participating teachers", "Follow-up students can complete", "A measured renewal decision"] },
+    ],
+  },
+  trust: {
+    label: "Trust & research",
+    title: "Make learning data a controlled service.",
+    description: "European adaptation, optional processing and bounded research are delivery workstreams, not marketing labels.",
+    intro: "A school can teach without recording. Where recording or AI analysis is used, the purpose, participant controls and human responsibility must be explicit.",
+    sections: [
+      { title: "Roles and participant choice", paragraphs: ["For school-managed learning data, the working model generally places the school as controller and LaSpeak as processor; LaSpeak separately controls its own commercial account data.", "A join action or generic terms acceptance is not treated as sufficient permission for every downstream use."] },
+      { title: "Optional capture, limited processing", paragraphs: ["Recording and AI analysis are optional. The delivery work includes purpose-specific enforcement, retention periods, deletion across derived data, access logging, vendor and transfer review, and an impact-assessment decision.", "Manual notes and homework keep the teaching loop usable when automated processing is disabled."] },
+      { title: "Teacher control does not replace assessment", paragraphs: ["LaSpeak supports teachers rather than issuing admissions decisions, grades or certificates. Intended use and actual functionality still determine the applicable AI obligations.", "Restricted release, logging, human oversight and documentation follow the written classification and obligation assessment."] },
+      { title: "Four research workstreams", paragraphs: ["The research programme separates evaluation data from development examples and reports results by task and language."], list: ["Observation reliability against a teacher-reviewed reference set", "Correction, deletion and time-consistency invariants", "Teacher acceptance and usefulness of follow-up tasks", "Task-specific usability and performance of native interactions"] },
+      { title: "Decision gates before wider release", paragraphs: ["Features that miss a gate stay in manual use. Learning-effect claims require a separately designed and sufficiently powered study.", "Tested backups, recoverable lessons and incident response complete the school promise of dependable continuity."] },
+    ],
+  },
   about: {
     label: "About LaSpeak",
-    title: "Delivering a lesson.\nKeeping what matters.",
-    description:
-      "The origin of LaSpeak: Denis Gasenchenko’s experience operating language education workflows and a grounded question about continuity between lessons.",
-    intro:
-      "LaSpeak starts with a practical distinction: delivering a lesson and preserving useful evidence from it are not the same task.",
+    title: "Built by operating.\nMade for many schools.",
+    description: "LaSpeak grows from Denis Gasenchenko’s experience building and operating ChinaChild into a multilingual product for independent schools.",
+    intro: "Dependable B2B systems taught the operating discipline. Running a teaching service exposed the daily work. Building the platform connected the two.",
     sections: [
       {
-        title: "A problem from operating experience",
+        title: "A founder who has run the problem",
         paragraphs: [
           "Denis Gasenchenko is a digital-product and B2B operator with more than eight years of experience across FinTech, payroll, business software and online language education.",
-          "His work operating live-language teaching workflows led him to investigate what remains after a lesson ends. A session can be delivered, attended and reported, while the context of a particular learner production is still difficult to find later.",
+          "Through ChinaChild, he has dealt with recurring lessons, teacher availability, classroom access, homework, student communication and financial administration as connected operating problems.",
         ],
       },
       {
-        title: "The idea behind LaSpeak",
+        title: "A substantial technology starting point",
         paragraphs: [
-          "LaSpeak is an evidence-review layer that connects relevant moments across lessons while keeping each interpretation close to its source.",
-          "The product workflow runs from teacher model or prompt to learner attempt, correction, repair, possible later independent reuse and teacher review. It organises evidence without reducing learning to a formula.",
+          "Building the service produced scheduling logic, a LiveKit classroom, teaching content, homework, messaging, lesson processing and substantial iOS and Android code.",
+          "LaSpeak retains sound components while creating the boundaries required for multiple schools, multilingual delivery and European data practices.",
         ],
       },
       {
-        title: "A deliberately focused product",
+        title: "France as the launch base",
         paragraphs: [
-          "LaSpeak is built first for adult and professional FLE providers in France. This gives the product a concrete teaching context for handovers, formative progress conversations and finding source-linked examples.",
-          "The focused scope keeps the product grounded in real teaching work: preserve context, surface relevant evidence and leave the final interpretation with the educator.",
+          "France brings customer discovery, language expertise, European market access and relevant research capabilities into one programme.",
+          "The initial product serves English, French and Chinese teaching. France is the commercial and development base for later European and international expansion.",
         ],
       },
       {
-        title: "What should stay human",
+        title: "Rights and data stay explicit",
         paragraphs: [
-          "Teachers bring knowledge of the learner, the activity and the wider course that a short excerpt cannot contain. Their review is central to the concept, not a final checkbox after an automated judgement.",
-          "A useful system should allow an interpretation to be changed, rejected or left unresolved. It should also make it easy to see the difference between something observed and something inferred.",
+          "Only verified software rights are contributed, assigned or licensed to the French company. Teaching content, third-party assets and contractor contributions require separate review.",
+          "Customer and student data do not transfer with the code. Productisation starts with clean school boundaries and an appropriate data lifecycle.",
         ],
       },
     ],
@@ -198,7 +206,7 @@ export const pages: Record<
       {
         title: "Data processed when you browse",
         paragraphs: [
-          "LaSpeak does not use analytics, advertising technology, social-media pixels or tracking cookies. Theme and illustrative interface choices remain in page memory only and are not stored or transmitted to LaSpeak.",
+          "LaSpeak does not use analytics, advertising technology, social-media pixels or tracking cookies. Theme and presentation choices remain in page memory only and are not stored or transmitted to LaSpeak.",
           "Vercel processes the technical request information required to deliver and protect the website. This may include an IP address, request time, requested URL, user agent, approximate network information and security signals. The purpose is website delivery, availability, troubleshooting and abuse prevention. The legal basis is the controller’s legitimate interest in providing a secure, reliable public website.",
           "Technical request data is generated automatically and is necessary to deliver the requested page. LaSpeak does not create an independent analytics database. Any technical logs accessible to the publisher are retained for no more than 30 days, unless a specific security incident requires a longer, documented investigation.",
         ],

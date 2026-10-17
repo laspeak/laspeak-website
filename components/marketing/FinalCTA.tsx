@@ -18,7 +18,7 @@ export function FinalCTA({
         <p>{d.text}</p>
         <div>
           <a
-            href={mailto("conversation", true, locale)}
+            href={mailto("pilot", true, locale)}
             className="button"
           >
             {d.cta}
@@ -31,8 +31,8 @@ export function FinalCTA({
                 href={
                   email === siteConfig.HELLO_EMAIL &&
                   siteConfig.HELLO_EMAIL !== siteConfig.FOUNDER_EMAIL
-                    ? mailto("conversation", false, locale)
-                    : mailto("conversation", true, locale)
+                    ? mailto("pilot", false, locale)
+                    : mailto("pilot", true, locale)
                 }
               >
                 {email}

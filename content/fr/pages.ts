@@ -5,6 +5,8 @@ import { emailHref, siteConfig } from "@/lib/site-config";
 export const pages: Record<
   | "providers"
   | "product"
+  | "pricing"
+  | "trust"
   | "about"
   | "privacy"
   | "legal"
@@ -13,146 +15,152 @@ export const pages: Record<
   EditorialPage
 > = {
   providers: {
-    label: "Formation linguistique pour adultes",
-    title: "D’un cours à l’autre,\npréserver l’essentiel.",
-    description:
-      "Pour les organismes de formation FLE : un suivi pédagogique fondé sur des traces reliées aux cours et examinées par les enseignants.",
-    intro:
-      "Un parcours de formation repose sur une suite d’échanges humains. Lorsque les enseignants, les groupes ou les plannings changent, le contexte utile ne devrait pas repartir de zéro.",
+    label: "Pour les écoles de langues indépendantes",
+    title: "Commencer là où la direction ressent la friction.",
+    description: "LaSpeak est conçu pour les écoles dirigées par leur propriétaire, avec 6 à 25 enseignants, des cours récurrents pour adultes et une vision directe de la pédagogie comme des opérations.",
+    intro: "Une école ne devrait pas dépendre d’une collection d’outils déconnectés pour garder cohérents son planning, ses cours, son suivi et l’expérience apprenant.",
     sections: [
       {
-        title: "Ce qui se perd entre les séances",
+        title: "Le profil du premier client",
         paragraphs: [
-          "Un compte rendu peut indiquer qu’un cours portait sur le passé composé. Il ne précise pas toujours si l’apprenant a produit une forme après un modèle, l’a reprise après une correction ou l’a réemployée sans aide au cours d’un échange ultérieur.",
-          "Pour une équipe pédagogique, ces distinctions peuvent éclairer une passation entre enseignants. Elles deviennent plus difficiles à examiner lorsque les traces issues des cours sont dispersées entre notes, enregistrements et historique du LMS.",
+          "Le premier acheteur est un dirigeant qui reste proche du travail quotidien. L’école organise des cours en direct récurrents, plusieurs enseignants partagent le contexte apprenant et l’équipe veut un service cohérent sans maintenir plusieurs systèmes isolés.",
+          "La fourchette de 6 à 25 enseignants constitue l’hypothèse de départ : assez grande pour ressentir la friction de coordination, assez accessible pour une décision et une migration ciblées.",
         ],
       },
       {
-        title: "Relier des traces, plutôt qu’ajouter un rapport",
+        title: "Un fonctionnement école complet",
         paragraphs: [
-          "LaSpeak rapproche une consigne, une production de l’apprenant, une correction, une reprise et un éventuel réemploi ultérieur. Les exemples pertinents deviennent faciles à retrouver sur plusieurs séances.",
-          "Un rapprochement proposé n’est pas une conclusion sur l’apprenant. L’extrait d’origine, la référence de la séance et le contexte de l’échange restent accessibles afin que l’enseignant puisse en examiner la pertinence.",
+          "LaSpeak relie planning, cours en direct, supports, devoirs, messages et pilotage opérationnel au contexte nécessaire pour le cours suivant.",
+          "Une identité école et une trace de cours servent trois perspectives : la direction pilote le service, l’enseignant poursuit le parcours et l’apprenant agit entre les cours.",
         ],
       },
       {
-        title: "Quatre usages pris en charge",
-        paragraphs: [
-          "LaSpeak s’inscrit dans le travail déjà réalisé par les équipes pédagogiques, sans imposer une nouvelle routine de compte rendu.",
-        ],
+        title: "Où apparaît la valeur",
+        paragraphs: ["Le premier pilote suit le planning réel de l’école plutôt qu’une démonstration produit générique."],
         list: [
-          "Passation entre enseignants : transmettre un exemple concret et les conditions dans lesquelles il a été produit.",
-          "Échanges sur la progression de l’apprenant : discuter d’une production choisie, au-delà d’une impression générale.",
-          "Préparation d’une reprise : formuler une question pour la séance suivante sans transformer l’absence de trace en difficulté supposée.",
-          "Recherche d’exemples : revenir à un passage précis sans parcourir tout un enregistrement.",
+          "Direction : voir changements de planning, validations en attente et exceptions avec une prochaine action.",
+          "Enseignant : commencer avec le contexte utile au lieu de le reconstruire entre plusieurs outils.",
+          "Apprenant : passer du cours aux devoirs, messages et activités courtes dans le même service.",
+          "École : mesurer onboarding, usage récurrent, suivi terminé et volonté de renouveler.",
         ],
       },
       {
-        title: "La décision reste à l’enseignant",
+        title: "Un premier marché ciblé",
         paragraphs: [
-          "Accepter, modifier, rejeter ou différer : les choix pour l’examen d’un rapprochement restent simples. L’enseignant peut reconnaître une piste utile, en corriger l’interprétation ou laisser la question ouverte.",
-          "La présence d’une forme dans une transcription ne suffit pas à conclure à sa maîtrise. Son absence ne signifie pas non plus que l’apprenant ne sait pas l’utiliser : l’activité n’en a peut-être pas donné l’occasion.",
+          "Les prospects prioritaires enseignent l’anglais, le français ou le chinois à des adultes en ligne ou en hybride et peuvent nommer un responsable opérationnel pour le pilote.",
+          "Les enseignants indépendants pourront rejoindre plus tard une offre autonome. Les grandes universités et les achats grands comptes sont hors de la première démarche commerciale.",
         ],
       },
       {
-        title: "Un complément à vos outils",
+        title: "Aucune économie non mesurée",
         paragraphs: [
-          "LaSpeak complète les cours, le suivi pédagogique et les outils de gestion de la formation déjà en place. C’est une couche d’examen des traces, et non une école de langues, un LMS de remplacement ou un système de notation automatique.",
-          "Le produit se concentre sur la formation linguistique pour adultes et professionnels en France, avec des usages qui respectent le temps enseignant, les pratiques d’enregistrement, le consentement, les droits d’accès et l’intérêt pédagogique d’un retour sur les cours.",
-        ],
-      },
-      {
-        title: "Un échange produit ciblé",
-        paragraphs: [
-          "Un échange de 20 minutes permet de situer LaSpeak dans la façon dont votre équipe assure la continuité, les passations et les bilans de progression. Aucun enregistrement ou document d’apprenant n’est nécessaire pour ce premier échange.",
-          "Lorsque le fonctionnement correspond à vos besoins, l’étape suivante consiste à cadrer la mise en œuvre : participants, données, accès, responsabilités et critères de réussite.",
+          "Le pilote mesure la double saisie, la préparation, les passations, les exceptions, le temps d’assistance et les coûts fournisseurs par rapport au point de départ de l’école.",
+          "LaSpeak ne promet pas de gain prouvé de temps, de coût ou d’apprentissage avant l’obtention de ces preuves.",
         ],
       },
     ],
   },
   product: {
-    label: "Produit et mise en œuvre",
-    title: "Rendre la continuité visible.",
-    description:
-      "Un échange produit ciblé pour les équipes de FLE pour adultes en France : découvrir LaSpeak et définir le bon périmètre de mise en œuvre.",
-    intro:
-      "LaSpeak transforme les enregistrements, transcriptions et notes pédagogiques en traces reliées aux sources que les enseignants examinent entre plusieurs cours.",
+    label: "La plateforme LaSpeak",
+    title: "Trois couches. Un seul service pédagogique.",
+    description: "Découvrez comment fonctionnement de l’école, continuité pédagogique et pratique native forment un seul produit pour les écoles de langues indépendantes.",
+    intro: "L’unité de valeur de LaSpeak est le cycle d’apprentissage complet — du planning et du cours en direct au suivi, à la pratique, à la préparation et au pilotage.",
     sections: [
       {
-        title: "Ce que LaSpeak relie",
+        title: "Plateforme opérationnelle — du socle existant au produit école",
         paragraphs: [
-          "LaSpeak relie les moments qui comptent : consignes, productions de l’apprenant, corrections, reprises et réemplois ultérieurs. Chaque interprétation reste proche de sa source et soumise à la validation de l’enseignant.",
-          "Le résultat est une couche de traces directement exploitable pour les passations, les bilans de progression et la préparation des cours, sans transformer une transcription isolée en jugement automatique.",
+          "Plannings récurrents, classe LiveKit, contenus pédagogiques, devoirs, messages, dossiers et traitement des cours existent déjà dans le socle technologique ChinaChild.",
+          "LaSpeak transforme ces domaines en produit avec tenancy école, rôles, configuration multilingue, contrôles européens, facturation, onboarding et observabilité.",
         ],
       },
       {
-        title: "À qui s’adresse le produit ?",
+        title: "Intelligence pédagogique — rapports existants, état longitudinal en R&D",
         paragraphs: [
-          "LaSpeak est conçu pour les enseignants, responsables pédagogiques et coordinateurs intervenant dans des formations de FLE pour adultes ou professionnels en France, notamment dans les organismes de formation et les écoles de langues.",
-          "Il complète les outils d’enseignement et de gestion déjà en place. L’échange part de votre organisation réelle, que les traces se trouvent aujourd’hui dans des enregistrements, des transcriptions, des notes ou un LMS.",
+          "Les traces de cours, la validation enseignant et la préparation suivante maintiennent les décisions pédagogiques liées à leur source. L’enseignant peut confirmer, modifier, écarter ou laisser une preuve faible sans conclusion.",
+          "Un historique apprenant révisable, capable de gérer correction tardive et suppression sans altérer les vues antérieures, reste un programme de recherche et d’ingénierie délimité.",
         ],
       },
       {
-        title: "Le contenu de l’échange produit",
+        title: "Pratique native — un socle existe, les interactions restent à évaluer",
         paragraphs: [
-          "En 20 minutes, nous identifions une situation concrète — passation, bilan de progression ou décision de préparation — et montrons où LaSpeak s’insère dans la chaîne de travail.",
-          "Aucune préparation ni donnée d’apprenant n’est nécessaire. Une description générale et anonymisée suffit pour définir le bon périmètre produit.",
-        ],
-        list: [
-          "Votre contexte : l’organisation des cours et du suivi pédagogique.",
-          "Une situation concrète : ce qui s’est passé et la manière dont vous l’avez gérée.",
-          "Votre regard : ce qui aurait, ou non, facilité le travail.",
+          "Le code natif apprenant existant couvre cours, contenus, devoirs, messages, planning, vocabulaire et progression.",
+          "Les nouvelles interactions d’oral, d’écoute, de prononciation et d’écriture chinoise sont évaluées par tâche et par langue, sans être présentées comme des résultats d’apprentissage validés.",
         ],
       },
       {
-        title: "Des limites produit claires",
+        title: "Une plateforme, trois perspectives",
         paragraphs: [
-          "LaSpeak assiste l’examen par l’enseignant ; il ne note pas les apprenants, ne classe pas les enseignants et ne certifie aucun niveau CECRL. La source et l’interprétation de l’enseignant restent distinctes tout au long du processus.",
-          "L’interface publique présentée sur ce site utilise des données fictives afin de n’exposer aucun apprenant, enseignant ou organisme. Les démonstrations et mises en œuvre s’inscrivent dans un périmètre convenu et respectueux des données.",
+          "La direction voit planning, affectation des enseignants, exceptions et visibilité financière. L’enseignant travaille avec supports, cours en direct, observations validées et prochaine étape. L’apprenant retrouve cours, devoirs, messages et pratique courte.",
+          "Le même apprenant, le même cours et les mêmes droits traversent ces perspectives au lieu d’être recréés dans des outils séparés.",
         ],
       },
       {
-        title: "De l’échange à la mise en œuvre",
+        title: "Une publication progressive, pas une promesse globale",
         paragraphs: [
-          "Lorsque l’adéquation est claire, nous définissons une mise en œuvre limitée avec un processus, des participants, des responsabilités et des critères de réussite convenus.",
-          "Avant tout partage de supports de cours réels, le cadre de mise en œuvre couvre les finalités, la base légale, l’information des participants, les accès, la sécurité, la conservation et la suppression. Merci de ne pas envoyer de données d’apprenants dans un premier email.",
+          "Le statut produit reste explicite : un socle opérationnel, une productisation pour les écoles indépendantes et des fonctions de recherche soumises à des seuils de décision.",
+          "Une fonction qui ne franchit pas un seuil de fiabilité, d’utilité, de confidentialité ou d’interaction reste manuelle ou restreinte. Aucun visuel du site n’est présenté comme une capture du produit en production.",
         ],
       },
     ],
   },
+  pricing: {
+    label: "Tarifs & pilote",
+    title: "Un abonnement école avec des volumes clairs.",
+    description: "Trois offres mensuelles alignent taille de l’école, activité apprenant et usage média. La première étape commerciale est un pilote payant de huit semaines.",
+    intro: "Chaque offre inclut planning, classe, supports, devoirs, messages et accès enseignants/apprenants. Prix hors taxes.",
+    sections: [
+      { title: "Start — 199 € par mois", paragraphs: ["Jusqu’à 6 enseignants nommés et 100 apprenants actifs par mois."], list: ["300 participant-heures", "20 heures de cours individuels traitées par IA", "Fonctionnement école essentiel et accès enseignants/apprenants"] },
+      { title: "School — 399 € par mois", paragraphs: ["Jusqu’à 12 enseignants nommés et 250 apprenants actifs par mois. C’est l’offre de départ des premiers pilotes payants."], list: ["700 participant-heures", "40 heures de cours individuels traitées par IA", "Onboarding de 200 € par école"] },
+      { title: "Growth — 699 € par mois", paragraphs: ["Jusqu’à 25 enseignants nommés et 500 apprenants actifs par mois."], list: ["1 400 participant-heures", "80 heures de cours individuels traitées par IA", "Le même fonctionnement école connecté à une échelle supérieure"] },
+      { title: "Un socle prévisible, des usages supplémentaires mesurés", paragraphs: ["L’usage supplémentaire est facturé 0,30 € par participant-heure et 1,50 € par heure de cours individuel traitée par IA. Un cours d’une heure avec un enseignant et un apprenant consomme deux participant-heures. Le traitement des groupes fait l’objet d’un devis séparé."], list: ["Les apprenants actifs sont comptés chaque mois", "Les sièges enseignants sont nominatifs", "Les heures IA couvrent les cours individuels avec deux pistes enregistrées au maximum"] },
+      { title: "Pilote School de huit semaines — 998 €", paragraphs: ["Le pilote comprend deux mois School à 399 € et 200 € d’onboarding. Il commence avec une cohorte adulte, un planning convenu et un contact nommé dans l’école."], list: ["Accès fiable à la classe", "Usage récurrent par les enseignants participants", "Suivi réalisable par les apprenants", "Décision de renouvellement mesurée"] },
+    ],
+  },
+  trust: {
+    label: "Confiance & recherche",
+    title: "Faire des données d’apprentissage un service contrôlé.",
+    description: "Adaptation européenne, traitement optionnel et recherche délimitée sont des chantiers de livraison, pas des labels marketing.",
+    intro: "Une école peut enseigner sans enregistrer. Lorsqu’un enregistrement ou une analyse IA est utilisé, la finalité, les contrôles participants et la responsabilité humaine doivent être explicites.",
+    sections: [
+      { title: "Rôles et choix des participants", paragraphs: ["Pour les données pédagogiques gérées par l’école, le modèle de travail place généralement l’école comme responsable de traitement et LaSpeak comme sous-traitant ; LaSpeak traite séparément ses propres données commerciales.", "Rejoindre un cours ou accepter des conditions générales ne vaut pas autorisation pour tous les usages ultérieurs."] },
+      { title: "Captation optionnelle, traitement limité", paragraphs: ["L’enregistrement et l’analyse IA sont optionnels. Le travail couvre l’application des finalités, les durées de conservation, la suppression des données dérivées, les journaux d’accès, l’examen des fournisseurs et transferts, ainsi qu’une décision d’analyse d’impact.", "Notes manuelles et devoirs maintiennent la boucle pédagogique lorsque le traitement automatisé est désactivé."] },
+      { title: "Le contrôle enseignant ne remplace pas l’évaluation juridique", paragraphs: ["LaSpeak soutient les enseignants sans prendre de décision d’admission, attribuer de note ou délivrer de certificat. L’usage prévu et la fonctionnalité réelle déterminent néanmoins les obligations applicables à l’IA.", "Publication restreinte, journalisation, contrôle humain et documentation suivent une classification écrite."] },
+      { title: "Quatre chantiers de recherche", paragraphs: ["Le programme sépare les données d’évaluation des exemples de développement et publie les résultats par tâche et par langue."], list: ["Fiabilité des observations face à une référence validée par des enseignants", "Invariants de correction, suppression et cohérence temporelle", "Acceptation enseignant et utilité des activités de suivi", "Utilisabilité et performance propres aux interactions natives"] },
+      { title: "Des seuils avant toute diffusion élargie", paragraphs: ["Une fonction qui ne franchit pas son seuil reste manuelle. Toute affirmation d’effet sur l’apprentissage exige une étude distincte et suffisamment dimensionnée.", "Sauvegardes testées, cours récupérables et réponse aux incidents complètent la promesse de continuité."] },
+    ],
+  },
   about: {
     label: "À propos de LaSpeak",
-    title: "Assurer le cours.\nGarder ce qui compte.",
-    description:
-      "LaSpeak est né d’une question opérationnelle sur la continuité entre les cours de langue. Découvrez le produit et son fondateur, Denis Gasenchenko.",
-    intro:
-      "À l’origine de LaSpeak, une distinction très concrète : assurer un cours et préserver les traces utiles de ce cours sont deux tâches différentes.",
+    title: "Construit par l’expérience.\nPensé pour plusieurs écoles.",
+    description: "LaSpeak transforme l’expérience de Denis Gasenchenko dans la construction et l’exploitation de ChinaChild en produit multilingue pour les écoles indépendantes.",
+    intro: "Les systèmes B2B fiables ont apporté la discipline opérationnelle. L’exploitation d’un service pédagogique a révélé le travail quotidien. La construction de la plateforme a relié les deux.",
     sections: [
       {
-        title: "Une question née de l’expérience",
+        title: "Un fondateur qui a vécu le problème",
         paragraphs: [
           "Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.",
-          "La gestion de cours de langue en direct l’a conduit à s’intéresser à ce qui reste après la séance. Un cours peut avoir eu lieu, être suivi et faire l’objet d’un compte rendu, sans que le contexte d’une production précise soit facile à retrouver ensuite.",
+          "Avec ChinaChild, il a traité comme un ensemble les cours récurrents, la disponibilité des enseignants, l’accès à la classe, les devoirs, la communication apprenant et l’administration financière.",
         ],
       },
       {
-        title: "L’idée derrière LaSpeak",
+        title: "Un point de départ technologique substantiel",
         paragraphs: [
-          "LaSpeak est une couche de mise en relation et d’examen des traces pédagogiques. Le produit relie des moments pertinents entre plusieurs séances, en maintenant chaque interprétation au plus près de sa source.",
-          "Le parcours va du modèle ou de la consigne de l’enseignant à la production de l’apprenant, puis à la correction, à la reprise, à un éventuel réemploi autonome et à l’examen par l’enseignant. Il organise les traces sans réduire l’apprentissage à une formule.",
+          "La construction du service a produit logique de planning, classe LiveKit, contenus, devoirs, messages, traitement des cours et un code iOS/Android substantiel.",
+          "LaSpeak conserve les composants solides tout en créant les frontières nécessaires à plusieurs écoles, à la livraison multilingue et aux pratiques européennes de données.",
         ],
       },
       {
-        title: "Un produit volontairement ciblé",
+        title: "La France comme base de lancement",
         paragraphs: [
-          "LaSpeak est d’abord conçu pour les organismes de FLE pour adultes et professionnels en France. Ce cadre donne au produit un contexte précis pour les passations, les bilans de progression et la recherche d’exemples reliés aux sources.",
-          "Ce périmètre ciblé maintient le produit ancré dans le travail pédagogique réel : conserver le contexte, faire remonter les traces pertinentes et laisser l’interprétation finale à l’enseignant.",
+          "La France rassemble découverte client, expertise linguistique, accès au marché européen et compétences de recherche pertinentes dans un même programme.",
+          "Le produit initial sert l’enseignement de l’anglais, du français et du chinois. La France est la base commerciale et de développement avant l’expansion européenne et internationale.",
         ],
       },
       {
-        title: "Ce qui doit rester humain",
+        title: "Droits et données restent explicites",
         paragraphs: [
-          "L’enseignant connaît l’apprenant, l’activité et le parcours dans son ensemble. Un extrait ne contient pas tout ce contexte. Son examen constitue donc le cœur du projet, pas une simple case à cocher après un jugement automatique.",
-          "Un outil utile doit permettre de modifier une interprétation, de la rejeter ou de laisser une question ouverte. Il doit aussi rendre visible la différence entre ce qui a été observé et ce qui est supposé.",
+          "Seuls les droits logiciels vérifiés sont apportés, cédés ou licenciés à la société française. Les contenus pédagogiques, actifs tiers et contributions de prestataires font l’objet d’un examen séparé.",
+          "Les données clients et apprenants ne sont pas transférées avec le code. La productisation commence par des frontières école propres et un cycle de vie adapté.",
         ],
       },
     ],
@@ -198,7 +206,7 @@ export const pages: Record<
       {
         title: "Données traitées lors de la navigation",
         paragraphs: [
-          "LaSpeak n’utilise ni mesure d’audience, ni technologie publicitaire, ni pixel de réseau social, ni cookie de suivi. Le choix du thème et les décisions prises dans l’interface illustrative restent uniquement dans la mémoire de la page et ne sont ni conservés ni transmis à LaSpeak.",
+          "LaSpeak n’utilise ni mesure d’audience, ni technologie publicitaire, ni pixel de réseau social, ni cookie de suivi. Le choix du thème reste uniquement dans la mémoire de la page et n’est ni conservé ni transmis à LaSpeak.",
           "Vercel traite les informations techniques nécessaires pour fournir et protéger le site. Il peut s’agir de l’adresse IP, de l’heure de la requête, de l’URL demandée, de l’agent utilisateur, d’informations réseau approximatives et de signaux de sécurité. Les finalités sont la fourniture du site, sa disponibilité, le diagnostic et la prévention des abus. La base légale est l’intérêt légitime du responsable à proposer un site public sûr et fiable.",
           "Les données techniques sont générées automatiquement et nécessaires pour servir la page demandée. LaSpeak ne constitue aucune base de mesure d’audience indépendante. Les journaux techniques accessibles à l’éditeur sont conservés pendant 30 jours au maximum, sauf si un incident précis nécessite une investigation documentée plus longue.",
         ],
@@ -216,7 +224,7 @@ export const pages: Record<
         paragraphs: [
           "Un premier échange n’autorise ni la collecte ni l’analyse de supports de cours. N’envoyez pas de noms d’apprenants, enregistrements, transcriptions, données de santé, données sensibles, informations confidentielles d’un employeur ou contenus que vous n’êtes pas autorisé à communiquer. Une description générale et anonymisée suffit.",
           "Aucun échange produit n’est enregistré sans information préalable distincte des participants et sans base légale appropriée. Toute mise en œuvre impliquant des cours réels ou des données d’apprenants exige, avant tout partage, un cadre écrit distinct couvrant les rôles, finalités, base légale, information des personnes, sécurité, accès, sous-traitants, conservation et suppression.",
-          "Les interfaces du produit présentent des échanges fictifs. Elles ne représentent aucun apprenant, enseignant, organisme, client ou déploiement réel. Le site public s’adresse à des professionnels adultes et n’est pas destiné à collecter des données d’enfants.",
+          "Les situations d’apprentissage décrites sur le site sont génériques. Elles ne représentent aucun apprenant, enseignant, organisme, client ou déploiement réel. Le site public s’adresse à des professionnels adultes et n’est pas destiné à collecter des données d’enfants.",
         ],
       },
       {

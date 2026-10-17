@@ -117,6 +117,8 @@ export function EditorialPage({
   page:
     | "providers"
     | "product"
+    | "pricing"
+    | "trust"
     | "about"
     | "privacy"
     | "legal"
@@ -125,7 +127,7 @@ export function EditorialPage({
 }) {
   const d = getDictionary(locale);
   const content = editorialPages[locale][page];
-  const label = page === "providers" ? d.nav.providers : d.nav[page];
+  const label = d.nav[page];
   const isPolicyPage = ["privacy", "legal", "cookies", "terms"].includes(
     page,
   );
@@ -144,17 +146,25 @@ export function EditorialPage({
             <div className="actions">
               <a
                 href={mailto(
-                  page === "product" ? "product" : "conversation",
+                  page === "product"
+                    ? "product"
+                    : page === "pricing"
+                      ? "pilot"
+                      : "conversation",
                   true,
                   locale,
                 )}
                 className="button"
               >
-                {page === "product" ? d.product.cta : d.nav.talk}
+                {page === "product"
+                  ? d.product.cta
+                  : page === "pricing"
+                    ? d.pilot.cta
+                    : d.nav.talk}
                 <span aria-hidden="true">↗</span>
               </a>
               {page === "about" ? <LinkedInLink locale={locale} /> : null}
-              {page === "product" ? (
+              {page === "product" || page === "pricing" ? (
                 <span className="ui-label">{d.product.note}</span>
               ) : null}
             </div>
@@ -201,19 +211,25 @@ export function EditorialPage({
               </div>
             </div>
           )}
-          {page === "product" && (
+          {(page === "product" || page === "pricing") && (
             <div className="editorial-aside">
               <a
                 className="text-link"
-                href={mailto("implementation", true, locale)}
+                href={mailto(
+                  page === "pricing" ? "pilot" : "implementation",
+                  true,
+                  locale,
+                )}
               >
-                {d.product.implementation}
+                {page === "pricing" ? d.pilot.cta : d.product.implementation}
                 <span aria-hidden="true">↗</span>
               </a>
               <p>
-                {locale === "fr"
-                  ? "Le périmètre, les responsabilités et les règles de traitement des données sont convenus avant toute mise en œuvre."
-                  : "Scope, responsibilities and data-handling rules are agreed before any implementation begins."}
+                {page === "pricing"
+                  ? d.pilot.note
+                  : locale === "fr"
+                    ? "Le périmètre, les responsabilités et les règles de traitement des données sont convenus avant toute mise en œuvre."
+                    : "Scope, responsibilities and data-handling rules are agreed before any implementation begins."}
               </p>
             </div>
           )}
@@ -225,10 +241,18 @@ export function EditorialPage({
               <Link
                 href={href(
                   locale,
-                  page === "product" ? "providers" : "product",
+                  page === "product"
+                    ? "providers"
+                    : page === "trust"
+                      ? "pricing"
+                      : "product",
                 )}
               >
-                {page === "product" ? d.nav.providers : d.nav.product}
+                {page === "product"
+                  ? d.nav.providers
+                  : page === "trust"
+                    ? d.nav.pricing
+                    : d.nav.product}
                 <span aria-hidden="true"> →</span>
               </Link>
             </div>

@@ -64,7 +64,12 @@ export function Header({
               locale === "fr" ? "Navigation principale" : "Main navigation"
             }
           >
-            <Link href={`${href(locale)}#how-it-works`}>{d.how}</Link>
+            <Link
+              href={href(locale, "product")}
+              aria-current={page === "product" ? "page" : undefined}
+            >
+              {d.product}
+            </Link>
             <Link
               href={href(locale, "providers")}
               aria-current={page === "providers" ? "page" : undefined}
@@ -72,10 +77,16 @@ export function Header({
               {d.providers}
             </Link>
             <Link
-              href={href(locale, "product")}
-              aria-current={page === "product" ? "page" : undefined}
+              href={href(locale, "pricing")}
+              aria-current={page === "pricing" ? "page" : undefined}
             >
-              {d.product}
+              {d.pricing}
+            </Link>
+            <Link
+              href={href(locale, "trust")}
+              aria-current={page === "trust" ? "page" : undefined}
+            >
+              {d.trust}
             </Link>
             <Link
               href={href(locale, "about")}
@@ -108,7 +119,7 @@ export function Header({
               </Link>
             </nav>
             <a
-              href={mailto("conversation", true, locale)}
+              href={mailto("pilot", true, locale)}
               className="button button-small header-cta"
             >
               {d.talk}
@@ -134,13 +145,7 @@ export function Header({
           }
           inert={!open}
         >
-          <Link
-            href={`${href(locale)}#how-it-works`}
-            onClick={() => setOpen(false)}
-          >
-            {d.how}
-          </Link>
-          {(["providers", "product", "about", "insights"] as const).map(
+          {(["product", "providers", "pricing", "trust", "about", "insights"] as const).map(
             (k) => (
               <Link
                 key={k}
@@ -152,7 +157,7 @@ export function Header({
             ),
           )}
           <a
-            href={mailto("conversation", true, locale)}
+            href={mailto("pilot", true, locale)}
             onClick={() => setOpen(false)}
           >
             {d.talk}

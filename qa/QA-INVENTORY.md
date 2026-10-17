@@ -3,53 +3,41 @@
 ## Build and delivery
 
 - Production `next build`, strict TypeScript and ESLint.
-- Static export for the attached preview; Vercel uses the normal Next.js build.
-- Runtime dependency audit.
+- Static generation of all 26 EN/FR content routes.
 - Source handoff includes lockfile, configuration, documentation and optimised images.
 
 ## Routes and SEO
 
-- All 22 localised content routes return success with one H1 and correct HTML language.
-- All internal anchors and links resolve, including equivalent EN/FR article routes.
-- Unique page titles and descriptions; canonical, en/fr/x-default hreflang, OpenGraph and Twitter cards.
-- WebSite/Person schema and secondary-page BreadcrumbList parse as JSON.
-- Sitemap includes all routes; robots blocks staging, allows configured production.
-- Root redirects to /en; unknown paths return 404.
+- Every localised content route returns success with one H1 and the correct HTML language.
+- Internal links resolve, including equivalent EN/FR pricing, trust, article and legal routes.
+- Unique titles and descriptions; canonical, en/fr/x-default hreflang, OpenGraph and Twitter cards.
+- WebSite/Product/Person schema and secondary-page BreadcrumbList parse as JSON.
+- Sitemap includes all routes; robots blocks staging and allows configured production.
+- Root redirects to `/en/`; unknown paths return 404.
 
 ## User controls
 
-- Mobile menu opens/closes, Escape returns focus, outside click closes.
+- Mobile menu opens/closes, Escape returns focus and outside click closes it.
 - Language switch navigates to the equivalent URL.
-- Header/hero/how-it-works anchors lead to the correct section.
-- Contact links use the configured address and correct encoded subject.
-- Evidence timeline selects all three lessons; source references reveal original context.
-- Accept, edit/save/cancel, reject, defer and reset each produce visible local-only results.
-- Source context closes without changing the selected lesson.
-- Theme toggles light/dark/light with readable evidence and photography.
-- Skip link, navigation, review actions and edit field have visible keyboard focus.
+- Hero and internal CTAs lead to Platform or open the correctly addressed pilot email.
+- Theme toggles light/dark/light without storing a cookie.
+- Skip link and navigation have visible keyboard focus.
 
 ## Visual coverage
 
-- Homepages at 375, 430, 768, 1024, 1440, 1728 pixels.
-- Every secondary page and article at desktop and 375 pixels.
-- Inspect hero, story, journey, evidence viewer, provider section, product CTA, legal documents and footer.
-- Inspect mobile menu, editing, source context, selected review state and dark homepage.
-- No horizontal overflow; no squashed or tiny interface labels.
+- Homepages at 375, 960, 1024 and desktop widths.
+- Pricing, Trust & research and editorial-page templates at desktop and 375 pixels.
+- Inspect hero, role routes, learning cycle, product layers, technology foundation, pricing, trust, founder and footer.
+- Inspect mobile menu, long French labels and both colour themes.
+- No horizontal overflow or interface-like product mockups.
 - Responsive image srcsets request mobile-sized WebP variants.
-
-## Off-happy-path checks
-
-- Empty edit cannot save; cancelled edit leaves interpretation unchanged.
-- Unknown translated slug returns 404 rather than incorrectly serving the other language.
-- Reduced motion disables transitions; 200% text zoom remains usable.
-- Site content works with JavaScript disabled; the synthetic viewer retains an initial readable state.
 
 ## Editorial integrity
 
-- Every product visual is visibly labelled illustrative/synthetic.
-- Stock subjects never appear as customers, founder or study participants.
-- No fake testimonials, partnerships, customer counts, results or validated-accuracy claims.
-- Product positioning is confident while example data, teacher control and the distinction between observation and interpretation remain explicit.
-- No lorem ipsum, invented academic references or corporate registration claims.
-- Production domain, all four role-based contact addresses and brand/founder LinkedIn destinations are explicit.
-- Legal status is disclosed only where required and does not interrupt the product narrative.
+- Owner, teacher and student perspectives are present in both languages.
+- Operating platform, learning intelligence and native practice are present in both languages.
+- Existing foundation, productisation and research programme are kept distinct.
+- No fake testimonials, partnerships, customer counts, achieved research targets or savings claims.
+- Optional recording, human oversight and the absence of automated scoring/CEFR certification remain explicit.
+- Stock subjects never appear as customers, employees or study participants.
+- No browser windows, dashboards, phones or other visuals that imply a finished interface.

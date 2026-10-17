@@ -1,216 +1,120 @@
 import type { Dictionary } from "../types";
+
 export const fr: Dictionary = {
   nav: {
-    how: "Fonctionnement",
-    providers: "Organismes FLE",
-    product: "Produit",
-    about: "À propos",
-    talk: "Échangeons",
-    menu: "Menu",
-    close: "Fermer",
-    skip: "Aller au contenu",
-    home: "Accueil",
-    insights: "Ressources",
-    privacy: "Confidentialité",
-    legal: "Mentions légales",
-    cookies: "Cookies",
-    terms: "Conditions d’utilisation",
-    contact: "Contact",
+    how: "Fonctionnement", providers: "Pour les écoles", product: "Plateforme", pricing: "Tarifs",
+    trust: "Confiance & recherche", about: "À propos", talk: "Discuter d’un pilote", menu: "Menu",
+    close: "Fermer", skip: "Aller au contenu", home: "Accueil", insights: "Ressources",
+    privacy: "Confidentialité", legal: "Mentions légales", cookies: "Cookies", terms: "Conditions d’utilisation", contact: "Contact",
   },
   hero: {
-    context:
-      "Des traces pédagogiques validées par les enseignants, d’un cours à l’autre",
-    title: "Des traces d’apprentissage qui",
-    accent: "ne disparaissent pas à la fin du cours.",
-    description:
-      "LaSpeak relie les consignes, les productions de l’apprenant, les corrections, les reprises et les réemplois ultérieurs entre plusieurs séances, tout en conservant le contexte d’origine et en laissant la décision à l’enseignant.",
-    cta: "Échanger avec le fondateur",
-    secondary: "Découvrir le fonctionnement",
-    note: "Conçu pour les enseignants, avec chaque interprétation sous leur contrôle.",
-  },
-  story: {
-    label: "Le cours n’est qu’un début",
-    title: "Un cours, c’est bien plus qu’un enregistrement.",
-    text: "Une consigne. Une hésitation. Une correction qui fait sens. Une expression réutilisée trois séances plus tard. Ce contexte peut se perdre entre enregistrements, notes et comptes rendus isolés. LaSpeak en préserve le fil.",
-    alt: "Une apprenante adulte, casque sur les oreilles, échange avec une enseignante sur son ordinateur.",
-    caption:
-      "L’échange humain reste au premier plan. Les traces doivent rester reliées à cet échange.",
+    context: "La plateforme pédagogique et opérationnelle des écoles de langues indépendantes",
+    title: "Une école.", accent: "Tous les cours reliés.",
+    description: "LaSpeak réunit planning, cours en direct, supports, devoirs, messages et progression dans un même service — pour la direction, l’enseignant et l’apprenant.",
+    cta: "Découvrir la plateforme", secondary: "Discuter d’un pilote de 8 semaines",
+    note: "Conçu pour les écoles dirigées par leur propriétaire, avec 6 à 25 enseignants et des cours récurrents pour adultes.",
+    orbit: ["Planifier", "Enseigner", "Suivre", "Pratiquer", "Préparer"], centre: "Un même parcours d’apprentissage",
   },
   problem: {
-    label: "Ce qui se perd entre les cours",
-    title: "Un compte rendu dit ce qui s’est passé.",
-    muted: "Pas forcément ce que l’apprenant sait réutiliser.",
-    lines: [
-      ["L’assiduité", "indique la présence."],
-      ["Le programme", "indique les contenus abordés."],
-      ["La transcription", "indique ce qui a été dit."],
+    label: "L’école fragmentée", title: "Un bon cours peut rester prisonnier d’un service déconnecté.",
+    description: "Planning, visioconférence, supports, devoirs et messages sont souvent répartis entre plusieurs outils. Entre les cours, le travail devient manuel, répété et fragile.",
+    items: [
+      { role: "Direction", title: "Les exceptions traversent les outils.", text: "Un changement de salle, un remplacement ou un suivi manqué n’a pas toujours de responsable visible." },
+      { role: "Enseignant", title: "Le contexte doit être reconstruit.", text: "Notes, messages et devoirs ne préparent pas automatiquement la prochaine étape pédagogique utile." },
+      { role: "Apprenant", title: "Le cours s’arrête trop tôt.", text: "L’action suivante est séparée de la conversation qui lui donnait du sens." },
     ],
-    question:
-      "Mais cette production a-t-elle été sollicitée, corrigée, reprise ou réemployée de façon autonome ?",
   },
-  journey: {
-    label: "Le fonctionnement",
-    title: "Suivre les productions.\nGarder le contexte.",
-    description:
-      "Un enchaînement illustratif, pas une note. LaSpeak relie des moments que l’enseignant peut examiner ensemble.",
-    steps: [
-      [
-        "Modèle ou consigne de l’enseignant",
-        "« Qu’est-ce que vous avez fait ce week-end ? »",
-      ],
-      ["Production de l’apprenant", "« J’ai allé à Lyon. »"],
-      ["Correction", "« On dit : je suis allé à Lyon. »"],
-      ["Reprise", "« Oui, je suis allé à Lyon. »"],
-      [
-        "Réemploi autonome ultérieur",
-        "« Le mois dernier, je suis allé à Marseille. »",
-      ],
-      [
-        "Validation par l’enseignant",
-        "Ce rapprochement est-il pertinent ? L’enseignant en décide.",
-      ],
+  roles: {
+    label: "Une plateforme, trois perspectives", title: "Une même journée d’école, reliée pour tous.",
+    description: "Chacun retrouve le travail dont il a besoin, tandis que l’identité, les droits et le contexte du cours restent dans le même service.",
+    items: [
+      { key: "owner", role: "Direction", title: "Piloter le service.", text: "Garder en vue planning, affectation des enseignants, exceptions et visibilité financière.", route: ["Planning", "Équipe", "Exceptions", "Pilotage"] },
+      { key: "teacher", role: "Enseignant", title: "Enseigner avec le contexte.", text: "Passer des supports et du cours en direct aux observations validées et à la prochaine étape préparée.", route: ["Supports", "Cours", "Validation", "Préparation"] },
+      { key: "student", role: "Apprenant", title: "Continuer à apprendre.", text: "Retrouver cours, devoirs, messages et courtes activités natives dans une expérience continue.", route: ["Rejoindre", "Apprendre", "Pratiquer", "Revenir"] },
     ],
-    distinction: "Observer ≠ interpréter.",
-    observation:
-      "Observation : l’apprenant a dit « je suis allé » au cours de deux séances différentes.",
-    interpretation:
-      "Interprétation : le réemploi pourrait être lié à une correction antérieure. C’est une piste à examiner, pas une preuve de maîtrise.",
   },
-  viewer: {
-    label: "Regarder de plus près",
-    title: "Une interprétation n’est utile que si l’on peut la vérifier.",
-    description:
-      "Revenir à l’extrait. Retrouver l’échange. Valider le rapprochement, le modifier ou laisser la question ouverte.",
-    synthetic: "Exemple fictif",
-    illustrative: "Interface illustrative",
-    lesson: "Séance",
-    prompt: "Consigne de l’enseignant",
-    attempt: "Production de l’apprenant",
-    reuse: "Réemploi autonome possible",
-    possible: "Lien possible",
-    source: "Source",
-    original: "Extrait d’origine",
-    speaker: "Locuteur",
-    learner: "Apprenant",
-    timestamp: "Horodatage",
-    event: "Événement",
-    relationship: "Rapprochement proposé",
-    correction: "Correction lors de la séance 02",
-    review: "Validation par l’enseignant",
-    actions: ["Accepter", "Modifier", "Rejeter", "Différer"],
-    timeline: "D’une séance à l’autre",
-    note: "Explorez cet exemple. Vos choix restent dans cette page : aucune sauvegarde ni évaluation.",
-    reset: "Réinitialiser l’exemple",
-    editLabel: "Votre interprétation",
-    save: "Enregistrer dans cet exemple",
-    cancel: "Annuler",
-    statuses: [
-      "Rapprochement accepté dans cet exemple.",
-      "Interprétation modifiée dans cet exemple.",
-      "Rapprochement rejeté dans cet exemple.",
-      "Examen différé dans cet exemple.",
+  cycle: {
+    label: "Le cycle d’apprentissage complet", title: "Chaque cours transforme le suivant.",
+    description: "LaSpeak relie le fonctionnement de l’école à la décision pédagogique — de la planification à la préparation du prochain cours.",
+    steps: ["Planifier", "Cours en direct", "Observer", "Valider", "Pratiquer", "Actualiser l’historique", "Préparer", "Piloter l’école"],
+    caption: "La valeur vient du cycle complet, pas d’un compte rendu isolé.",
+  },
+  layers: {
+    label: "Architecture produit", title: "Trois couches. Un seul service pédagogique.",
+    description: "L’anglais, le français et le chinois partagent le fonctionnement de l’école. Chaque langue conserve les interactions d’apprentissage qui lui sont propres.",
+    items: [
+      { number: "01", title: "Plateforme opérationnelle", purpose: "Faire fonctionner l’école.", features: ["Planning", "Classe virtuelle", "Contenus", "Devoirs", "Messages", "Visibilité financière"], status: "Socle existant → produit école", tone: "foundation" },
+      { number: "02", title: "Intelligence pédagogique", purpose: "Faire suivre le contexte.", features: ["Traces du cours", "Validation enseignant", "Historique révisable", "Préparation du prochain cours"], status: "Comptes rendus existants ; état longitudinal en R&D", tone: "productisation" },
+      { number: "03", title: "Pratique native", purpose: "Rendre l’action suivante utile.", features: ["Expression orale", "Compréhension", "Prononciation", "Écriture chinoise"], status: "Socle natif ; nouvelles interactions à évaluer", tone: "research" },
     ],
-    viewSource: "Voir la source",
-    closeSource: "Fermer la source",
+  },
+  foundation: {
+    label: "Un socle construit, des étapes explicites", title: "Réutiliser ce qui fonctionne. Construire soigneusement la frontière école.",
+    description: "LaSpeak part du logiciel ChinaChild utilisé pour exploiter un service d’enseignement. La productisation et la recherche restent clairement distinguées de ce socle.",
+    columns: [
+      { title: "Déjà construit", status: "Socle existant", tone: "foundation", text: "Des domaines opérationnels réduisent l’ingénierie nécessaire au premier produit école.", items: ["Plannings récurrents", "Classe LiveKit", "Contenus et devoirs", "Messages et dossiers", "Traitement des cours", "Code natif apprenant"] },
+      { title: "En productisation", status: "Productisation", tone: "productisation", text: "Les hypothèses mono-école deviennent un service isolé et répétable pour plusieurs écoles.", items: ["Tenancy et rôles", "Configuration multilingue", "Contrôles européens", "Facturation et usage", "Onboarding et migration", "Observabilité des versions"] },
+      { title: "En expérimentation", status: "Programme de recherche", tone: "research", text: "Les fonctions de recherche restent manuelles ou restreintes tant que les preuves sont insuffisantes.", items: ["Fiabilité des observations", "État apprenant corrigible", "Suivi utile", "Interactions propres aux langues"] },
+    ],
   },
   why: {
-    label: "Pourquoi LaSpeak",
-    title: "Plus de contexte.\nPas de fausse certitude.",
+    label: "Pourquoi LaSpeak", title: "La difficulté, c’est la boucle complète.",
     items: [
-      [
-        "Entre plusieurs séances",
-        "Pas un compte rendu de plus. Un rapprochement à examiner dans la durée.",
-      ],
-      [
-        "Relié aux sources",
-        "Chaque interprétation proposée renvoie à son contexte d’origine.",
-      ],
-      [
-        "L’enseignant décide",
-        "L’IA propose ; l’enseignant accepte, modifie, rejette ou diffère.",
-      ],
-      [
-        "L’incertitude reste visible",
-        "L’absence de trace n’est pas automatiquement considérée comme un échec.",
-      ],
-    ],
-    is: "Un complément, pas un remplacement.",
-    isText:
-      "LaSpeak est un outil de mise en relation et d’examen des traces pédagogiques, au service d’un enseignement humain.",
-    isnt: "Ce n’est pas",
-    exclusions: [
-      "un tuteur IA",
-      "un LMS",
-      "un système de notation automatique",
-      "un classement des enseignants",
-      "une certification CECRL",
+      ["Une identité opérationnelle", "Le même apprenant, le même cours et les mêmes droits traversent planning, enseignement, pratique et passations."],
+      ["Un contexte qui circule", "Une observation validée peut orienter une action utile et revenir dans le prochain cours."],
+      ["Un historique révisable", "Corrections et suppressions modifient le contexte futur sans réécrire silencieusement l’historique."],
+      ["Une pratique adaptée à la langue", "Oral, écoute et écriture utilisent des interactions différentes plutôt qu’un exercice générique."],
     ],
   },
-  providers: {
-    label: "Pour les organismes FLE",
-    title: "Changer d’enseignant, sans repartir de zéro.",
-    description:
-      "Conçu pour les organismes de FLE pour adultes et professionnels en France, et pour les équipes qui assurent la continuité pédagogique.",
-    items: [
-      [
-        "Passation entre enseignants",
-        "Conserver le contexte utile quand un autre enseignant prend le relais.",
-      ],
-      [
-        "Échanges sur la progression",
-        "S’appuyer sur des exemples concrets, au-delà des impressions générales.",
-      ],
-      [
-        "Points à reprendre",
-        "Repérer des traces qui méritent un nouvel examen.",
-      ],
-      [
-        "Retrouver un exemple",
-        "Revenir au moment pertinent sans revoir l’intégralité du cours.",
-      ],
+  pricing: {
+    label: "Des tarifs école lisibles", title: "Choisir l’échelle. Garder l’usage visible.",
+    description: "Chaque offre inclut le fonctionnement essentiel de l’école, les accès enseignants et apprenants, ainsi que des volumes média et traitement définis.",
+    tiers: [
+      { name: "Start", price: "199 €", unit: "/ mois", allowances: ["6 enseignants", "100 apprenants actifs", "300 participant-heures", "20 heures de cours IA"] },
+      { name: "School", price: "399 €", unit: "/ mois", featured: true, allowances: ["12 enseignants", "250 apprenants actifs", "700 participant-heures", "40 heures de cours IA"] },
+      { name: "Growth", price: "699 €", unit: "/ mois", allowances: ["25 enseignants", "500 apprenants actifs", "1 400 participant-heures", "80 heures de cours IA"] },
     ],
-    complement:
-      "LaSpeak complète les outils d’enseignement et de gestion des formations existants sans les remplacer.",
-    cta: "Pour les organismes FLE",
-    alt: "Une enseignante explique un point à distance, devant son ordinateur et ses notes.",
+    footnote: "Prix HT. Onboarding : 200 € par école. Les usages supplémentaires sont facturés séparément.",
+    cta: "Voir les tarifs et le pilote", details: "Pas de paiement en ligne : la première étape consiste à cadrer le fonctionnement de votre école.",
+  },
+  pilot: {
+    label: "Première étape commerciale", title: "Un pilote School de huit semaines", price: "998 €",
+    description: "Deux mois avec l’offre School et l’onboarding, en commençant par une cohorte adulte et un contact nommé dans l’école.",
+    items: ["Un planning et un fonctionnement convenus", "Un usage régulier par les enseignants participants", "Un suivi réalisable par les apprenants", "Une décision de renouvellement mesurée"],
+    cta: "Discuter d’un pilote", note: "Aucun enregistrement ni document apprenant n’est nécessaire pour le premier échange.",
+  },
+  trust: {
+    label: "Une mise en œuvre responsable", title: "Une école peut enseigner sans enregistrer.",
+    description: "L’enregistrement et l’analyse IA sont optionnels, associés à une finalité, à des contrôles adaptés et à une décision humaine claire.",
+    items: [
+      ["Choisir avant de capter", "Rejoindre un cours ou accepter des conditions générales ne vaut pas autorisation pour tous les usages ultérieurs."],
+      ["Jugement enseignant", "Le produit soutient les décisions pédagogiques ; il ne note, ne classe et ne certifie pas automatiquement."],
+      ["Cycle de vie contrôlé", "Accès, conservation, correction et suppression font partie de la conception du service."],
+      ["Des preuves avant l’extension", "Les fonctions de recherche qui ne franchissent pas leur seuil restent manuelles ou restreintes."],
+    ],
+    cta: "Découvrir la confiance et la recherche",
   },
   product: {
-    label: "Échanges produit",
-    title: "Voyons comment LaSpeak s’intègre à votre organisation pédagogique.",
-    paragraphs: [
-      "LaSpeak donne aux équipes de FLE pour adultes un cadre structuré pour retrouver des traces reliées aux sources entre plusieurs cours, sous le contrôle des enseignants.",
-      "Un échange ciblé permet de situer le produit dans vos passations, vos bilans de progression et vos outils de gestion existants.",
-    ],
-    cta: "Échanger sur LaSpeak",
-    note: "20 minutes autour du produit. Aucune préparation nécessaire.",
-    implementation: "Discuter d’une mise en œuvre",
+    label: "La plateforme LaSpeak", title: "Voir le service pédagogique complet.",
+    paragraphs: ["Relier le fonctionnement de l’école, les cours en direct et ce qui se passe entre les séances.", "Partir du fonctionnement réel de l’équipe, puis définir un pilote ciblé."],
+    cta: "Découvrir la plateforme", note: "Un statut clair pour la base existante, la productisation et la recherche.", implementation: "Discuter d’une mise en œuvre",
+  },
+  providers: {
+    label: "Pour les écoles de langues indépendantes", title: "Commencer là où la direction ressent la friction.",
+    description: "Pour les écoles de 6 à 25 enseignants proposant des cours récurrents pour adultes en anglais, français ou chinois.",
+    items: [["Un planning", "Coordonner cours récurrents et changements."], ["Un fil pédagogique", "Préserver le contexte lors des passations."], ["Un service apprenant", "Relier cours, suivi et pratique."], ["Un fonctionnement responsable", "Donner à chaque exception une prochaine action visible."]],
+    complement: "La première démarche commerciale vise les écoles d’adultes en ligne ou hybrides en France.", cta: "Pour les écoles",
+    alt: "Une enseignante prépare un cours de langue en ligne dans un espace calme.",
   },
   founder: {
-    label: "Derrière LaSpeak",
-    title: "Un produit né de l’expérience opérationnelle.",
-    paragraphs: [
-      "Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.",
-      "La gestion de cours de langue en direct l’a conduit à créer LaSpeak : un produit qui comble l’écart entre la réalisation d’un cours et la conservation de traces utiles entre plusieurs séances.",
-    ],
-    role: "Fondateur de LaSpeak",
-    linkedin: "Voir le profil LinkedIn de Denis",
-    more: "En savoir plus sur le produit",
+    label: "Construit par l’expérience", title: "Une plateforme née de l’exploitation d’une école de langues.",
+    paragraphs: ["Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.", "La construction et l’exploitation de ChinaChild ont relié les problèmes concrets que LaSpeak transforme aujourd’hui en produit pour les écoles indépendantes."],
+    role: "Fondateur de ChinaChild et LaSpeak", linkedin: "Voir Denis sur LinkedIn", more: "Lire l’histoire du fondateur",
   },
-  final: {
-    title: "Prolongez chaque cours dans le suivant.",
-    text: "Découvrez comment LaSpeak s’intègre à vos passations, vos bilans de progression et votre préparation pédagogique.",
-    cta: "Échanger avec Denis",
-  },
+  final: { title: "Reliez l’école autour de chaque cours.", text: "Apportez un planning réel et une cohorte adulte récurrente. Nous cartographierons le fonctionnement et vérifierons si un pilote de huit semaines est pertinent.", cta: "Discuter d’un pilote" },
   footer: {
-    statement: "Garder le fil.",
-    development:
-      "LaSpeak est un produit d’intelligence pédagogique validée par l’enseignant, au service de la continuité des apprentissages.",
-    theme: "Changer le thème de couleurs",
-    emailLabels: {
-      general: "Général",
-      founder: "Fondateur",
-      support: "Assistance",
-      privacy: "Données personnelles",
-    },
+    statement: "Une école. Tous les cours reliés.",
+    development: "LaSpeak est une plateforme pédagogique et opérationnelle pour les écoles de langues indépendantes.", theme: "Changer le thème de couleurs",
+    emailLabels: { general: "Général", founder: "Fondateur", support: "Assistance", privacy: "Données personnelles" },
   },
 };

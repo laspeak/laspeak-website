@@ -1,7 +1,7 @@
 import type { EditorialPage } from "../types";
 import { emailHref, siteConfig } from "@/lib/site-config";
 
-const updated = "Last updated: 15 October 2026";
+const updated = "Last updated: 16 October 2026";
 
 export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = {
   legal: {
@@ -16,7 +16,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
       {
         title: "Website and publisher",
         paragraphs: [
-          "LaSpeak is a teacher-reviewed language intelligence product and brand. It is not currently operated by an incorporated company or separate legal person, and no company name, legal form, share capital, registration number or VAT number applies.",
+          "LaSpeak is a learning and operating platform and brand for independent language schools. It is not currently operated by an incorporated company or separate legal person, and no company name, legal form, share capital, registration number or VAT number applies.",
           "At the present pre-trading stage, the website is published on a non-professional basis by Denis Gasenchenko, a natural person and founder of LaSpeak. Denis Gasenchenko is also the publication director and is responsible for the editorial content.",
           "Product access, implementation scope and commercial terms are not contracted through this public website. The legal notice will be updated with the operator’s complete professional particulars when trading begins or an incorporated entity takes over publication.",
         ],
@@ -83,7 +83,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
         paragraphs: [
           "Unless a third-party credit states otherwise, the original text, information architecture, interface design, LaSpeak name and LaSpeak visual identity on this website are protected by applicable intellectual-property laws. No licence to reproduce, adapt, distribute or commercially exploit them is granted by access to the website.",
           "The founder portrait is published with Denis Gasenchenko’s authorisation. Other photographic and visual assets were supplied for the project and remain subject to the rights and licence terms of their respective authors or rightsholders. Third-party names and marks remain the property of their owners. Please contact the publisher before any reuse beyond exceptions permitted by law.",
-          "The Onest typeface is distributed under the SIL Open Font License. Product-interface examples and conversations shown on the website are fictional and do not depict a real learner, teacher, customer or deployment.",
+          "The Onest typeface is distributed under the SIL Open Font License. Editorial diagrams and example learning situations shown on the website are generic and do not depict a real learner, teacher, customer or deployment.",
         ],
       },
       {
@@ -108,7 +108,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
         title: "What this website does not store",
         paragraphs: [
           "LaSpeak does not use analytics cookies, advertising cookies, social-media pixels, fingerprinting, cross-site tracking, localStorage or sessionStorage. It does not create an advertising identifier or visitor profile.",
-          "The colour-theme control and choices made in the illustrative evidence viewer exist only in the page’s working memory. They disappear when the page is reloaded or closed and are not sent to LaSpeak.",
+          "The colour-theme choice exists only in the page’s working memory. It disappears when the page is reloaded or closed and is not sent to LaSpeak.",
         ],
       },
       {
@@ -159,7 +159,7 @@ export const legalPages: Record<"legal" | "cookies" | "terms", EditorialPage> = 
         title: "Purpose and scope",
         paragraphs: [
           "The website presents LaSpeak, its product workflow and the professional contexts it supports. It also provides direct contact points for product and implementation conversations. No purchase, subscription or service contract is concluded through the website itself.",
-          "Public product descriptions explain the core workflow but do not replace an agreed specification, implementation scope or commercial agreement. Illustrative interfaces use synthetic content so that no learner, teacher or organisation is exposed.",
+          "Public product descriptions explain the core workflow but do not replace an agreed specification, implementation scope or commercial agreement. Editorial diagrams use generic content so that no learner, teacher or organisation is exposed.",
         ],
       },
       {

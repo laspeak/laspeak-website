@@ -31,7 +31,7 @@ export function emailHref(address: string, subject?: string) {
 }
 
 export function mailto(
-  kind: "conversation" | "product" | "implementation" = "conversation",
+  kind: "conversation" | "product" | "implementation" | "pilot" = "conversation",
   founder = true,
   locale: "en" | "fr" = "en",
 ) {
@@ -40,11 +40,13 @@ export function mailto(
       conversation: "LaSpeak — product conversation",
       product: "LaSpeak — product workflow",
       implementation: "LaSpeak — implementation",
+      pilot: "LaSpeak — 8-week school pilot",
     },
     fr: {
       conversation: "LaSpeak — échange produit",
       product: "LaSpeak — fonctionnement du produit",
       implementation: "LaSpeak — mise en œuvre",
+      pilot: "LaSpeak — pilote école de 8 semaines",
     },
   };
   return emailHref(

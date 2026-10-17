@@ -5,15 +5,14 @@ import { editorialPages, getArticles } from "@/content/editorial";
 
 const homeMeta = {
   en: {
-    title:
-      "LaSpeak — Teacher-reviewed learning evidence across language lessons",
+    title: "LaSpeak — One school. Every lesson connected.",
     description:
-      "LaSpeak connects prompts, learner attempts, corrections and later reuse across language lessons, with every interpretation linked to its source and reviewed by teachers.",
+      "The learning and operating platform connecting schedules, live teaching, materials, homework, messages and student progress for independent language schools.",
   },
   fr: {
-    title: "LaSpeak — Des traces pédagogiques reliées entre les cours de FLE",
+    title: "LaSpeak — Une école. Tous les cours reliés.",
     description:
-      "LaSpeak relie les consignes, productions, corrections et réemplois entre les cours, avec chaque interprétation reliée à sa source et validée par l’enseignant.",
+      "La plateforme pédagogique et opérationnelle qui relie planning, cours en direct, supports, devoirs, messages et progression pour les écoles de langues indépendantes.",
   },
 };
 const insightsMeta = {
@@ -73,8 +72,8 @@ export function metadataFor(locale: Locale, key: PageKey): Metadata {
           height: 630,
           alt:
             locale === "fr"
-              ? "LaSpeak : garder le fil entre les cours."
-              : "LaSpeak: keep the thread between lessons.",
+              ? "LaSpeak : une école, tous les cours reliés."
+              : "LaSpeak: one school, every lesson connected.",
         },
       ],
     },
