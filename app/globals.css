@@ -2350,12 +2350,11 @@ html[lang="fr"] .hero h1 {
 .hero-storytelling {
   position: relative;
   width: min(100%, 600px);
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   justify-self: end;
   overflow: hidden;
   border-radius: 22px;
   background: var(--surface);
-  box-shadow: 0 24px 70px color-mix(in srgb, var(--ink) 12%, transparent);
 }
 .hero-storytelling img {
   object-fit: cover;
