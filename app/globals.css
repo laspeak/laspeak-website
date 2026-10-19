@@ -2343,14 +2343,14 @@ html[lang="fr"] .hero h1 {
 /* 2026 platform narrative — diagrams and editorial structure, never product UI. */
 .platform-hero {
   min-height: calc(100svh - 94px);
-  grid-template-columns: minmax(0, 1.12fr) minmax(420px, 0.88fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(440px, 0.92fr);
   padding-block: clamp(var(--s16), 8vw, var(--s32));
 }
 .platform-hero .hero-copy { position: relative; z-index: 2; }
 .hero-storytelling {
   position: relative;
-  width: min(100%, 560px);
-  aspect-ratio: 3 / 4;
+  width: min(100%, 600px);
+  aspect-ratio: 4 / 5;
   justify-self: end;
   overflow: hidden;
   border-radius: 22px;
@@ -2471,8 +2471,8 @@ html[lang="fr"] .hero h1 {
 @media (max-width: 1199px) {
   .desktop-nav { gap: var(--s4); }
   .desktop-nav a { font-size: 0.78rem; }
-  .platform-hero { grid-template-columns: 1fr 0.9fr; }
-  .hero-storytelling { max-width: 470px; }
+  .platform-hero { grid-template-columns: 1fr 0.95fr; }
+  .hero-storytelling { max-width: 500px; }
   .layer-row { grid-template-columns: 58px 0.9fr 1.1fr 0.9fr; gap: var(--s5); }
 }
 @media (max-width: 959px) {
