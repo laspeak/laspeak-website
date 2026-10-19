@@ -2347,53 +2347,20 @@ html[lang="fr"] .hero h1 {
   padding-block: clamp(var(--s16), 8vw, var(--s32));
 }
 .platform-hero .hero-copy { position: relative; z-index: 2; }
-.orbit-map {
+.hero-storytelling {
   position: relative;
   width: min(100%, 560px);
-  aspect-ratio: 1;
-  margin-inline: auto;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, var(--lavender-light) 0 27%, transparent 27.4%);
-}
-.orbit-ring {
-  position: absolute;
-  border: 1px solid color-mix(in srgb, var(--purple) 42%, transparent);
-  border-radius: 50%;
-  inset: 13%;
-}
-.orbit-ring-two { inset: 30%; border-style: dashed; }
-.orbit-centre {
-  position: absolute;
-  inset: 36%;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  border-radius: 50%;
-  background: var(--ink);
-  color: var(--bg);
-  padding: var(--s4);
-}
-.orbit-centre span { font-size: var(--text-xs); color: var(--lavender); }
-.orbit-centre strong { font-size: var(--text-sm); line-height: 1.3; margin-top: var(--s1); }
-.orbit-item {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: var(--s2);
-  padding: var(--s3) var(--s4);
-  border-radius: 999px;
+  aspect-ratio: 3 / 4;
+  justify-self: end;
+  overflow: hidden;
+  border-radius: 22px;
   background: var(--surface);
-  border: 1px solid var(--line);
-  font-size: var(--text-sm);
-  box-shadow: 0 12px 30px color-mix(in srgb, var(--ink) 7%, transparent);
-  white-space: nowrap;
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--ink) 12%, transparent);
 }
-.orbit-item i { font-style: normal; color: var(--purple); font-size: var(--text-xs); }
-.orbit-item-1 { top: 3%; left: 38%; }
-.orbit-item-2 { top: 28%; right: -2%; }
-.orbit-item-3 { bottom: 15%; right: 4%; }
-.orbit-item-4 { bottom: 6%; left: 15%; }
-.orbit-item-5 { top: 28%; left: -2%; }
+.hero-storytelling img {
+  object-fit: cover;
+  object-position: 58% center;
+}
 
 .section-heading { max-width: 850px; margin-bottom: var(--s12); }
 .section-heading > p:not(.eyebrow),
@@ -2505,12 +2472,18 @@ html[lang="fr"] .hero h1 {
   .desktop-nav { gap: var(--s4); }
   .desktop-nav a { font-size: 0.78rem; }
   .platform-hero { grid-template-columns: 1fr 0.9fr; }
-  .orbit-map { max-width: 470px; }
+  .hero-storytelling { max-width: 470px; }
   .layer-row { grid-template-columns: 58px 0.9fr 1.1fr 0.9fr; gap: var(--s5); }
 }
 @media (max-width: 959px) {
   .platform-hero { min-height: auto; grid-template-columns: 1fr; }
-  .orbit-map { width: min(82vw, 540px); margin-top: var(--s6); }
+  .hero-storytelling {
+    width: min(100%, 720px);
+    max-width: none;
+    aspect-ratio: 3 / 2;
+    justify-self: start;
+    margin-top: var(--s6);
+  }
   .split-heading { grid-template-columns: 1fr; gap: var(--s4); }
   .friction-grid, .role-routes, .foundation-grid { grid-template-columns: 1fr; }
   .friction-grid article { border-right: 0; border-bottom: 1px solid #f7f6f233; padding-inline: 0; }
@@ -2527,14 +2500,7 @@ html[lang="fr"] .hero h1 {
 @media (max-width: 767px) {
   .platform-hero { padding-top: var(--s12); }
   .platform-hero h1 { font-size: clamp(3rem, 13vw, 4.35rem); }
-  .orbit-map { width: min(92vw, 430px); }
-  .orbit-item { padding: var(--s2) var(--s3); font-size: var(--text-xs); }
-  .orbit-centre { inset: 34%; }
-  .orbit-item-1 { left: 34%; }
-  .orbit-item-2 { right: -3%; }
-  .orbit-item-3 { right: -1%; bottom: 12%; }
-  .orbit-item-4 { left: 8%; bottom: 3%; }
-  .orbit-item-5 { left: -3%; }
+  .hero-storytelling { aspect-ratio: 4 / 3; border-radius: 16px; }
   .section-heading { margin-bottom: var(--s8); }
   .friction-grid article, .role-route, .foundation-card { padding: var(--s6); }
   .friction-grid article { padding-inline: 0; }
@@ -2551,13 +2517,7 @@ html[lang="fr"] .hero h1 {
   .pilot-band-inner > div:last-child { grid-column: 1; }
   .footer-links { gap: var(--s4); }
 }
-@media (max-width: 430px) {
-  .orbit-map { width: 100%; }
-  .orbit-item { font-size: 0.68rem; }
-  .orbit-item i { display: none; }
-  .orbit-centre strong { font-size: 0.7rem; }
-}
 @media print {
-  .orbit-map, .pilot-band { break-inside: avoid; }
+  .hero-storytelling, .pilot-band { break-inside: avoid; }
   .pricing-section { background: white; }
 }
