@@ -69,7 +69,7 @@ export const pages: Record<
       {
         title: "Operating platform — existing foundation to school product",
         paragraphs: [
-          "Recurring schedules, a LiveKit classroom, teaching content, homework, messaging, records and lesson processing already exist in the ChinaChild technology base.",
+          "Recurring schedules, a LiveKit classroom, teaching content, homework, messaging, records and lesson processing already exist in the LaSpeak technology base.",
           "LaSpeak productises those domains with school tenancy, roles, language-neutral configuration, European processing controls, billing, onboarding and release observability.",
         ],
       },
@@ -132,14 +132,14 @@ export const pages: Record<
   about: {
     label: "About LaSpeak",
     title: "Built by operating.\nMade for many schools.",
-    description: "LaSpeak grows from Denis Gasenchenko’s experience building and operating ChinaChild into a multilingual product for independent schools.",
+    description: "LaSpeak grows from Denis Gasenchenko’s experience building digital products and operating online language education into a multilingual product for independent schools.",
     intro: "Dependable B2B systems taught the operating discipline. Running a teaching service exposed the daily work. Building the platform connected the two.",
     sections: [
       {
         title: "A founder who has run the problem",
         paragraphs: [
           "Denis Gasenchenko is a digital-product and B2B operator with more than eight years of experience across FinTech, payroll, business software and online language education.",
-          "Through ChinaChild, he has dealt with recurring lessons, teacher availability, classroom access, homework, student communication and financial administration as connected operating problems.",
+          "Through operating an online language school, he has dealt with recurring lessons, teacher availability, classroom access, homework, student communication and financial administration as connected problems.",
         ],
       },
       {

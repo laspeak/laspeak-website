@@ -50,7 +50,7 @@ export const en: Dictionary = {
   },
   foundation: {
     label: "Built foundation, explicit next steps", title: "Reuse what works. Build the school boundary carefully.",
-    description: "LaSpeak starts from ChinaChild software used to operate a teaching service. Productisation and research remain clearly separated from that existing base.",
+    description: "LaSpeak builds on software already used to operate a teaching service. Productisation and research remain clearly separated from that existing base.",
     columns: [
       { title: "Already built", status: "Existing foundation", tone: "foundation", text: "Working domains reduce the basic engineering needed for a first school product.", items: ["Recurring schedules", "LiveKit classroom", "Content and homework", "Messaging and records", "Lesson processing", "Native student code"] },
       { title: "Being productised", status: "Productisation", tone: "productisation", text: "Single-school assumptions become a repeatable, isolated service for independent schools.", items: ["School tenancy and roles", "Language-neutral configuration", "European data controls", "Billing and usage", "Onboarding and migration", "Release observability"] },
@@ -108,8 +108,8 @@ export const en: Dictionary = {
   },
   founder: {
     label: "Built by operating", title: "A platform shaped by running a language school.",
-    paragraphs: ["Denis Gasenchenko is a digital-product and B2B operator with more than eight years of experience across FinTech, payroll, business software and online language education.", "Building and operating ChinaChild connected the practical problems LaSpeak now turns into a product for independent schools."],
-    role: "Founder, ChinaChild and LaSpeak", linkedin: "View Denis on LinkedIn", more: "Read the founder story",
+    paragraphs: ["Denis Gasenchenko is a digital-product and B2B operator with more than eight years of experience across FinTech, payroll, business software and online language education.", "Building and operating an online language school connected the practical problems LaSpeak now turns into a product for independent schools."],
+    role: "Founder, LaSpeak", linkedin: "View Denis on LinkedIn", more: "Read the founder story",
   },
   final: { title: "Connect the school around every lesson.", text: "Bring one real timetable and one recurring adult cohort. We will map the workflow and see whether an eight-week pilot fits.", cta: "Discuss a pilot" },
   footer: {

@@ -50,7 +50,7 @@ export const fr: Dictionary = {
   },
   foundation: {
     label: "Un socle construit, des étapes explicites", title: "Réutiliser ce qui fonctionne. Construire soigneusement la frontière école.",
-    description: "LaSpeak part du logiciel ChinaChild utilisé pour exploiter un service d’enseignement. La productisation et la recherche restent clairement distinguées de ce socle.",
+    description: "LaSpeak s’appuie sur un logiciel déjà utilisé pour exploiter un service d’enseignement. La productisation et la recherche restent clairement distinguées de ce socle.",
     columns: [
       { title: "Déjà construit", status: "Socle existant", tone: "foundation", text: "Des domaines opérationnels réduisent l’ingénierie nécessaire au premier produit école.", items: ["Plannings récurrents", "Classe LiveKit", "Contenus et devoirs", "Messages et dossiers", "Traitement des cours", "Code natif apprenant"] },
       { title: "En productisation", status: "Productisation", tone: "productisation", text: "Les hypothèses mono-école deviennent un service isolé et répétable pour plusieurs écoles.", items: ["Tenancy et rôles", "Configuration multilingue", "Contrôles européens", "Facturation et usage", "Onboarding et migration", "Observabilité des versions"] },
@@ -108,8 +108,8 @@ export const fr: Dictionary = {
   },
   founder: {
     label: "Construit par l’expérience", title: "Une plateforme née de l’exploitation d’une école de langues.",
-    paragraphs: ["Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.", "La construction et l’exploitation de ChinaChild ont relié les problèmes concrets que LaSpeak transforme aujourd’hui en produit pour les écoles indépendantes."],
-    role: "Fondateur de ChinaChild et LaSpeak", linkedin: "Voir Denis sur LinkedIn", more: "Lire l’histoire du fondateur",
+    paragraphs: ["Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.", "La construction et l’exploitation d’une école de langues en ligne ont relié les problèmes concrets que LaSpeak transforme aujourd’hui en produit pour les écoles indépendantes."],
+    role: "Fondateur de LaSpeak", linkedin: "Voir Denis sur LinkedIn", more: "Lire l’histoire du fondateur",
   },
   final: { title: "Reliez l’école autour de chaque cours.", text: "Apportez un planning réel et une cohorte adulte récurrente. Nous cartographierons le fonctionnement et vérifierons si un pilote de huit semaines est pertinent.", cta: "Discuter d’un pilote" },
   footer: {

@@ -121,7 +121,7 @@ Server components are the default. Client components are limited to navigation, 
 
 The site presents LaSpeak as one connected platform across school operations, live teaching and learning between lessons. The homepage separates three perspectives (owner, teacher and student), eight steps in the learning cycle and three product layers (operating platform, learning intelligence and native practice).
 
-Capability status is explicit throughout: existing ChinaChild foundations, work that requires multi-school productisation and research-programme directions are not presented as the same level of readiness. The site contains no platform screenshots, browser or phone frames, synthetic dashboards, fabricated customers or outcome claims.
+Capability status is explicit throughout: existing operating foundations, work that requires multi-school productisation and research-programme directions are not presented as the same level of readiness. The site contains no platform screenshots, browser or phone frames, synthetic dashboards, fabricated customers or outcome claims.
 
 ## SEO
 

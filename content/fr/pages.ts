@@ -69,7 +69,7 @@ export const pages: Record<
       {
         title: "Plateforme opérationnelle — du socle existant au produit école",
         paragraphs: [
-          "Plannings récurrents, classe LiveKit, contenus pédagogiques, devoirs, messages, dossiers et traitement des cours existent déjà dans le socle technologique ChinaChild.",
+          "Plannings récurrents, classe LiveKit, contenus pédagogiques, devoirs, messages, dossiers et traitement des cours existent déjà dans le socle technologique LaSpeak.",
           "LaSpeak transforme ces domaines en produit avec tenancy école, rôles, configuration multilingue, contrôles européens, facturation, onboarding et observabilité.",
         ],
       },
@@ -132,14 +132,14 @@ export const pages: Record<
   about: {
     label: "À propos de LaSpeak",
     title: "Construit par l’expérience.\nPensé pour plusieurs écoles.",
-    description: "LaSpeak transforme l’expérience de Denis Gasenchenko dans la construction et l’exploitation de ChinaChild en produit multilingue pour les écoles indépendantes.",
+    description: "LaSpeak transforme l’expérience de Denis Gasenchenko dans les produits numériques et l’enseignement des langues en ligne en produit multilingue pour les écoles indépendantes.",
     intro: "Les systèmes B2B fiables ont apporté la discipline opérationnelle. L’exploitation d’un service pédagogique a révélé le travail quotidien. La construction de la plateforme a relié les deux.",
     sections: [
       {
         title: "Un fondateur qui a vécu le problème",
         paragraphs: [
           "Denis Gasenchenko travaille depuis plus de huit ans dans les produits numériques et le B2B, entre FinTech, paie, logiciels de gestion et enseignement des langues en ligne.",
-          "Avec ChinaChild, il a traité comme un ensemble les cours récurrents, la disponibilité des enseignants, l’accès à la classe, les devoirs, la communication apprenant et l’administration financière.",
+          "En exploitant une école de langues en ligne, il a traité comme un ensemble les cours récurrents, la disponibilité des enseignants, l’accès à la classe, les devoirs, la communication apprenant et l’administration financière.",
         ],
       },
       {

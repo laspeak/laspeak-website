@@ -32,7 +32,7 @@ The platform-repositioning build was checked locally on 16 October 2026. No depl
 
 - The homepage first screen identifies LaSpeak as the learning and operating platform for independent language schools and names the connected processes.
 - Pricing is published as Start €199, School €399 and Growth €699; onboarding, additional-use rates and the €998 eight-week School pilot are documented.
-- Existing ChinaChild foundations, multi-school productisation and research-programme work are explicitly separated.
+- Existing operating foundations, multi-school productisation and research-programme work are explicitly separated.
 - Recording and AI analysis are optional; teacher confirmation, retention/deletion controls and the absence of automatic grading or CEFR certification are stated.
 - No invented clients, testimonials, partners, achieved research results or proven time/money savings were found.
 
